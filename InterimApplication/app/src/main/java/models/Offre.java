@@ -10,11 +10,14 @@ public class Offre {
     private String typeContrat;
     private String dateDeb;
     private String dateFin;
+    private String ville;
+
+    private String pays;
     private Publisher publisher;
 
     public Offre() {}
 
-    public Offre(String ref, String nom, String description, long remunerationMensuelle, long remunerationHoraire, String typeContrat, String dateDeb, String dateFin, Publisher publisher) {
+    public Offre(String ref, String nom, String description, long remunerationMensuelle, long remunerationHoraire, String typeContrat, String dateDeb, String dateFin, Publisher publisher, String pays,String ville) {
         this.ref = ref;
         this.nom = nom;
         this.description = description;
@@ -24,6 +27,8 @@ public class Offre {
         this.dateDeb = dateDeb;
         this.dateFin = dateFin;
         this.publisher = publisher;
+        this.pays=pays;
+        this.ville=ville;
     }
 
     public int getId() {
@@ -56,6 +61,22 @@ public class Offre {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getVille() {
+        return ville;
+    }
+
+    public void setVille(String ville) {
+        this.ville = ville;
+    }
+
+    public String getPays() {
+        return pays;
+    }
+
+    public void setPays(String pays) {
+        this.pays = pays;
     }
 
     public long getRemunerationMensuelle() {

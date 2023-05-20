@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_background"
+    android:layout_marginTop="20dp">
+
+<RelativeLayout
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp">
+
+    <TextView
+        android:id="@+id/nomPostePub"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:inputType="text"
+        android:text=" dfgdfg"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/addPubImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="245dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/nomPostePub"
+        android:src="@drawable/add" />
+</RelativeLayout>
+    <TextView
+        android:id="@+id/employeurPub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text="Employeur : " />
+
+
+    <TextView
+        android:id="@+id/referencePub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/employeurPub"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text="Référence : " />
+    <TextView
+        android:id="@+id/ContratPub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/referencePub"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text="Contrat : " />
+    <TextView
+        android:id="@+id/remTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ContratPub"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text="Rémuneration : " />
+    <TextView
+        android:id="@+id/remHeurePub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text=" €/Heure " />
+    <TextView
+        android:id="@+id/remMoisPub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remHeurePub"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text="€/Mois : " />
+
+    <TextView
+        android:id="@+id/dateDebPub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remMoisPub"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="date"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text=" Début du contrat: " />
+    <TextView
+        android:id="@+id/dateFinPub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateDebPub"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text="Fin du contrat : " />
+
+    <TextView
+        android:id="@+id/descrptiontitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateFinPub"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text="Description : " />
+
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/descrptiontitle"
+        android:background="@drawable/edit_background"
+        android:gravity="top"
+        android:inputType="text" />
+    <TextView
+        android:id="@+id/datePublication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="date"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text="Publié le : "
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

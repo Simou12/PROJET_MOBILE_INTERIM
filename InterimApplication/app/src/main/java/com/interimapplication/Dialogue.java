@@ -30,10 +30,10 @@ import models.Publisher;
 
 
 public class Dialogue extends AppCompatDialogFragment {
-    private EditText nomOffreView, refOffreView, remHorraireView, remMensuelleView, dateDebContratView, dateFinContratView, descriptionView;
+    private EditText nomOffreView, refOffreView, remHorraireView, remMensuelleView, dateDebContratView, dateFinContratView, descriptionView, villeView, paysView;
     private Button butValider;
     private Spinner contratView;
-    private String nomOffre, refOffre, contrat, remHorraire, remMensuelle, dateDeb, dateFin, description;
+    private String nomOffre, refOffre, contrat, remHorraire, remMensuelle, dateDeb, dateFin, description, ville, pays;
     // private DialogListener listener;
     private AlertDialog dialog;
     String validDate = "^(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/\\\\d{4}$";
@@ -64,6 +64,8 @@ public class Dialogue extends AppCompatDialogFragment {
                         dateDeb = dateDebContratView.getText().toString();
                         dateFin = dateFinContratView.getText().toString();
                         description = descriptionView.getText().toString();
+                        ville=villeView.getText().toString();
+                        pays=paysView.getText().toString();
                         if (!nomOffre.equals("") && !refOffre.equals("") && !contrat.equals("") && !dateDeb.equals("")) {
                             nomOffreView.setBackgroundResource(R.drawable.edit_background);
                             refOffreView.setBackgroundResource(R.drawable.edit_background);
@@ -73,7 +75,7 @@ public class Dialogue extends AppCompatDialogFragment {
                                 //dateFinContratView.setBackgroundResource(R.drawable.edit_background);
                                 //TODO récupérer les informations du publisher à partir de son profil
                                 Publisher publisher = new Publisher();
-                                Offre offre = new Offre(refOffre, nomOffre, description, Long.parseLong(remMensuelle), Long.parseLong(remHorraire), contrat, dateDeb, dateFin, publisher);
+                                Offre offre = new Offre(refOffre, nomOffre, description, Long.parseLong(remMensuelle), Long.parseLong(remHorraire), contrat, dateDeb, dateFin, publisher,ville,pays);
                             FirebaseUser currentUser = CurrentUserManager.getInstance().getCurrentUser();
                             //TODO récupérer le currentUser en entier
                             offreRef.setValue(offre)
@@ -138,6 +140,8 @@ public class Dialogue extends AppCompatDialogFragment {
         dateDebContratView = view.findViewById(R.id.dateDeb);
         dateFinContratView = view.findViewById(R.id.dateFin);
         descriptionView = view.findViewById(R.id.description);
+        villeView=view.findViewById(R.id.ville);
+        paysView=view.findViewById(R.id.pays);
 
         return builder.create();
     }

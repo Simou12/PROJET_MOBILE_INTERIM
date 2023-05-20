@@ -11,13 +11,12 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="JobSpot"
-        android:textSize="30dp"
-        android:padding="10dp"
-        android:textColor="@color/black"
-        android:textAlignment="center"
         android:background="@drawable/round"
-        />
+        android:padding="10dp"
+        android:text="JobSpot"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
     <TextView
         android:id="@+id/titre"
         android:layout_width="wrap_content"
