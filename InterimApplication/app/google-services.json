@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "385312652932",
+    "project_id": "interimapplication",
+    "storage_bucket": "interimapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385312652932:android:1cb79ce65b1856cc0cccd1",
+        "android_client_info": {
+          "package_name": "com.interimapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385312652932-509eabssde5ou82f5tiu39g1autltvte.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp1KGFgvVJmcgFmXa-tpeWMubvHJUoWUI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "385312652932-509eabssde5ou82f5tiu39g1autltvte.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
