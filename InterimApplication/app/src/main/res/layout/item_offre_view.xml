@@ -20,7 +20,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
         android:inputType="text"
-        android:text=" dfgdfg"
+        android:text=" Serveur"
         android:textColor="@color/black"
         android:textSize="30dp" />
 

@@ -186,7 +186,7 @@
             android:layout_height="50dp"
 
             android:layout_toEndOf="@+id/shareImage"
-            android:src="@drawable/coeurNomRempli" />
+            android:src="@drawable/coeurnonrempli" />
 
         <ImageView
             android:id="@+id/shareImage"

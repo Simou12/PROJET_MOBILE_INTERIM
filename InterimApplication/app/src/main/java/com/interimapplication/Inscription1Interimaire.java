@@ -11,8 +11,6 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import retrofit.RetrofitService;
-import retrofit.UserApi;
 
 public class Inscription1Interimaire extends AppCompatActivity {
 

@@ -16,11 +16,7 @@ import org.w3c.dom.Text;
 import java.util.List;
 
 import models.Interimaire;
-import retrofit.RetrofitService;
-import retrofit.UserApi;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
+
 
 public class Connexion extends AppCompatActivity {
     private EditText email;
@@ -45,26 +41,7 @@ public class Connexion extends AppCompatActivity {
             String mail = email.getText().toString();
             String password = mdp.getText().toString();
 
-            RetrofitService retrofitService = new RetrofitService();
-            UserApi userApi = retrofitService.getRetrofit().create(UserApi.class);
 
-            Call<Interimaire> callCandidat = userApi.getCandidatByEmail(mail);
-            callCandidat.enqueue(new Callback<Interimaire>() {
-                @Override
-                public void onResponse(Call<Interimaire> call, Response<Interimaire> response) {
-                    Interimaire candidat = response.body();
-                    if (candidat.equals(null)){
-                        Toast.makeText(Connexion.this, "Ce compte n'existe pas!", Toast.LENGTH_SHORT).show();
-                    }else {
-                        startActivity(new Intent(Connexion.this,Accueil.class));
-                    }
-                }
-                @Override
-                public void onFailure(Call<Interimaire> call, Throwable t) {
-                    Toast.makeText(Connexion.this, "Erreur de connexion", Toast.LENGTH_SHORT).show();
-                    Log.e("Eroooor : ",t.getMessage());
-                }
-            });
         });
     }
 }
