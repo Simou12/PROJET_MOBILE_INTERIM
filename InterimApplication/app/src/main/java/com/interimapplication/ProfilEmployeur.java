@@ -18,10 +18,9 @@ public class ProfilEmployeur extends AppCompatActivity {
     private void initializeComponents() {
         ajouterOffreView=findViewById(R.id.addOffre);
         ajouterOffreView.setOnClickListener(View -> {
-            openDialog();
+            Intent intent=new Intent(ProfilEmployeur.this,AddOffreEmp.class);
+            startActivity(intent);
         });
     }
-    private void openDialog(){
 
-    }
 }
