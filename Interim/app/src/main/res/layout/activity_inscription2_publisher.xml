@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inscription2Publisher">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="JobSpot"
+        android:textSize="30dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:background="@drawable/round"
+        />
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Veuillez renseigner au moins une adresse mail."
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/title"
+        />
+
+    <EditText
+        android:id="@+id/tel1"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/edit_background"
+        android:hint="Téléphone (optionnel)"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:layout_below="@+id/titre" />
+    <EditText
+        android:id="@+id/tel2"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/edit_background"
+        android:hint="Téléphone 2 (optionnel)"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:layout_below="@+id/tel1" />
+
+    <EditText
+        android:id="@+id/adress"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/edit_background"
+        android:hint="Adresse"
+        android:textAlignment="center"
+        android:layout_below="@+id/tel2" />
+
+    <EditText
+        android:id="@+id/email1"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/edit_background"
+        android:hint="Adresse mail 1 "
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:layout_below="@+id/adress" />
+
+    <EditText
+        android:id="@+id/email2"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/edit_background"
+        android:hint="Adresse mail 2 (optionnel)"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:layout_below="@+id/email1" />
+
+    <EditText
+        android:id="@+id/mdp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/edit_background"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:layout_below="@+id/email2" />
+
+    <EditText
+        android:id="@+id/lien"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/edit_background"
+        android:hint="Lien public (optionnel)"
+        android:textAlignment="center"
+        android:layout_below="@+id/mdp" />
+
+    <Button
+        android:id="@+id/valider"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:text="Valider"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/lien"/>
+
+</RelativeLayout>
