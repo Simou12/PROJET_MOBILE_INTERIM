@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_background"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp">
+    <ImageView
+        android:id="@+id/accepte"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/jaccepte"
+        android:layout_marginLeft="280dp"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:id="@+id/refus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/rejeter"
+        android:layout_marginLeft="280dp"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:id="@+id/nomEmploi"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="0dp"
+            android:inputType="text"
+            android:text="Emploi"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/nomEntreprise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text="Entreprise " />
+
+    <TextView
+        android:id="@+id/refAnnonce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomEntreprise"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text="Ref " />
+
+    <TextView
+        android:id="@+id/dateCandidature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/refAnnonce"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text="date " />
+
+
+</RelativeLayout>
