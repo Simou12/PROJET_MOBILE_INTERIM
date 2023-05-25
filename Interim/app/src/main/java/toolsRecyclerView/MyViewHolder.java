@@ -18,7 +18,7 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
 
     public MyViewHolder(@NonNull View itemView) {
         super(itemView);
-        nomEmploiView=itemView.findViewById(R.id.nomPostePub);
+        /*nomEmploiView=itemView.findViewById(R.id.nomPostePub);
         employeurView=itemView.findViewById(R.id.employeurPub);
         refOffreView=itemView.findViewById(R.id.referencePub);
         contratOffreView=itemView.findViewById(R.id.ContratPub);
@@ -31,6 +31,6 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
         imageAdd=itemView.findViewById(R.id.addPubImage);
         menu = itemView.findViewById(R.id.menu);
         postuler = itemView.findViewById(R.id.postuler);
-        adress = itemView.findViewById(R.id.adress);
+        adress = itemView.findViewById(R.id.adress);*/
     }
 }

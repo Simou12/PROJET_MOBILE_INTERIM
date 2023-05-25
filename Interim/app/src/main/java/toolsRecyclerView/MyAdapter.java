@@ -7,17 +7,15 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.PopupMenu;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.interim.Postule;
+import com.interim.interim.Postule;
 import com.example.interim.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
     Context context;

@@ -11,7 +11,7 @@
         android:text="Nom :"
         android:textColor="@color/black"
         android:textSize="18dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="50dp"
         android:layout_marginLeft="20dp"/>
 
     <EditText
@@ -33,7 +33,7 @@
         android:text="Prénom :"
         android:textColor="@color/black"
         android:textSize="18dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="50dp"
         android:layout_marginLeft="110dp"
         android:layout_toRightOf="@+id/nomtxt"/>
 
@@ -142,7 +142,7 @@
     <EditText
         android:id="@+id/motivation"
         android:layout_width="350dp"
-        android:layout_height="200dp"
+        android:layout_height="120dp"
         android:layout_below="@+id/motivationtxt"
         android:layout_centerHorizontal="true"
         android:background="@drawable/edit_background"

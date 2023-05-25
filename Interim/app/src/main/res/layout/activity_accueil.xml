@@ -4,20 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Accueil">
+    tools:context="com.interim.interim.Accueil">
 
-    <EditText
+    <SearchView
         android:id="@+id/search"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/edit_background"
-        android:drawableLeft="@drawable/search"
-        android:drawableRight="@drawable/micro"
-        android:drawablePadding="8dp"
-        android:hint="Chercher un post"
-        android:paddingLeft="20dp" />
+        android:iconifiedByDefault="false"
+        android:queryBackground="@android:color/transparent"
+        android:queryHint="Trouvez une offre" />
+
+
 
     <ImageView
         android:id="@+id/send"

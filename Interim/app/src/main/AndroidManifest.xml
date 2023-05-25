@@ -19,64 +19,67 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".Postule"
+            android:name="com.interim.interim.Item"
+            android:exported="true" />
+        <activity
+            android:name="com.interim.interim.Postule"
             android:exported="false" />
         <activity
-            android:name=".SavedOffers"
+            android:name="com.interim.interim.SavedOffers"
+            android:exported="true" />
+        <activity
+            android:name="com.interim.interim.MesNotifs"
             android:exported="false" />
         <activity
-            android:name=".MesNotifs"
+            android:name="com.interim.interim.MesEmplois"
             android:exported="false" />
         <activity
-            android:name=".MesEmplois"
+            android:name="com.interim.interim.MesCandidatures"
             android:exported="false" />
         <activity
-            android:name=".MesCandidatures"
+            android:name="com.interim.interim.OffreResultatRechercheInterim"
             android:exported="false" />
         <activity
-            android:name=".OffreResultatRechercheInterim"
+            android:name="com.interim.interim.ChoixAbonnement"
             android:exported="false" />
         <activity
-            android:name=".ChoixAbonnement"
+            android:name="com.interim.interim.MesOffres"
             android:exported="false" />
         <activity
-            android:name=".MesOffres"
+            android:name="com.interim.interim.AddOffre"
             android:exported="false" />
         <activity
-            android:name=".AddOffre"
+            android:name="com.interim.interim.InterimaireProfil"
             android:exported="false" />
         <activity
-            android:name=".InterimaireProfil"
+            android:name="com.interim.interim.EmployeurProfil"
             android:exported="false" />
         <activity
-            android:name=".EmployeurProfil"
+            android:name="com.interim.interim.Inscription2Publisher"
             android:exported="false" />
         <activity
-            android:name=".Inscription2Publisher"
+            android:name="com.interim.interim.Inscription1Publisher"
             android:exported="false" />
         <activity
-            android:name=".Inscription1Publisher"
+            android:name="com.interim.interim.Drawer_base"
             android:exported="false" />
         <activity
-            android:name=".Drawer_base"
+            android:name="com.interim.interim.Accueil"
             android:exported="false" />
         <activity
-            android:name=".Accueil"
+            android:name="com.interim.interim.Connexion"
             android:exported="false" />
         <activity
-            android:name=".Connexion"
+            android:name="com.interim.interim.Role"
             android:exported="false" />
         <activity
-            android:name=".Role"
+            android:name="com.interim.interim.Inscription2Interimaire"
             android:exported="false" />
         <activity
-            android:name=".Inscription2Interimaire"
+            android:name="com.interim.interim.Inscription1Interimaire"
             android:exported="false" />
         <activity
-            android:name=".Inscription1Interimaire"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name="com.interim.interim.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
