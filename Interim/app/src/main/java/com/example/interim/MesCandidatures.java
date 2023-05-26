@@ -46,7 +46,8 @@ public class MesCandidatures extends Drawer_base implements OnItemClickListener{
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()){
                     Candidature candidature = dataSnapshot.getValue(Candidature.class);
                     if(candidature.getEmail().equals(userEmail)){
-                        ItemCandidature item = new ItemCandidature(candidature.getNomEmploi(),candidature.getEntreprise(),candidature.getRefAnnonce(),candidature.getDate(),candidature.getStatus());
+                        String adress = candidature.getAdress();
+                        ItemCandidature item = new ItemCandidature(candidature.getNomEmploi(),candidature.getEntreprise(),candidature.getRefAnnonce(),candidature.getDate(),candidature.getStatus(),adress);
                         listCandidatures.add(item);
                     }
                 }

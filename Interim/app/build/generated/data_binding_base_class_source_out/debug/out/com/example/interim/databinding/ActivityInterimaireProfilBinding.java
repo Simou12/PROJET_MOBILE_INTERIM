@@ -5,10 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.interim.R;
@@ -18,22 +18,28 @@ import java.lang.String;
 
 public final class ActivityInterimaireProfilBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView candidatures;
+  public final ImageView deconnexionInterim;
 
   @NonNull
-  public final TextView emplois;
+  public final ImageView favoriInterim;
 
   @NonNull
-  public final TextView gererProfil;
+  public final ImageView gestProfilInterim;
 
   @NonNull
-  public final TextView nomUtilisateur;
+  public final ImageView imageView2;
 
   @NonNull
-  public final TextView notifs;
+  public final ImageView mesCandidInterim;
+
+  @NonNull
+  public final ImageView mesEmploiInterim;
+
+  @NonNull
+  public final ImageView notif;
 
   @NonNull
   public final ImageView photoProfil;
@@ -42,26 +48,34 @@ public final class ActivityInterimaireProfilBinding implements ViewBinding {
   public final TextView role;
 
   @NonNull
-  public final TextView savedOffre;
+  public final TextView textView;
 
-  private ActivityInterimaireProfilBinding(@NonNull RelativeLayout rootView,
-      @NonNull TextView candidatures, @NonNull TextView emplois, @NonNull TextView gererProfil,
-      @NonNull TextView nomUtilisateur, @NonNull TextView notifs, @NonNull ImageView photoProfil,
-      @NonNull TextView role, @NonNull TextView savedOffre) {
+  @NonNull
+  public final TextView userNameInterim;
+
+  private ActivityInterimaireProfilBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ImageView deconnexionInterim, @NonNull ImageView favoriInterim,
+      @NonNull ImageView gestProfilInterim, @NonNull ImageView imageView2,
+      @NonNull ImageView mesCandidInterim, @NonNull ImageView mesEmploiInterim,
+      @NonNull ImageView notif, @NonNull ImageView photoProfil, @NonNull TextView role,
+      @NonNull TextView textView, @NonNull TextView userNameInterim) {
     this.rootView = rootView;
-    this.candidatures = candidatures;
-    this.emplois = emplois;
-    this.gererProfil = gererProfil;
-    this.nomUtilisateur = nomUtilisateur;
-    this.notifs = notifs;
+    this.deconnexionInterim = deconnexionInterim;
+    this.favoriInterim = favoriInterim;
+    this.gestProfilInterim = gestProfilInterim;
+    this.imageView2 = imageView2;
+    this.mesCandidInterim = mesCandidInterim;
+    this.mesEmploiInterim = mesEmploiInterim;
+    this.notif = notif;
     this.photoProfil = photoProfil;
     this.role = role;
-    this.savedOffre = savedOffre;
+    this.textView = textView;
+    this.userNameInterim = userNameInterim;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -86,33 +100,45 @@ public final class ActivityInterimaireProfilBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.candidatures;
-      TextView candidatures = ViewBindings.findChildViewById(rootView, id);
-      if (candidatures == null) {
+      id = R.id.deconnexionInterim;
+      ImageView deconnexionInterim = ViewBindings.findChildViewById(rootView, id);
+      if (deconnexionInterim == null) {
         break missingId;
       }
 
-      id = R.id.emplois;
-      TextView emplois = ViewBindings.findChildViewById(rootView, id);
-      if (emplois == null) {
+      id = R.id.favoriInterim;
+      ImageView favoriInterim = ViewBindings.findChildViewById(rootView, id);
+      if (favoriInterim == null) {
         break missingId;
       }
 
-      id = R.id.gerer_profil;
-      TextView gererProfil = ViewBindings.findChildViewById(rootView, id);
-      if (gererProfil == null) {
+      id = R.id.gestProfilInterim;
+      ImageView gestProfilInterim = ViewBindings.findChildViewById(rootView, id);
+      if (gestProfilInterim == null) {
         break missingId;
       }
 
-      id = R.id.nom_utilisateur;
-      TextView nomUtilisateur = ViewBindings.findChildViewById(rootView, id);
-      if (nomUtilisateur == null) {
+      id = R.id.imageView2;
+      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView2 == null) {
         break missingId;
       }
 
-      id = R.id.notifs;
-      TextView notifs = ViewBindings.findChildViewById(rootView, id);
-      if (notifs == null) {
+      id = R.id.mesCandidInterim;
+      ImageView mesCandidInterim = ViewBindings.findChildViewById(rootView, id);
+      if (mesCandidInterim == null) {
+        break missingId;
+      }
+
+      id = R.id.mesEmploiInterim;
+      ImageView mesEmploiInterim = ViewBindings.findChildViewById(rootView, id);
+      if (mesEmploiInterim == null) {
+        break missingId;
+      }
+
+      id = R.id.notif;
+      ImageView notif = ViewBindings.findChildViewById(rootView, id);
+      if (notif == null) {
         break missingId;
       }
 
@@ -128,14 +154,21 @@ public final class ActivityInterimaireProfilBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.saved_offre;
-      TextView savedOffre = ViewBindings.findChildViewById(rootView, id);
-      if (savedOffre == null) {
+      id = R.id.textView;
+      TextView textView = ViewBindings.findChildViewById(rootView, id);
+      if (textView == null) {
         break missingId;
       }
 
-      return new ActivityInterimaireProfilBinding((RelativeLayout) rootView, candidatures, emplois,
-          gererProfil, nomUtilisateur, notifs, photoProfil, role, savedOffre);
+      id = R.id.userNameInterim;
+      TextView userNameInterim = ViewBindings.findChildViewById(rootView, id);
+      if (userNameInterim == null) {
+        break missingId;
+      }
+
+      return new ActivityInterimaireProfilBinding((ConstraintLayout) rootView, deconnexionInterim,
+          favoriInterim, gestProfilInterim, imageView2, mesCandidInterim, mesEmploiInterim, notif,
+          photoProfil, role, textView, userNameInterim);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

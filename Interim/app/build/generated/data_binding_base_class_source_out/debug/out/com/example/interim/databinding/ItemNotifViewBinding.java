@@ -4,11 +4,11 @@ package com.example.interim.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.interim.R;
@@ -18,45 +18,41 @@ import java.lang.String;
 
 public final class ItemNotifViewBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView accepte;
+  public final CardView card;
 
   @NonNull
-  public final TextView adressPub;
+  public final ConstraintLayout layout1;
 
   @NonNull
-  public final TextView employeurPub;
+  public final ConstraintLayout layoutCache;
 
   @NonNull
-  public final ImageView enCours;
+  public final TextView nomEmploi;
 
   @NonNull
-  public final RelativeLayout header;
+  public final TextView nomEntreprise;
 
   @NonNull
-  public final TextView nomPostePub;
+  public final TextView ref;
 
-  @NonNull
-  public final ImageView refus;
-
-  private ItemNotifViewBinding(@NonNull RelativeLayout rootView, @NonNull ImageView accepte,
-      @NonNull TextView adressPub, @NonNull TextView employeurPub, @NonNull ImageView enCours,
-      @NonNull RelativeLayout header, @NonNull TextView nomPostePub, @NonNull ImageView refus) {
+  private ItemNotifViewBinding(@NonNull ConstraintLayout rootView, @NonNull CardView card,
+      @NonNull ConstraintLayout layout1, @NonNull ConstraintLayout layoutCache,
+      @NonNull TextView nomEmploi, @NonNull TextView nomEntreprise, @NonNull TextView ref) {
     this.rootView = rootView;
-    this.accepte = accepte;
-    this.adressPub = adressPub;
-    this.employeurPub = employeurPub;
-    this.enCours = enCours;
-    this.header = header;
-    this.nomPostePub = nomPostePub;
-    this.refus = refus;
+    this.card = card;
+    this.layout1 = layout1;
+    this.layoutCache = layoutCache;
+    this.nomEmploi = nomEmploi;
+    this.nomEntreprise = nomEntreprise;
+    this.ref = ref;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -81,50 +77,44 @@ public final class ItemNotifViewBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.accepte;
-      ImageView accepte = ViewBindings.findChildViewById(rootView, id);
-      if (accepte == null) {
+      id = R.id.card;
+      CardView card = ViewBindings.findChildViewById(rootView, id);
+      if (card == null) {
         break missingId;
       }
 
-      id = R.id.adressPub;
-      TextView adressPub = ViewBindings.findChildViewById(rootView, id);
-      if (adressPub == null) {
+      id = R.id.layout1;
+      ConstraintLayout layout1 = ViewBindings.findChildViewById(rootView, id);
+      if (layout1 == null) {
         break missingId;
       }
 
-      id = R.id.employeurPub;
-      TextView employeurPub = ViewBindings.findChildViewById(rootView, id);
-      if (employeurPub == null) {
+      id = R.id.layoutCache;
+      ConstraintLayout layoutCache = ViewBindings.findChildViewById(rootView, id);
+      if (layoutCache == null) {
         break missingId;
       }
 
-      id = R.id.enCours;
-      ImageView enCours = ViewBindings.findChildViewById(rootView, id);
-      if (enCours == null) {
+      id = R.id.nomEmploi;
+      TextView nomEmploi = ViewBindings.findChildViewById(rootView, id);
+      if (nomEmploi == null) {
         break missingId;
       }
 
-      id = R.id.header;
-      RelativeLayout header = ViewBindings.findChildViewById(rootView, id);
-      if (header == null) {
+      id = R.id.nomEntreprise;
+      TextView nomEntreprise = ViewBindings.findChildViewById(rootView, id);
+      if (nomEntreprise == null) {
         break missingId;
       }
 
-      id = R.id.nomPostePub;
-      TextView nomPostePub = ViewBindings.findChildViewById(rootView, id);
-      if (nomPostePub == null) {
+      id = R.id.ref;
+      TextView ref = ViewBindings.findChildViewById(rootView, id);
+      if (ref == null) {
         break missingId;
       }
 
-      id = R.id.refus;
-      ImageView refus = ViewBindings.findChildViewById(rootView, id);
-      if (refus == null) {
-        break missingId;
-      }
-
-      return new ItemNotifViewBinding((RelativeLayout) rootView, accepte, adressPub, employeurPub,
-          enCours, header, nomPostePub, refus);
+      return new ItemNotifViewBinding((ConstraintLayout) rootView, card, layout1, layoutCache,
+          nomEmploi, nomEntreprise, ref);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

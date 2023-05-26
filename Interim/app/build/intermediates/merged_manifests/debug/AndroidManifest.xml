@@ -12,6 +12,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <permission
         android:name="com.example.interim.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -32,6 +34,21 @@
         android:testOnly="true"
         android:theme="@style/Theme.Interim"
         android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.example.interim.Item"
+            android:exported="false" />
+        <activity
+            android:name="com.example.interim.GererInterimaireProfil"
+            android:exported="false" />
+        <activity
+            android:name="com.example.interim.AccueilAnonyme"
+            android:exported="false" />
+        <activity
+            android:name="com.example.interim.CandidatureEnCoursEmpl"
+            android:exported="false" />
+        <activity
+            android:name="com.example.interim.AnnonceEmployeur"
+            android:exported="false" />
         <activity
             android:name="com.example.interim.Postule"
             android:exported="false" />

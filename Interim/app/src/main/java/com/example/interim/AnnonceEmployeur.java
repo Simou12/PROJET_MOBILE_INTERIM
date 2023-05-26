@@ -65,8 +65,24 @@ public class AnnonceEmployeur extends Drawer_base implements OnItemClickListener
 
     @Override
     public void onItemClick(int position) {
-        Intent intent = new Intent(AnnonceEmployeur.this, CandidatureEnCoursEmpl.class);
-        intent.putExtra("refAnnonce",listAnnonces.get(position).getRefAnnonce());
-        startActivity(intent);
+        Intent intent1 = getIntent();
+        String choix = intent1.getStringExtra("choix");
+        if(choix.equals("enCours")){
+            Intent intent = new Intent(AnnonceEmployeur.this, CandidatureEnCoursEmpl.class);
+            intent.putExtra("refAnnonce",listAnnonces.get(position).getRefAnnonce());
+            intent.putExtra("casChoisis",choix);
+            startActivity(intent);
+        } else if (choix.equals("acceptee")) {
+            Intent intent = new Intent(AnnonceEmployeur.this, CandidatureEnCoursEmpl.class);
+            intent.putExtra("refAnnonce",listAnnonces.get(position).getRefAnnonce());
+            intent.putExtra("casChoisis",choix);
+            startActivity(intent);
+        }else{
+            Intent intent = new Intent(AnnonceEmployeur.this, CandidatureEnCoursEmpl.class);
+            intent.putExtra("refAnnonce",listAnnonces.get(position).getRefAnnonce());
+            intent.putExtra("casChoisis",choix);
+            startActivity(intent);
+        }
+
     }
 }

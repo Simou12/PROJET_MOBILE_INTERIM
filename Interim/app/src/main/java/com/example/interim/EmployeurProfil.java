@@ -95,12 +95,19 @@ public class EmployeurProfil extends Drawer_base {
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.enCours:
-                        startActivity(new Intent(EmployeurProfil.this, AnnonceEmployeur.class));
+                        Intent intent1 = new Intent(EmployeurProfil.this, AnnonceEmployeur.class);
+                        intent1.putExtra("choix","enCours");
+                        startActivity(intent1);
+                        return true;
                     case R.id.acceptee:
-
+                        Intent intent2 = new Intent(EmployeurProfil.this, AnnonceEmployeur.class);
+                        intent2.putExtra("choix","acceptee");
+                        startActivity(intent2);
                         return true;
                     case R.id.refusee:
-
+                        Intent intent3 = new Intent(EmployeurProfil.this, AnnonceEmployeur.class);
+                        intent3.putExtra("choix","refusee");
+                        startActivity(intent3);
                         return true;
                     default:
                         return false;

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import com.example.interim.databinding.ActivityInterimaireProfilBinding;
 import com.google.firebase.auth.FirebaseUser;
@@ -22,7 +23,8 @@ import models.Interimaire;
 
 public class InterimaireProfil extends Drawer_base {
 
-    TextView savedOffers, mesCandidatures,mesNotifs, mesEmplois, nom;
+    ImageView savedOffers, mesCandidatures,mesNotifs, mesEmplois, gererProfil, deconnexion;
+    TextView nom;
     ActivityInterimaireProfilBinding act;
     FirebaseUser currentUser = CurrentUserManager.getInstance().getCurrentUser();
     String userEmail = currentUser.getEmail();
@@ -34,7 +36,7 @@ public class InterimaireProfil extends Drawer_base {
         setContentView(act.getRoot());
         allocatedTitle("Mon profil");
 
-        nom = findViewById(R.id.nom_utilisateur);
+        nom = findViewById(R.id.userNameInterim);
 
         DatabaseReference interimaireRef = FirebaseDatabase.getInstance().getReference("interimaire");
         interimaireRef.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -53,15 +55,13 @@ public class InterimaireProfil extends Drawer_base {
             }
         });
 
-        TextView gerer = findViewById(R.id.gerer_profil);
-        SpannableString content = new SpannableString("Gérer mon profil");
-        content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
-        gerer.setText(content);
 
-        savedOffers = findViewById(R.id.saved_offre);
-        mesCandidatures = findViewById(R.id.candidatures);
-        mesNotifs = findViewById(R.id.notifs);
-        mesEmplois = findViewById(R.id.emplois);
+        savedOffers = findViewById(R.id.favoriInterim);
+        mesCandidatures = findViewById(R.id.mesCandidInterim);
+        mesNotifs = findViewById(R.id.notif);
+        mesEmplois = findViewById(R.id.mesEmploiInterim);
+        gererProfil = findViewById(R.id.gestProfilInterim);
+        deconnexion = findViewById(R.id.deconnexionInterim);
 
         mesCandidatures.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,6 +90,24 @@ public class InterimaireProfil extends Drawer_base {
                 startActivity(new Intent(InterimaireProfil.this, MesEmplois.class));
             }
         });
+
+        gererProfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(InterimaireProfil.this, GererInterimaireProfil.class));
+            }
+        });
+
+        deconnexion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(InterimaireProfil.this, MainActivity.class));
+            }
+        });
+
+
+
+
 
 
     }

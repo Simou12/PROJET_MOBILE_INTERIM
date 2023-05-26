@@ -6,6 +6,8 @@
     </string-array>
     <color name="black">#FF000000</color>
     <color name="bleu">#33658A</color>
+    <color name="bleuClair"> #EBF0FB</color>
+    <color name="blue_background">#002386 </color>
     <color name="green">#ECE8C4</color>
     <color name="gris">#93928C</color>
     <color name="grisClair">#AAA9A3</color>
@@ -29,7 +31,7 @@
     <string name="project_id" translatable="false">interim-1a28c</string>
     <style name="Theme.Interim" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
-        <item name="colorPrimary">@color/bleu</item>
+        <item name="colorPrimary">@color/blue_background</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         

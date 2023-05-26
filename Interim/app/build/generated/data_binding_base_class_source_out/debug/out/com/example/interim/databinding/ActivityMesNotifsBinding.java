@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
@@ -20,11 +21,15 @@ public final class ActivityMesNotifsBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final TextView aucune;
+
+  @NonNull
   public final RecyclerView recylerView;
 
-  private ActivityMesNotifsBinding(@NonNull RelativeLayout rootView,
+  private ActivityMesNotifsBinding(@NonNull RelativeLayout rootView, @NonNull TextView aucune,
       @NonNull RecyclerView recylerView) {
     this.rootView = rootView;
+    this.aucune = aucune;
     this.recylerView = recylerView;
   }
 
@@ -55,13 +60,19 @@ public final class ActivityMesNotifsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.aucune;
+      TextView aucune = ViewBindings.findChildViewById(rootView, id);
+      if (aucune == null) {
+        break missingId;
+      }
+
       id = R.id.recylerView;
       RecyclerView recylerView = ViewBindings.findChildViewById(rootView, id);
       if (recylerView == null) {
         break missingId;
       }
 
-      return new ActivityMesNotifsBinding((RelativeLayout) rootView, recylerView);
+      return new ActivityMesNotifsBinding((RelativeLayout) rootView, aucune, recylerView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,7 +1,6 @@
 package com.example.interim;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -22,7 +21,6 @@ import java.util.List;
 import MesNotifsRecyclerView.ItemNotif;
 import MesNotifsRecyclerView.NotifAdapter;
 import models.Candidature;
-import toolsRecyclerView.MyAdapter;
 
 public class MesNotifs extends Drawer_base {
 
@@ -50,7 +48,7 @@ public class MesNotifs extends Drawer_base {
                 for (DataSnapshot datasnapshot : snapshot.getChildren()) {
                     Candidature candidature = datasnapshot.getValue(Candidature.class);
                     if(candidature.getEmail().equals(userEmail) && (candidature.getStatus().equals("acceptee") || candidature.getStatus().equals("refusee"))){
-                        ItemNotif notif= new ItemNotif(candidature.getNomEmploi(),candidature.getEmployeur(),candidature.getAdress());
+                        ItemNotif notif= new ItemNotif(candidature.getNomEmploi(),candidature.getEntreprise(),candidature.getAdress(),candidature.getStatus(),candidature.getRefAnnonce());
                         listNotifItem.add(notif);
                     }
                 }

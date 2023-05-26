@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/sauvegarde"
-        android:title="Sauvegarder"
+        android:id="@+id/enCours"
+        android:title="Candidatures en cours"
         />
     <item
-        android:id="@+id/traduire"
-        android:title="Traduire"
+        android:id="@+id/acceptee"
+        android:title="Candidatures acceptées"
         />
     <item
-        android:id="@+id/partager"
-        android:title="Partager"/>
+        android:id="@+id/refusee"
+        android:title="Candidatures refusées"/>
 </menu>

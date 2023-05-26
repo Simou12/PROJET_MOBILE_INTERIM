@@ -7,10 +7,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.interim.R;
@@ -20,7 +20,7 @@ import java.lang.String;
 
 public final class ActivityConnexionBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
   public final Button btnvalid;
@@ -43,7 +43,7 @@ public final class ActivityConnexionBinding implements ViewBinding {
   @NonNull
   public final TextView texte;
 
-  private ActivityConnexionBinding(@NonNull RelativeLayout rootView, @NonNull Button btnvalid,
+  private ActivityConnexionBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnvalid,
       @NonNull TextView conx, @NonNull EditText email, @NonNull ImageView image,
       @NonNull EditText mdp, @NonNull TextView signUp, @NonNull TextView texte) {
     this.rootView = rootView;
@@ -58,7 +58,7 @@ public final class ActivityConnexionBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -125,7 +125,7 @@ public final class ActivityConnexionBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityConnexionBinding((RelativeLayout) rootView, btnvalid, conx, email, image,
+      return new ActivityConnexionBinding((ConstraintLayout) rootView, btnvalid, conx, email, image,
           mdp, signUp, texte);
     }
     String missingId = rootView.getResources().getResourceName(id);

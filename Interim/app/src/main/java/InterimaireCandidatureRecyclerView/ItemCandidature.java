@@ -7,15 +7,17 @@ public class ItemCandidature {
     private String ref;
     private String dateCandidature;
     private  String status;
+    private String adress;
 
     public ItemCandidature(){}
 
-    public ItemCandidature(String nomEmploi, String entreprise, String ref, String dateCandidature, String status) {
+    public ItemCandidature(String nomEmploi, String entreprise, String ref, String dateCandidature, String status, String adresse) {
         this.nomEmploi = nomEmploi;
         this.entreprise = entreprise;
         this.ref = ref;
         this.dateCandidature = dateCandidature;
         this.status=status;
+        this.adress = adresse;
     }
 
     public String getNomEmploi() {
@@ -56,5 +58,13 @@ public class ItemCandidature {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getAdress() {
+        return adress;
+    }
+
+    public void setAdress(String adress) {
+        this.adress = adress;
     }
 }

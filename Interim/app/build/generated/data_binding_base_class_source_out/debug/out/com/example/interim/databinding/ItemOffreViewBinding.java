@@ -6,10 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.interim.R;
@@ -19,16 +21,16 @@ import java.lang.String;
 
 public final class ItemOffreViewBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
   public final TextView ContratPub;
 
   @NonNull
-  public final ImageView addPubImage;
+  public final TextView adre;
 
   @NonNull
-  public final TextView adress;
+  public final CardView card;
 
   @NonNull
   public final TextView dateDebPub;
@@ -46,62 +48,89 @@ public final class ItemOffreViewBinding implements ViewBinding {
   public final TextView descrptiontitle;
 
   @NonNull
-  public final TextView employeurPub;
+  public final ConstraintLayout layout1;
 
   @NonNull
-  public final RelativeLayout header;
+  public final ConstraintLayout layoutCache;
 
   @NonNull
-  public final ImageView menu;
+  public final LinearLayout layoutContraty;
+
+  @NonNull
+  public final LinearLayout layoutDate;
+
+  @NonNull
+  public final LinearLayout layoutLocal;
+
+  @NonNull
+  public final LinearLayout layoutRemun;
+
+  @NonNull
+  public final ImageView liker;
+
+  @NonNull
+  public final TextView nomEmployeurPub;
 
   @NonNull
   public final TextView nomPostePub;
 
   @NonNull
+  public final ImageView photoProfil;
+
+  @NonNull
   public final Button postuler;
 
   @NonNull
-  public final TextView referencePub;
-
-  @NonNull
-  public final TextView remHeurePub;
-
-  @NonNull
-  public final TextView remMoisPub;
+  public final TextView ref;
 
   @NonNull
   public final TextView remTitle;
 
-  private ItemOffreViewBinding(@NonNull RelativeLayout rootView, @NonNull TextView ContratPub,
-      @NonNull ImageView addPubImage, @NonNull TextView adress, @NonNull TextView dateDebPub,
+  @NonNull
+  public final ImageView share;
+
+  @NonNull
+  public final ImageView traduction;
+
+  private ItemOffreViewBinding(@NonNull ConstraintLayout rootView, @NonNull TextView ContratPub,
+      @NonNull TextView adre, @NonNull CardView card, @NonNull TextView dateDebPub,
       @NonNull TextView dateFinPub, @NonNull TextView datePublication,
       @NonNull TextView description, @NonNull TextView descrptiontitle,
-      @NonNull TextView employeurPub, @NonNull RelativeLayout header, @NonNull ImageView menu,
-      @NonNull TextView nomPostePub, @NonNull Button postuler, @NonNull TextView referencePub,
-      @NonNull TextView remHeurePub, @NonNull TextView remMoisPub, @NonNull TextView remTitle) {
+      @NonNull ConstraintLayout layout1, @NonNull ConstraintLayout layoutCache,
+      @NonNull LinearLayout layoutContraty, @NonNull LinearLayout layoutDate,
+      @NonNull LinearLayout layoutLocal, @NonNull LinearLayout layoutRemun,
+      @NonNull ImageView liker, @NonNull TextView nomEmployeurPub, @NonNull TextView nomPostePub,
+      @NonNull ImageView photoProfil, @NonNull Button postuler, @NonNull TextView ref,
+      @NonNull TextView remTitle, @NonNull ImageView share, @NonNull ImageView traduction) {
     this.rootView = rootView;
     this.ContratPub = ContratPub;
-    this.addPubImage = addPubImage;
-    this.adress = adress;
+    this.adre = adre;
+    this.card = card;
     this.dateDebPub = dateDebPub;
     this.dateFinPub = dateFinPub;
     this.datePublication = datePublication;
     this.description = description;
     this.descrptiontitle = descrptiontitle;
-    this.employeurPub = employeurPub;
-    this.header = header;
-    this.menu = menu;
+    this.layout1 = layout1;
+    this.layoutCache = layoutCache;
+    this.layoutContraty = layoutContraty;
+    this.layoutDate = layoutDate;
+    this.layoutLocal = layoutLocal;
+    this.layoutRemun = layoutRemun;
+    this.liker = liker;
+    this.nomEmployeurPub = nomEmployeurPub;
     this.nomPostePub = nomPostePub;
+    this.photoProfil = photoProfil;
     this.postuler = postuler;
-    this.referencePub = referencePub;
-    this.remHeurePub = remHeurePub;
-    this.remMoisPub = remMoisPub;
+    this.ref = ref;
     this.remTitle = remTitle;
+    this.share = share;
+    this.traduction = traduction;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -132,15 +161,15 @@ public final class ItemOffreViewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.addPubImage;
-      ImageView addPubImage = ViewBindings.findChildViewById(rootView, id);
-      if (addPubImage == null) {
+      id = R.id.adre;
+      TextView adre = ViewBindings.findChildViewById(rootView, id);
+      if (adre == null) {
         break missingId;
       }
 
-      id = R.id.adress;
-      TextView adress = ViewBindings.findChildViewById(rootView, id);
-      if (adress == null) {
+      id = R.id.card;
+      CardView card = ViewBindings.findChildViewById(rootView, id);
+      if (card == null) {
         break missingId;
       }
 
@@ -174,21 +203,51 @@ public final class ItemOffreViewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.employeurPub;
-      TextView employeurPub = ViewBindings.findChildViewById(rootView, id);
-      if (employeurPub == null) {
+      id = R.id.layout1;
+      ConstraintLayout layout1 = ViewBindings.findChildViewById(rootView, id);
+      if (layout1 == null) {
         break missingId;
       }
 
-      id = R.id.header;
-      RelativeLayout header = ViewBindings.findChildViewById(rootView, id);
-      if (header == null) {
+      id = R.id.layoutCache;
+      ConstraintLayout layoutCache = ViewBindings.findChildViewById(rootView, id);
+      if (layoutCache == null) {
         break missingId;
       }
 
-      id = R.id.menu;
-      ImageView menu = ViewBindings.findChildViewById(rootView, id);
-      if (menu == null) {
+      id = R.id.layoutContraty;
+      LinearLayout layoutContraty = ViewBindings.findChildViewById(rootView, id);
+      if (layoutContraty == null) {
+        break missingId;
+      }
+
+      id = R.id.layoutDate;
+      LinearLayout layoutDate = ViewBindings.findChildViewById(rootView, id);
+      if (layoutDate == null) {
+        break missingId;
+      }
+
+      id = R.id.layoutLocal;
+      LinearLayout layoutLocal = ViewBindings.findChildViewById(rootView, id);
+      if (layoutLocal == null) {
+        break missingId;
+      }
+
+      id = R.id.layoutRemun;
+      LinearLayout layoutRemun = ViewBindings.findChildViewById(rootView, id);
+      if (layoutRemun == null) {
+        break missingId;
+      }
+
+      id = R.id.liker;
+      ImageView liker = ViewBindings.findChildViewById(rootView, id);
+      if (liker == null) {
+        break missingId;
+      }
+
+      id = R.id.nomEmployeurPub;
+      TextView nomEmployeurPub = ViewBindings.findChildViewById(rootView, id);
+      if (nomEmployeurPub == null) {
         break missingId;
       }
 
@@ -198,27 +257,21 @@ public final class ItemOffreViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.photoProfil;
+      ImageView photoProfil = ViewBindings.findChildViewById(rootView, id);
+      if (photoProfil == null) {
+        break missingId;
+      }
+
       id = R.id.postuler;
       Button postuler = ViewBindings.findChildViewById(rootView, id);
       if (postuler == null) {
         break missingId;
       }
 
-      id = R.id.referencePub;
-      TextView referencePub = ViewBindings.findChildViewById(rootView, id);
-      if (referencePub == null) {
-        break missingId;
-      }
-
-      id = R.id.remHeurePub;
-      TextView remHeurePub = ViewBindings.findChildViewById(rootView, id);
-      if (remHeurePub == null) {
-        break missingId;
-      }
-
-      id = R.id.remMoisPub;
-      TextView remMoisPub = ViewBindings.findChildViewById(rootView, id);
-      if (remMoisPub == null) {
+      id = R.id.ref;
+      TextView ref = ViewBindings.findChildViewById(rootView, id);
+      if (ref == null) {
         break missingId;
       }
 
@@ -228,9 +281,22 @@ public final class ItemOffreViewBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemOffreViewBinding((RelativeLayout) rootView, ContratPub, addPubImage, adress,
-          dateDebPub, dateFinPub, datePublication, description, descrptiontitle, employeurPub,
-          header, menu, nomPostePub, postuler, referencePub, remHeurePub, remMoisPub, remTitle);
+      id = R.id.share;
+      ImageView share = ViewBindings.findChildViewById(rootView, id);
+      if (share == null) {
+        break missingId;
+      }
+
+      id = R.id.traduction;
+      ImageView traduction = ViewBindings.findChildViewById(rootView, id);
+      if (traduction == null) {
+        break missingId;
+      }
+
+      return new ItemOffreViewBinding((ConstraintLayout) rootView, ContratPub, adre, card,
+          dateDebPub, dateFinPub, datePublication, description, descrptiontitle, layout1,
+          layoutCache, layoutContraty, layoutDate, layoutLocal, layoutRemun, liker, nomEmployeurPub,
+          nomPostePub, photoProfil, postuler, ref, remTitle, share, traduction);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
