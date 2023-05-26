@@ -30,7 +30,7 @@ import models.Employeur;
 
 public class Inscription2Publisher extends AppCompatActivity {
 
-    private EditText tel1View,tel2View,adressView, email1View,email2View, mdpView,lienView;
+    private EditText tel2View,adressView,email2View;
     private String tel1,tel2,email1,email2,mdp,adress,lien;
     private Button btnValider;
     private FirebaseAuth firebaseAuth;
@@ -44,12 +44,8 @@ public class Inscription2Publisher extends AppCompatActivity {
 
         FirebaseApp.initializeApp(this);
         firebaseAuth = FirebaseAuth.getInstance();
-
-        tel1View = findViewById(R.id.tel1);
         tel2View = findViewById(R.id.tel2);
-        email1View = findViewById(R.id.email1);
         email2View = findViewById(R.id.email2);
-        mdpView = findViewById(R.id.mdp);
         adressView = findViewById(R.id.adress);
         lienView = findViewById(R.id.lien);
         btnValider = findViewById(R.id.valider);

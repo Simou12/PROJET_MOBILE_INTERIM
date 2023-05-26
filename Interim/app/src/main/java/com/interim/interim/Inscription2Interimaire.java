@@ -124,6 +124,5 @@ public class Inscription2Interimaire extends AppCompatActivity {
         });
     }
 
-
 }
 
