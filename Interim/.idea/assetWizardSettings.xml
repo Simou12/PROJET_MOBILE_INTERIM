@@ -23,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$PROJECT_DIR$/../../../SCD%20UM/AppData/Local/Android/Sdk/icons/material/materialicons/file_download/baseline_file_download_24.xml" />
+                                      <entry key="url" value="file:$USER_HOME$/Library/Android/sdk/icons/material/materialicons/phone_android/baseline_phone_android_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -34,8 +34,8 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="858585" />
-                            <entry key="outputName" value="file_download_24" />
-                            <entry key="sourceFile" value="C:\Users\SCD UM\AndroidStudioProjects\Interim" />
+                            <entry key="outputName" value="baseline_phone_android_24" />
+                            <entry key="sourceFile" value="/C:\Users\SCD UM\AndroidStudioProjects\Interim" />
                           </map>
                         </option>
                       </PersistentState>

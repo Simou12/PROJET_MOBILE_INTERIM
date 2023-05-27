@@ -20,6 +20,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Presentation_slides"
+            android:exported="false" />
+        <activity
+            android:name=".gerer_employeur"
+            android:exported="false" />
+        <activity
             android:name=".Item"
             android:exported="false" />
         <activity

@@ -26,9 +26,9 @@
       <list>
         <option value="valueResourceFile" />
         <option value="Interface" />
-        <option value="layoutResourceFile" />
         <option value="Class" />
         <option value="resourceFile" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -54,8 +54,8 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "android-custom-viewC:/Users/SCD UM/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_SELECTED": "RecyclerView",
     "cidr.known.project.marker": "true",
-    "last_directory_selection": "/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/res/drawable",
-    "last_opened_file_path": "/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/res/drawable"
+    "last_directory_selection": "/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/res/drawable-v24",
+    "last_opened_file_path": "/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/java/com/example/interim"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -66,11 +66,11 @@
       <recent name="com.example.interim" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/example/interim" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
       <recent name="C:\Users\SCD UM\AndroidStudioProjects\Interim\app\src\main\res\drawable" />
-      <recent name="C:\Users\SCD UM\AndroidStudioProjects\Interim\app\src\main\java" />
-      <recent name="C:\Users\SCD UM\AndroidStudioProjects\Interim\app\src\main\res\menu" />
     </key>
     <key name="android.template.163333148">
       <recent name="com.example.interim" />
@@ -92,6 +92,9 @@
       <recent name="com.example.interim" />
     </key>
     <key name="android.template.1599542417">
+      <recent name="com.example.interim" />
+    </key>
+    <key name="android.template.-1932589871">
       <recent name="com.example.interim" />
     </key>
     <key name="android.template.-1206049910">
@@ -215,7 +218,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainActivity" type="AndroidRunConfigurationType" factoryName="Android App" temporary="true">
+    <configuration name="MainActivity" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="Interim.app.main" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -333,7 +336,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Android App.MainActivity" />
         <item itemvalue="Android App.Connexion" />
         <item itemvalue="Android App.Inscription2Interimaire" />
       </list>
@@ -342,7 +344,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="63990eae-c274-472d-a0aa-a5c33b0df733" name="Changes" comment="" />
+      <changelist id="913c481a-39c2-4962-80f2-3fd46b7117ef" name="Changes" comment="" />
       <created>1684402400133</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

@@ -74,7 +74,7 @@
             android:layout_marginTop="33dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/edit_background"
-            android:drawableLeft="@drawable/baseline_smartphone_24"
+            android:drawableLeft="@drawable/baseline_phone_android_24"
             android:drawablePadding="8dp"
             android:hint="Téléphone "
             android:inputType="textEmailAddress"
