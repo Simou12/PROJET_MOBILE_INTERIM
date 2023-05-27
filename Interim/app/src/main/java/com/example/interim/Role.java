@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
+import agence.Inscription0Agence;
+
 public class Role extends AppCompatActivity {
 
     private Button interimaire;
@@ -26,7 +28,11 @@ public class Role extends AppCompatActivity {
             startActivity(intent);
         });
         employeur.setOnClickListener(View ->{
-            Intent intent = new Intent(Role.this, Inscription1Publisher.class);
+            Intent intent = new Intent(Role.this, Inscription0Publisher.class);
+            startActivity(intent);
+        });
+        agence.setOnClickListener(View ->{
+            Intent intent = new Intent(Role.this, Inscription0Agence.class);
             startActivity(intent);
         });
 

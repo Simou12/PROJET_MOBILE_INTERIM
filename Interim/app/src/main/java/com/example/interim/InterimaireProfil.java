@@ -80,7 +80,7 @@ public class InterimaireProfil extends Drawer_base {
         savedOffers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(InterimaireProfil.this, SavedOffers.class));
+                startActivity(new Intent(InterimaireProfil.this, MesFavori.class));
             }
         });
 

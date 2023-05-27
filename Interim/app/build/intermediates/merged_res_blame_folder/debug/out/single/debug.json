@@ -8,16 +8,16 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\layout_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_saved_offers.xml.flat",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_saved_offers.xml"
-    },
-    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_inscription2_publisher.xml.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_inscription2_publisher.xml"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_main_drawer_header.xml.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\main_drawer_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_background_annonce.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\background_annonce.xml"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -34,6 +34,10 @@
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_cartebancaire.png.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\cartebancaire.png"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_background_dialogue.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\background_dialogue.xml"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_item_notif_view.xml.flat",
@@ -64,6 +68,10 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\rondbleu.png"
     },
     {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_mes_favori.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_mes_favori.xml"
+    },
+    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_jaccepte.png.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\jaccepte.png"
     },
@@ -84,6 +92,10 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\place.png"
     },
     {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_cv_postule.png.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\cv_postule.png"
+    },
+    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\menu_main_drawer_menu.xml.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\menu\\main_drawer_menu.xml"
     },
@@ -92,20 +104,24 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_bloque.png.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\bloque.png"
+    },
+    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_gerer_interimaire_profil.xml.flat",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_gerer_interimaire_profil.xml"
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_add_offre.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_add_offre.xml"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_accueil.PNG.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\accueil.PNG"
     },
     {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_add_offre.xml.flat",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_add_offre.xml"
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_gerer_interimaire_profil.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_gerer_interimaire_profil.xml"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable-v24_ic_launcher_foreground.xml.flat",
@@ -120,16 +136,24 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\mallette.png"
     },
     {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_micro.xml.flat",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\micro.xml"
-    },
-    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_paypal.png.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\paypal.png"
     },
     {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_micro.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\micro.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_candidature_accepte_empl.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_candidature_accepte_empl.xml"
+    },
+    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_calendrier.png.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\calendrier.png"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_inscription0_publisher.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_inscription0_publisher.xml"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_interimaire_profil.xml.flat",
@@ -140,8 +164,20 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\sablier.png"
     },
     {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_baseline_smartphone_24.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\baseline_smartphone_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_inscription2_agence.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_inscription2_agence.xml"
+    },
+    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_contrat.png.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\contrat.png"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_coeur_rempli.png.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\coeur_rempli.png"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_choix_abonnement.xml.flat",
@@ -160,6 +196,10 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_historiques.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_historiques.xml"
+    },
+    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
@@ -170,6 +210,10 @@
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.interim.app-merged_res-34:/drawable_rondbleu.png.flat",
+        "source": "com.example.interim.app-main-36:/drawable/rondbleu.png"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_postule.xml.flat",
@@ -212,6 +256,10 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_mes_notifs.xml"
     },
     {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_profil_agence.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_profil_agence.xml"
+    },
+    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_item_offre_view.xml.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_offre_view.xml"
     },
@@ -228,8 +276,12 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\candidature.xml"
     },
     {
-        "merged": "com.example.interim.app-merged_res-34:/layout_item_emploi.xml.flat",
-        "source": "com.example.interim.app-main-36:/layout/item_emploi.xml"
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\menu_hiso.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\menu\\hiso.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_offreemploi.png.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\offreemploi.png"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_item_interimaire_candidatures.xml.flat",
@@ -248,8 +300,8 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_inscription1_interimaire.xml"
     },
     {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_coeur_vide.png.flat",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\coeur_vide.png"
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_jobapplication.png.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\jobapplication.png"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\mipmap-xhdpi_ic_launcher.webp.flat",
@@ -268,6 +320,10 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\edit.xml"
     },
     {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_inscription0_agence.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_inscription0_agence.xml"
+    },
+    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_proceder_payement.xml.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\proceder_payement.xml"
     },
@@ -278,6 +334,10 @@
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_conx_image.PNG.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\conx_image.PNG"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_item_candidature_accepte.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_candidature_accepte.xml"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_employeur.xml.flat",
@@ -292,8 +352,24 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\gestionprofil.png"
     },
     {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_edit_background_bleuclair.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\edit_background_bleuclair.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_encours.png.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\encours.png"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_notif_background.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\notif_background.xml"
+    },
+    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_candidatures.png.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\candidatures.png"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_item_hiso.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_hiso.xml"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_offre_resultat_recherche_interim.xml.flat",
@@ -304,16 +380,20 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\background_card.xml"
     },
     {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\mipmap-xxhdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_notification.png.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\notification.png"
     },
     {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_drawer_base.xml.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_drawer_base.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_accepte.png.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\accepte.png"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_connexion.xml.flat",
@@ -332,6 +412,10 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\error.xml"
     },
     {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_item_annonce_anonyme.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_annonce_anonyme.xml"
+    },
+    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_flow_menu.png.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\flow_menu.png"
     },
@@ -342,6 +426,10 @@
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_home.xml.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\home.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_plus.png.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\plus.png"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_next.png.flat",
@@ -368,16 +456,16 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\ic_launcher_background.xml"
     },
     {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_background_white_radius.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\background_white_radius.xml"
+    },
+    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_baseline_email_24.xml.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\baseline_email_24.xml"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_role.xml.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_role.xml"
-    },
-    {
-        "merged": "com.example.interim.app-merged_res-34:/layout_item_notif_view.xml.flat",
-        "source": "com.example.interim.app-main-36:/layout/item_notif_view.xml"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\mipmap-xxhdpi_ic_launcher.webp.flat",
@@ -412,16 +500,28 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\bottom_background_connexion.xml"
     },
     {
+        "merged": "com.example.interim.app-merged_res-34:/layout_activity_gerer_interimaire_profil.xml.flat",
+        "source": "com.example.interim.app-main-36:/layout/activity_gerer_interimaire_profil.xml"
+    },
+    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_utilisateur.png.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\utilisateur.png"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_round.xml.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\round.xml"
     },
     {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_utilisateur.png.flat",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\drawable\\utilisateur.png"
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_inscription1_agence.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_inscription1_agence.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_item_annonce_employeur.xml.flat",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_annonce_employeur.xml"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\drawable_edit_background2.xml.flat",
@@ -430,9 +530,5 @@
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_activity_mes_emplois.xml.flat",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_mes_emplois.xml"
-    },
-    {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-merged_res-34:\\layout_item_annonce_employeur.xml.flat",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_annonce_employeur.xml"
     }
 ]

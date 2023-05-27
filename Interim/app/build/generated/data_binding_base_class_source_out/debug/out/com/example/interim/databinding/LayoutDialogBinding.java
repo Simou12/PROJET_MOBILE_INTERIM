@@ -5,11 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.interim.R;
@@ -19,7 +19,7 @@ import java.lang.String;
 
 public final class LayoutDialogBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
   public final Spinner contratType;
@@ -66,7 +66,7 @@ public final class LayoutDialogBinding implements ViewBinding {
   @NonNull
   public final EditText ville;
 
-  private LayoutDialogBinding(@NonNull RelativeLayout rootView, @NonNull Spinner contratType,
+  private LayoutDialogBinding(@NonNull ConstraintLayout rootView, @NonNull Spinner contratType,
       @NonNull TextView date, @NonNull EditText dateDeb, @NonNull EditText dateFin,
       @NonNull EditText description, @NonNull EditText nomEntreprise, @NonNull EditText nomOffre,
       @NonNull EditText pays, @NonNull EditText reference, @NonNull EditText salaireHoraire,
@@ -92,7 +92,7 @@ public final class LayoutDialogBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -207,9 +207,9 @@ public final class LayoutDialogBinding implements ViewBinding {
         break missingId;
       }
 
-      return new LayoutDialogBinding((RelativeLayout) rootView, contratType, date, dateDeb, dateFin,
-          description, nomEntreprise, nomOffre, pays, reference, salaireHoraire, salaireMensuelle,
-          textDescr, textRemuneration, title, ville);
+      return new LayoutDialogBinding((ConstraintLayout) rootView, contratType, date, dateDeb,
+          dateFin, description, nomEntreprise, nomOffre, pays, reference, salaireHoraire,
+          salaireMensuelle, textDescr, textRemuneration, title, ville);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

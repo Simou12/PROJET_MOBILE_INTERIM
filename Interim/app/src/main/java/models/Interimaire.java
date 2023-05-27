@@ -8,16 +8,18 @@ public class Interimaire {
     private String telephone;
     private String email;
     private String mdp;
+    private String adress;
 
     public Interimaire(){}
 
-    public Interimaire(String nom, String prenom, String dateNaissance, String telephone, String email, String mdp) {
+    public Interimaire(String nom, String prenom, String dateNaissance, String telephone, String email, String mdp,String adress) {
         this.nom = nom;
         this.prenom = prenom;
         this.dateNaissance = dateNaissance;
         this.telephone = telephone;
         this.email = email;
         this.mdp = mdp;
+        this.adress = adress;
     }
 
     public String getPrenom() {
@@ -71,5 +73,13 @@ public class Interimaire {
 
     public void setTelephone(String telephone) {
         this.telephone = telephone;
+    }
+
+    public String getAdress() {
+        return adress;
+    }
+
+    public void setAdress(String adress) {
+        this.adress = adress;
     }
 }

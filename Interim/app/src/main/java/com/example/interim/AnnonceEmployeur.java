@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.example.interim.databinding.ActivityAnnonceEmployeurBinding;
 import com.google.firebase.auth.FirebaseUser;
@@ -14,6 +15,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -28,6 +31,7 @@ public class AnnonceEmployeur extends Drawer_base implements OnItemClickListener
     ActivityAnnonceEmployeurBinding act;
     FirebaseUser currentUser = CurrentUserManager.getInstance().getCurrentUser();
     String userEmail = currentUser.getEmail();
+    TextView aucune;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,9 +62,14 @@ public class AnnonceEmployeur extends Drawer_base implements OnItemClickListener
     }
 
     private void afficher(ArrayList<ItemAnnonce> annonces) {
-        recyclerView = findViewById(R.id.recylerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(AnnonceEmployeur.this));
-        recyclerView.setAdapter(new AnnonceEmployeurAdapter(getApplicationContext(), annonces,this));
+        if(annonces.isEmpty()){
+            aucune = findViewById(R.id.aucune);
+            aucune.setText("Vous n'avez aucune annonce publiée");
+        }else {
+            recyclerView = findViewById(R.id.recylerView);
+            recyclerView.setLayoutManager(new LinearLayoutManager(AnnonceEmployeur.this));
+            recyclerView.setAdapter(new AnnonceEmployeurAdapter(getApplicationContext(), annonces, this));
+        }
     }
 
     @Override
@@ -73,12 +82,12 @@ public class AnnonceEmployeur extends Drawer_base implements OnItemClickListener
             intent.putExtra("casChoisis",choix);
             startActivity(intent);
         } else if (choix.equals("acceptee")) {
-            Intent intent = new Intent(AnnonceEmployeur.this, CandidatureEnCoursEmpl.class);
+            Intent intent = new Intent(AnnonceEmployeur.this, CandidatureAccepteEmpl.class);
             intent.putExtra("refAnnonce",listAnnonces.get(position).getRefAnnonce());
             intent.putExtra("casChoisis",choix);
             startActivity(intent);
         }else{
-            Intent intent = new Intent(AnnonceEmployeur.this, CandidatureEnCoursEmpl.class);
+            Intent intent = new Intent(AnnonceEmployeur.this, CandidatureAccepteEmpl.class);
             intent.putExtra("refAnnonce",listAnnonces.get(position).getRefAnnonce());
             intent.putExtra("casChoisis",choix);
             startActivity(intent);

@@ -33,28 +33,50 @@ public class AccueilAnonyme extends AppCompatActivity implements OnItemClickList
         setContentView(R.layout.activity_accueil_anonyme);
 
         Intent intent = getIntent();
-        String pays = intent.getStringExtra("pays");
-        String ville = intent.getStringExtra("ville");
+        String choix = intent.getStringExtra("choix");
 
-        DatabaseReference offreRef = FirebaseDatabase.getInstance().getReference("offre");
-        offreRef.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for(DataSnapshot offreSnap : snapshot.getChildren()){
-                    Offre offre = offreSnap.getValue(Offre.class);
-                    if(offre.getVille().equals(ville) && offre.getPays().equals(pays)){
+        listOffresItem = new ArrayList<>();
+
+        if(choix.equals("yes")){
+            DatabaseReference offreRef = FirebaseDatabase.getInstance().getReference("offre");
+            offreRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    for(DataSnapshot offreSnap : snapshot.getChildren()){
+                        Offre offre = offreSnap.getValue(Offre.class);
+                        if(offre.getVille().equals("Montpellier")){
+                            String adress = offre.getVille()+", "+offre.getPays();
+                            ItemOffre item = new ItemOffre(offre.getNom(),offre.getPublisher(),offre.getRef(),offre.getTypeContrat(),Long.toString(offre.getRemunerationHoraire()),Long.toString(offre.getRemunerationMensuelle()),offre.getDateDeb(),offre.getDateFin(),offre.getDescription(),offre.getDatePublication(),adress,offre.getEntreprise());
+                            listOffresItem.add(item);
+                        }
+                        afficher(listOffresItem);
+                    }
+                }
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+
+                }
+            });
+
+        }else {
+            DatabaseReference offreRef = FirebaseDatabase.getInstance().getReference("offre");
+            offreRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    for(DataSnapshot offreSnap : snapshot.getChildren()){
+                        Offre offre = offreSnap.getValue(Offre.class);
                         String adress = offre.getVille()+", "+offre.getPays();
                         ItemOffre item = new ItemOffre(offre.getNom(),offre.getPublisher(),offre.getRef(),offre.getTypeContrat(),Long.toString(offre.getRemunerationHoraire()),Long.toString(offre.getRemunerationMensuelle()),offre.getDateDeb(),offre.getDateFin(),offre.getDescription(),offre.getDatePublication(),adress,offre.getEntreprise());
                         listOffresItem.add(item);
+                        }
+                        afficher(listOffresItem);
                     }
-                    afficher(listOffresItem);
-                }
-            }
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
 
-            }
-        });
+                }
+            });
+        }
     }
 
     private void afficher(ArrayList<ItemOffre> list) {

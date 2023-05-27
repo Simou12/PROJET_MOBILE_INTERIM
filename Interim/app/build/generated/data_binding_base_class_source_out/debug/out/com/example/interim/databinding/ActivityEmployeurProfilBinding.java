@@ -5,10 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.interim.R;
@@ -18,50 +18,64 @@ import java.lang.String;
 
 public final class ActivityEmployeurProfilBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView addOffre;
+  public final ImageView ajoutOffreEmp;
 
   @NonNull
-  public final TextView emplois;
+  public final ImageView candidaturesEmp;
 
   @NonNull
-  public final TextView gererProfil;
+  public final ImageView deconnexionEmp;
 
   @NonNull
-  public final TextView gestionCand;
+  public final ImageView gestProfilEmp;
 
   @NonNull
-  public final TextView mesOffres;
+  public final ImageView imageView2;
 
   @NonNull
-  public final TextView nomUtilisateur;
+  public final ImageView listNoirEmp;
+
+  @NonNull
+  public final ImageView offreEmp;
 
   @NonNull
   public final ImageView photoProfil;
 
   @NonNull
-  public final TextView role;
+  public final TextView roleEmp;
 
-  private ActivityEmployeurProfilBinding(@NonNull RelativeLayout rootView,
-      @NonNull TextView addOffre, @NonNull TextView emplois, @NonNull TextView gererProfil,
-      @NonNull TextView gestionCand, @NonNull TextView mesOffres, @NonNull TextView nomUtilisateur,
-      @NonNull ImageView photoProfil, @NonNull TextView role) {
+  @NonNull
+  public final TextView textView;
+
+  @NonNull
+  public final TextView userName;
+
+  private ActivityEmployeurProfilBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ImageView ajoutOffreEmp, @NonNull ImageView candidaturesEmp,
+      @NonNull ImageView deconnexionEmp, @NonNull ImageView gestProfilEmp,
+      @NonNull ImageView imageView2, @NonNull ImageView listNoirEmp, @NonNull ImageView offreEmp,
+      @NonNull ImageView photoProfil, @NonNull TextView roleEmp, @NonNull TextView textView,
+      @NonNull TextView userName) {
     this.rootView = rootView;
-    this.addOffre = addOffre;
-    this.emplois = emplois;
-    this.gererProfil = gererProfil;
-    this.gestionCand = gestionCand;
-    this.mesOffres = mesOffres;
-    this.nomUtilisateur = nomUtilisateur;
+    this.ajoutOffreEmp = ajoutOffreEmp;
+    this.candidaturesEmp = candidaturesEmp;
+    this.deconnexionEmp = deconnexionEmp;
+    this.gestProfilEmp = gestProfilEmp;
+    this.imageView2 = imageView2;
+    this.listNoirEmp = listNoirEmp;
+    this.offreEmp = offreEmp;
     this.photoProfil = photoProfil;
-    this.role = role;
+    this.roleEmp = roleEmp;
+    this.textView = textView;
+    this.userName = userName;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -86,39 +100,45 @@ public final class ActivityEmployeurProfilBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.addOffre;
-      TextView addOffre = ViewBindings.findChildViewById(rootView, id);
-      if (addOffre == null) {
+      id = R.id.ajoutOffreEmp;
+      ImageView ajoutOffreEmp = ViewBindings.findChildViewById(rootView, id);
+      if (ajoutOffreEmp == null) {
         break missingId;
       }
 
-      id = R.id.emplois;
-      TextView emplois = ViewBindings.findChildViewById(rootView, id);
-      if (emplois == null) {
+      id = R.id.candidaturesEmp;
+      ImageView candidaturesEmp = ViewBindings.findChildViewById(rootView, id);
+      if (candidaturesEmp == null) {
         break missingId;
       }
 
-      id = R.id.gerer_profil;
-      TextView gererProfil = ViewBindings.findChildViewById(rootView, id);
-      if (gererProfil == null) {
+      id = R.id.deconnexionEmp;
+      ImageView deconnexionEmp = ViewBindings.findChildViewById(rootView, id);
+      if (deconnexionEmp == null) {
         break missingId;
       }
 
-      id = R.id.gestionCand;
-      TextView gestionCand = ViewBindings.findChildViewById(rootView, id);
-      if (gestionCand == null) {
+      id = R.id.gestProfilEmp;
+      ImageView gestProfilEmp = ViewBindings.findChildViewById(rootView, id);
+      if (gestProfilEmp == null) {
         break missingId;
       }
 
-      id = R.id.mesOffres;
-      TextView mesOffres = ViewBindings.findChildViewById(rootView, id);
-      if (mesOffres == null) {
+      id = R.id.imageView2;
+      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView2 == null) {
         break missingId;
       }
 
-      id = R.id.nom_utilisateur;
-      TextView nomUtilisateur = ViewBindings.findChildViewById(rootView, id);
-      if (nomUtilisateur == null) {
+      id = R.id.listNoirEmp;
+      ImageView listNoirEmp = ViewBindings.findChildViewById(rootView, id);
+      if (listNoirEmp == null) {
+        break missingId;
+      }
+
+      id = R.id.offreEmp;
+      ImageView offreEmp = ViewBindings.findChildViewById(rootView, id);
+      if (offreEmp == null) {
         break missingId;
       }
 
@@ -128,14 +148,27 @@ public final class ActivityEmployeurProfilBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.role;
-      TextView role = ViewBindings.findChildViewById(rootView, id);
-      if (role == null) {
+      id = R.id.roleEmp;
+      TextView roleEmp = ViewBindings.findChildViewById(rootView, id);
+      if (roleEmp == null) {
         break missingId;
       }
 
-      return new ActivityEmployeurProfilBinding((RelativeLayout) rootView, addOffre, emplois,
-          gererProfil, gestionCand, mesOffres, nomUtilisateur, photoProfil, role);
+      id = R.id.textView;
+      TextView textView = ViewBindings.findChildViewById(rootView, id);
+      if (textView == null) {
+        break missingId;
+      }
+
+      id = R.id.userName;
+      TextView userName = ViewBindings.findChildViewById(rootView, id);
+      if (userName == null) {
+        break missingId;
+      }
+
+      return new ActivityEmployeurProfilBinding((ConstraintLayout) rootView, ajoutOffreEmp,
+          candidaturesEmp, deconnexionEmp, gestProfilEmp, imageView2, listNoirEmp, offreEmp,
+          photoProfil, roleEmp, textView, userName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

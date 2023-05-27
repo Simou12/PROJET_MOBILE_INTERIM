@@ -36,7 +36,7 @@ public class AnnonceEmployeurAdapter extends RecyclerView.Adapter<AnnonceEmploye
     @Override
     public void onBindViewHolder(@NonNull AnnonceViewHolder holder, int position) {
         holder.nomEmploi.setText(listAnnonce.get(position).getNomEmploi());
-        holder.refAnnonce.setText(listAnnonce.get(position).getRefAnnonce());
+        holder.refAnnonce.setText("Ref : "+listAnnonce.get(position).getRefAnnonce());
 
     }
 
@@ -54,7 +54,7 @@ public class AnnonceEmployeurAdapter extends RecyclerView.Adapter<AnnonceEmploye
         public AnnonceViewHolder(@NonNull View itemView, OnItemClickListener listener) {
             super(itemView);
             nomEmploi = itemView.findViewById(R.id.nomEmploi);
-            refAnnonce = itemView.findViewById(R.id.refAnnonce);
+            refAnnonce = itemView.findViewById(R.id.ref);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

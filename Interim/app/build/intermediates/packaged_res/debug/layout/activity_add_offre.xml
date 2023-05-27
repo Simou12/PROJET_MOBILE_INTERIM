@@ -4,24 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddOffreEmp">
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="JobSpot"
-        android:textSize="30dp"
-        android:padding="10dp"
-        android:textColor="@color/black"
-        android:textAlignment="center"
-        android:background="@drawable/round"
-        />
+    tools:context=".AddOffre">
+
 
     <TextView
         android:id="@+id/addOffre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/title"
         android:text="Ajouter une offre"
         android:textColor="@color/black"
         android:textSize="30dp"
@@ -56,5 +45,31 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="61dp"
         app:srcCompat="@drawable/add" />
+
+    <TextView
+        android:id="@+id/offres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageAddOffre"
+        android:text=""
+        android:textColor="@color/gris"
+        android:textSize="30dp"
+        android:layout_marginTop="190dp"
+        android:layout_centerHorizontal="true"
+       />
+
+    <Button
+        android:id="@+id/valider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue_background"
+        android:layout_marginStart="10dp"
+        android:text="Valider"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_below="@+id/offres"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        />
 
 </RelativeLayout>

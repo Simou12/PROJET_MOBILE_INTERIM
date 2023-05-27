@@ -1,110 +1,338 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue_background"
     tools:context=".EmployeurProfil">
 
 
     <ImageView
         android:id="@+id/photoProfil"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="122dp"
+        android:layout_height="113dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="0dp"
-        android:src="@drawable/profil" />
+        android:layout_marginTop="64dp"
+        android:src="@drawable/utilisateur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/nom_utilisateur"
+        android:id="@+id/userName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="56dp"
-        android:layout_toRightOf="@+id/photoProfil"
-        android:text="Jean Noel Vedal"
-        android:textColor="@color/black"
-        android:textSize="25dp" />
+        android:text="François DuJardin"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoProfil"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/role"
+        android:id="@+id/roleEmp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Intérimaire"
-        android:layout_below="@+id/nom_utilisateur"
-        android:layout_toRightOf="@+id/photoProfil"
-        android:layout_marginLeft="15dp"/>
+        android:text="Employeur"
+        android:textColor="@color/gris"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/userName"
+        app:layout_constraintStart_toStartOf="@+id/userName"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/gerer_profil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:drawableRight="@drawable/edit"
-        android:drawablePadding="8dp"
-        android:text="Gérer mon profil"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_below="@+id/photoProfil"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/bottom_background_light"
+        app:layout_constraintTop_toBottomOf="@+id/roleEmp">
 
-    <TextView
-        android:id="@+id/addOffre"
-        android:layout_width="165dp"
-        android:layout_height="100dp"
-        android:text="Ajouter offre"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        android:textAlignment="center"
-        android:paddingTop="35dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginLeft="7dp"
-        android:background="@drawable/edit_background"
-        android:layout_below="@+id/gerer_profil"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp">
 
-    <TextView
-        android:id="@+id/mesOffres"
-        android:layout_width="165dp"
-        android:layout_height="100dp"
-        android:layout_below="@+id/gerer_profil"
-        android:layout_marginLeft="7dp"
-        android:layout_marginTop="68dp"
-        android:layout_toRightOf="@+id/addOffre"
-        android:background="@drawable/edit_background"
-        android:paddingTop="35dp"
-        android:text="Offres publiées"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="18dp" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginBottom="20dp">
 
-    <TextView
-        android:id="@+id/gestionCand"
-        android:layout_width="165dp"
-        android:layout_height="100dp"
-        android:text="Gestion candidatures"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        android:textAlignment="center"
-        android:paddingTop="35dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="7dp"
-        android:background="@drawable/edit_background"
-        android:layout_below="@+id/addOffre"
-        />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/emplois"
-        android:layout_width="165dp"
-        android:layout_height="100dp"
-        android:text=""
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        android:textAlignment="center"
-        android:paddingTop="35dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="7dp"
-        android:background="@drawable/edit_background"
-        android:layout_below="@+id/mesOffres"
-        android:layout_toRightOf="@+id/gestionCand"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_btn_background">
 
-</RelativeLayout>
+                        <ImageView
+                            android:id="@+id/candidaturesEmp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/rondbleu"
+                            tools:ignore="DuplicateIds,MissingConstraints" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/candidaturesEmp"
+                            app:layout_constraintEnd_toEndOf="@+id/candidaturesEmp"
+                            app:layout_constraintStart_toStartOf="@+id/candidaturesEmp"
+                            app:layout_constraintTop_toTopOf="@+id/candidaturesEmp"
+                            app:srcCompat="@drawable/candidatures"
+                            tools:ignore="DuplicateIds" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Candidatures"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_btn_background">
+
+                        <ImageView
+                            android:id="@+id/offreEmp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/rondbleu"
+                            tools:ignore="MissingConstraints" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/offreEmp"
+                            app:layout_constraintEnd_toEndOf="@+id/offreEmp"
+                            app:layout_constraintStart_toStartOf="@+id/offreEmp"
+                            app:layout_constraintTop_toTopOf="@+id/offreEmp"
+                            app:srcCompat="@drawable/offreemploi" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mes offres"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_btn_background">
+
+                        <ImageView
+                            android:id="@+id/ajoutOffreEmp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/rondbleu"
+                            tools:ignore="MissingConstraints" />
+
+                        <ImageView
+
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/ajoutOffreEmp"
+                            app:layout_constraintEnd_toEndOf="@+id/ajoutOffreEmp"
+                            app:layout_constraintStart_toStartOf="@+id/ajoutOffreEmp"
+                            app:layout_constraintTop_toTopOf="@+id/ajoutOffreEmp"
+                            app:srcCompat="@drawable/plus" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ajouter offre"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_btn_background">
+
+                        <ImageView
+                            android:id="@+id/listNoirEmp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/rondbleu"
+                            tools:ignore="MissingConstraints" />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/listNoirEmp"
+                            app:layout_constraintEnd_toEndOf="@+id/listNoirEmp"
+                            app:layout_constraintStart_toStartOf="@+id/listNoirEmp"
+                            app:layout_constraintTop_toTopOf="@+id/listNoirEmp"
+                            app:srcCompat="@drawable/bloque" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Liste noir"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_btn_background">
+
+                        <ImageView
+                            android:id="@+id/gestProfilEmp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/rondbleu"
+                            tools:ignore="DuplicateIds,MissingConstraints" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/gestProfilEmp"
+                            app:layout_constraintEnd_toEndOf="@+id/gestProfilEmp"
+                            app:layout_constraintStart_toStartOf="@+id/gestProfilEmp"
+                            app:layout_constraintTop_toTopOf="@+id/gestProfilEmp"
+                            app:srcCompat="@drawable/gestionprofil"
+                            tools:ignore="DuplicateIds" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Profil"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        tools:ignore="DuplicateIds" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_btn_background">
+
+                        <ImageView
+                            android:id="@+id/deconnexionEmp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/rondbleu"
+                            tools:ignore="MissingConstraints" />
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/deconnexionEmp"
+                            app:layout_constraintEnd_toEndOf="@+id/deconnexionEmp"
+                            app:layout_constraintStart_toStartOf="@+id/deconnexionEmp"
+                            app:layout_constraintTop_toTopOf="@+id/deconnexionEmp"
+                            app:srcCompat="@drawable/deconnexion" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Déconnexion"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

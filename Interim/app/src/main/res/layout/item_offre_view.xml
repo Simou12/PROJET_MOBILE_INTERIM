@@ -316,13 +316,6 @@
                             android:layout_height="30dp"
                             android:layout_marginStart="10dp"
                             android:src="@drawable/coeurnonrempli" />
-                        <ImageView
-                            android:id="@+id/dislike"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_marginLeft="-30dp"
-                            android:src="@drawable/coeur_rempli"
-                            android:visibility="gone"/>
 
                     </LinearLayout>
 

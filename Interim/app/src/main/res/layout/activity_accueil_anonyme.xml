@@ -6,8 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".AccueilAnonyme">
 
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="JobSpot"
+        android:textSize="30dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:background="@drawable/round"
+        />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recylerView"
         android:layout_width="match_parent"
+        android:layout_below="@+id/titre"
+        android:layout_marginTop="20dp"
         android:layout_height="wrap_content"/>
 </RelativeLayout>

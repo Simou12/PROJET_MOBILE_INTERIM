@@ -4,6 +4,7 @@ package com.example.interim.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -33,17 +34,21 @@ public final class ActivityAddOffreBinding implements ViewBinding {
   public final ImageView imageAddOffres;
 
   @NonNull
-  public final TextView title;
+  public final TextView offres;
+
+  @NonNull
+  public final Button valider;
 
   private ActivityAddOffreBinding(@NonNull RelativeLayout rootView, @NonNull TextView addOffre,
       @NonNull TextView addOffres, @NonNull ImageView imageAddOffre,
-      @NonNull ImageView imageAddOffres, @NonNull TextView title) {
+      @NonNull ImageView imageAddOffres, @NonNull TextView offres, @NonNull Button valider) {
     this.rootView = rootView;
     this.addOffre = addOffre;
     this.addOffres = addOffres;
     this.imageAddOffre = imageAddOffre;
     this.imageAddOffres = imageAddOffres;
-    this.title = title;
+    this.offres = offres;
+    this.valider = valider;
   }
 
   @Override
@@ -97,14 +102,20 @@ public final class ActivityAddOffreBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.title;
-      TextView title = ViewBindings.findChildViewById(rootView, id);
-      if (title == null) {
+      id = R.id.offres;
+      TextView offres = ViewBindings.findChildViewById(rootView, id);
+      if (offres == null) {
+        break missingId;
+      }
+
+      id = R.id.valider;
+      Button valider = ViewBindings.findChildViewById(rootView, id);
+      if (valider == null) {
         break missingId;
       }
 
       return new ActivityAddOffreBinding((RelativeLayout) rootView, addOffre, addOffres,
-          imageAddOffre, imageAddOffres, title);
+          imageAddOffre, imageAddOffres, offres, valider);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -39,6 +39,7 @@ public class MesEmploisAdapter extends RecyclerView.Adapter<MesEmploisAdapter.Me
         holder.nomEmploi.setText(listEmplois.get(position).getNomEmploi());
         holder.adress.setText(listEmplois.get(position).getAdress());
         holder.entreprise.setText(listEmplois.get(position).getEntreprise());
+        holder.dateDebFin.setText("Date début : "+listEmplois.get(position).getDate());
     }
 
     @Override
@@ -48,13 +49,14 @@ public class MesEmploisAdapter extends RecyclerView.Adapter<MesEmploisAdapter.Me
 
     public static class MesEmploisViewHolder extends RecyclerView.ViewHolder{
 
-        TextView nomEmploi, entreprise, adress;
+        TextView nomEmploi, entreprise, adress,dateDebFin;
 
         public MesEmploisViewHolder(@NonNull View itemView, OnItemClickListener listener) {
             super(itemView);
             nomEmploi = itemView.findViewById(R.id.nomEmploi);
             entreprise = itemView.findViewById(R.id.nomEntreprise);
             adress = itemView.findViewById(R.id.adress);
+            dateDebFin = itemView.findViewById(R.id.dateDebFin);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

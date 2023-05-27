@@ -10,6 +10,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,9 +38,9 @@ import models.Interimaire;
 public class Postule extends Drawer_base {
 
     ActivityPostuleBinding activityPostuleBinding;
-    private EditText nom, prenom, dateNaissance,lettreMotivation;
-    private Button envoyer;
-    private TextView cv;
+    private EditText nom, prenom, dateNaissance,lettreMotivation, nationalite;
+    private ImageView envoyer;
+    TextView cv;
     FirebaseUser currentUser = CurrentUserManager.getInstance().getCurrentUser();
     String userEmail = currentUser.getEmail();
     private DatabaseReference candidatureRef;
@@ -62,8 +63,9 @@ public class Postule extends Drawer_base {
         prenom = findViewById(R.id.prenom);
         dateNaissance = findViewById(R.id.dateNaissance);
         lettreMotivation = findViewById(R.id.motivation);
-        envoyer = findViewById(R.id.envoyer);
-        cv = findViewById(R.id.monCv);
+        envoyer = findViewById(R.id.next);
+        cv = findViewById(R.id.cv);
+        nationalite = findViewById(R.id.nationnalite);
 
         candidatureRef = FirebaseDatabase.getInstance().getReference().child("candidatures");
         String candidatureKey = candidatureRef.push().getKey();
@@ -107,6 +109,7 @@ public class Postule extends Drawer_base {
                 String firstName = prenom.getText().toString();
                 String birthDay = dateNaissance.getText().toString();
                 String lettre = lettreMotivation.getText().toString();
+                String nationnalite = nationalite.getText().toString();
                 Intent intent = getIntent();
                 String offreRef = intent.getStringExtra("offreRef");
                 String employeur = intent.getStringExtra("employeur");
@@ -129,7 +132,7 @@ public class Postule extends Drawer_base {
                     Toast.makeText(view.getContext(), "Veuillez remplir tous les champs!", Toast.LENGTH_SHORT).show();
                 }else{
                     saveFile();
-                    Candidature candidature = new Candidature(name,firstName,offreRef,employeur,dateCandidature,"en attente",cvUriString,nomEmploi,adress,userEmail,entreprise);
+                    Candidature candidature = new Candidature(name,firstName,offreRef,employeur,dateCandidature,"en attente",cvUriString,nomEmploi,adress,userEmail,entreprise,nationnalite, birthDay,lettre);
                     candidatureRef.child(candidatureKey).setValue(candidature);
                     Toast.makeText(view.getContext(), "Candidature soumise!", Toast.LENGTH_SHORT).show();
                 }

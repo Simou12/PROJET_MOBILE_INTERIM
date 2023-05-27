@@ -5,11 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
+import android.widget.SearchView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.interim.R;
@@ -19,13 +19,16 @@ import java.lang.String;
 
 public final class ActivityAccueilBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
   public final TextView ajouter;
 
   @NonNull
   public final EditText employeur;
+
+  @NonNull
+  public final ConstraintLayout layoutCache;
 
   @NonNull
   public final EditText loc;
@@ -40,33 +43,30 @@ public final class ActivityAccueilBinding implements ViewBinding {
   public final TextView plus;
 
   @NonNull
-  public final EditText search;
-
-  @NonNull
-  public final ImageView send;
+  public final SearchView search;
 
   @NonNull
   public final EditText typeContrat;
 
-  private ActivityAccueilBinding(@NonNull RelativeLayout rootView, @NonNull TextView ajouter,
-      @NonNull EditText employeur, @NonNull EditText loc, @NonNull TextView moins,
-      @NonNull EditText periode, @NonNull TextView plus, @NonNull EditText search,
-      @NonNull ImageView send, @NonNull EditText typeContrat) {
+  private ActivityAccueilBinding(@NonNull ConstraintLayout rootView, @NonNull TextView ajouter,
+      @NonNull EditText employeur, @NonNull ConstraintLayout layoutCache, @NonNull EditText loc,
+      @NonNull TextView moins, @NonNull EditText periode, @NonNull TextView plus,
+      @NonNull SearchView search, @NonNull EditText typeContrat) {
     this.rootView = rootView;
     this.ajouter = ajouter;
     this.employeur = employeur;
+    this.layoutCache = layoutCache;
     this.loc = loc;
     this.moins = moins;
     this.periode = periode;
     this.plus = plus;
     this.search = search;
-    this.send = send;
     this.typeContrat = typeContrat;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -103,6 +103,12 @@ public final class ActivityAccueilBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.layoutCache;
+      ConstraintLayout layoutCache = ViewBindings.findChildViewById(rootView, id);
+      if (layoutCache == null) {
+        break missingId;
+      }
+
       id = R.id.loc;
       EditText loc = ViewBindings.findChildViewById(rootView, id);
       if (loc == null) {
@@ -128,14 +134,8 @@ public final class ActivityAccueilBinding implements ViewBinding {
       }
 
       id = R.id.search;
-      EditText search = ViewBindings.findChildViewById(rootView, id);
+      SearchView search = ViewBindings.findChildViewById(rootView, id);
       if (search == null) {
-        break missingId;
-      }
-
-      id = R.id.send;
-      ImageView send = ViewBindings.findChildViewById(rootView, id);
-      if (send == null) {
         break missingId;
       }
 
@@ -145,8 +145,8 @@ public final class ActivityAccueilBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityAccueilBinding((RelativeLayout) rootView, ajouter, employeur, loc, moins,
-          periode, plus, search, send, typeContrat);
+      return new ActivityAccueilBinding((ConstraintLayout) rootView, ajouter, employeur,
+          layoutCache, loc, moins, periode, plus, search, typeContrat);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

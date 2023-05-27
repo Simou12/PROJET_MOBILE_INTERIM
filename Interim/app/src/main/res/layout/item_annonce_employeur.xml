@@ -22,12 +22,12 @@
             android:layout_marginTop="0dp"
             android:inputType="text"
             android:text=" dfgdfg"
-            android:textColor="@color/black"
+            android:textColor="@color/blue_background"
             android:textSize="30dp" />
 
     </RelativeLayout>
     <TextView
-        android:id="@+id/refAnnonce"
+        android:id="@+id/ref"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/header"

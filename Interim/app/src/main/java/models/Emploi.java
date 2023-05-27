@@ -8,6 +8,8 @@ public class Emploi {
     private String date;
     private String candidat;
 
+    public Emploi(){}
+
     public Emploi(String nomEmploi, String entreprise, String adress, String date, String candidat) {
         this.nomEmploi = nomEmploi;
         this.entreprise = entreprise;

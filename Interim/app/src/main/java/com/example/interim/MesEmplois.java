@@ -37,6 +37,7 @@ public class MesEmplois extends Drawer_base implements OnItemClickListener {
         super.onCreate(savedInstanceState);
         act = ActivityMesEmploisBinding.inflate(getLayoutInflater());
         setContentView(act.getRoot());
+        allocatedTitle("Mes emplois");
 
         listEmplois = new ArrayList<>();
 

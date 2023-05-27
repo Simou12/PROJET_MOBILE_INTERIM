@@ -6,10 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.interim.R;
@@ -19,7 +19,7 @@ import java.lang.String;
 
 public final class ActivityInscription2InterimaireBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
   public final EditText email;
@@ -34,7 +34,7 @@ public final class ActivityInscription2InterimaireBinding implements ViewBinding
   public final EditText tel;
 
   @NonNull
-  public final TextView title;
+  public final TextView textView2;
 
   @NonNull
   public final TextView titre;
@@ -42,23 +42,23 @@ public final class ActivityInscription2InterimaireBinding implements ViewBinding
   @NonNull
   public final Button valider;
 
-  private ActivityInscription2InterimaireBinding(@NonNull RelativeLayout rootView,
+  private ActivityInscription2InterimaireBinding(@NonNull ConstraintLayout rootView,
       @NonNull EditText email, @NonNull EditText mdp, @NonNull EditText mdpConfirm,
-      @NonNull EditText tel, @NonNull TextView title, @NonNull TextView titre,
+      @NonNull EditText tel, @NonNull TextView textView2, @NonNull TextView titre,
       @NonNull Button valider) {
     this.rootView = rootView;
     this.email = email;
     this.mdp = mdp;
     this.mdpConfirm = mdpConfirm;
     this.tel = tel;
-    this.title = title;
+    this.textView2 = textView2;
     this.titre = titre;
     this.valider = valider;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -107,9 +107,9 @@ public final class ActivityInscription2InterimaireBinding implements ViewBinding
         break missingId;
       }
 
-      id = R.id.title;
-      TextView title = ViewBindings.findChildViewById(rootView, id);
-      if (title == null) {
+      id = R.id.textView2;
+      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
+      if (textView2 == null) {
         break missingId;
       }
 
@@ -125,8 +125,8 @@ public final class ActivityInscription2InterimaireBinding implements ViewBinding
         break missingId;
       }
 
-      return new ActivityInscription2InterimaireBinding((RelativeLayout) rootView, email, mdp,
-          mdpConfirm, tel, title, titre, valider);
+      return new ActivityInscription2InterimaireBinding((ConstraintLayout) rootView, email, mdp,
+          mdpConfirm, tel, textView2, titre, valider);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

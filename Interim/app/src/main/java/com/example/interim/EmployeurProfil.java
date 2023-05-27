@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 
@@ -21,7 +22,8 @@ import models.Employeur;
 
 public class EmployeurProfil extends Drawer_base {
 
-    TextView ajouterOffreView, nom,role, gestionCand,offrePubliee;
+    TextView  nom,role;
+    ImageView gestionCand,offrePubliee, ajouterOffreView,deconnexion,gestionProfil;
     ActivityEmployeurProfilBinding activityEmployeurProfilBinding;
     FirebaseUser currentUser = CurrentUserManager.getInstance().getCurrentUser();
     String userEmail = currentUser.getEmail();
@@ -33,11 +35,12 @@ public class EmployeurProfil extends Drawer_base {
         setContentView(activityEmployeurProfilBinding.getRoot());
         allocatedTitle("Mon profil");
 
-        nom = findViewById(R.id.nom_utilisateur);
-        gestionCand = findViewById(R.id.gestionCand);
-        offrePubliee = findViewById(R.id.mesOffres);
-        role = findViewById(R.id.role);
+        nom = findViewById(R.id.userName);
+        gestionCand = findViewById(R.id.candidaturesEmp);
+        offrePubliee = findViewById(R.id.offreEmp);
+        role = findViewById(R.id.roleEmp);
         role.setText("Employeur");
+        deconnexion = findViewById(R.id.deconnexionEmp);
 
         DatabaseReference employeeRef = FirebaseDatabase.getInstance().getReference("employeur");
         employeeRef.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -57,6 +60,13 @@ public class EmployeurProfil extends Drawer_base {
         });
         initializeComponents();
 
+        deconnexion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(EmployeurProfil.this, MainActivity.class));
+            }
+        });
+
 
         gestionCand.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,13 +78,14 @@ public class EmployeurProfil extends Drawer_base {
         offrePubliee.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(EmployeurProfil.this,MesOffres.class);
-                startActivity(intent);
+                showOverflowMenu2(view);
+                /*Intent intent = new Intent(EmployeurProfil.this,MesOffres.class);
+                startActivity(intent);*/
             }
         });
     }
     private void initializeComponents() {
-        ajouterOffreView=findViewById(R.id.addOffre);
+        ajouterOffreView=findViewById(R.id.ajoutOffreEmp);
         ajouterOffreView.setOnClickListener(View -> {
             openDialog();
         });
@@ -108,6 +119,29 @@ public class EmployeurProfil extends Drawer_base {
                         Intent intent3 = new Intent(EmployeurProfil.this, AnnonceEmployeur.class);
                         intent3.putExtra("choix","refusee");
                         startActivity(intent3);
+                        return true;
+                    default:
+                        return false;
+                }
+            }
+        });
+        popupMenu.show();
+    }
+
+    private void showOverflowMenu2(View v) {
+        PopupMenu popupMenu = new PopupMenu(v.getContext(), v);
+        popupMenu.inflate(R.menu.hiso);
+        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.enCours:
+                        Intent intent = new Intent(EmployeurProfil.this,MesOffres.class);
+                        startActivity(intent);
+                        return true;
+                    case R.id.passe:
+                        Intent intent2 = new Intent(EmployeurProfil.this, Historiques.class);
+                        startActivity(intent2);
                         return true;
                     default:
                         return false;

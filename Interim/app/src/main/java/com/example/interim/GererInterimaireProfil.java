@@ -28,8 +28,8 @@ import models.Interimaire;
 
 public class GererInterimaireProfil extends Drawer_base {
 
-    EditText nom, prenom, dateNaissance, telephone, mdp;
-    TextView email;
+    EditText nom, prenom, dateNaissance, telephone, mdp,email, ancienMdp;
+    TextView nomPrenomView, dateNaissanceView, mdpView,emailView;
     FirebaseUser currentUser = CurrentUserManager.getInstance().getCurrentUser();
     String userEmail = currentUser.getEmail();
     ActivityGererInterimaireProfilBinding act;
@@ -49,7 +49,13 @@ public class GererInterimaireProfil extends Drawer_base {
         telephone = findViewById(R.id.tel);
         mdp = findViewById(R.id.mdp);
         email = findViewById(R.id.email);
+        ancienMdp = findViewById(R.id.ancienMdp);
         btnValider = findViewById(R.id.valider);
+
+        nomPrenomView = findViewById(R.id.nomPrenom);
+        dateNaissanceView = findViewById(R.id.dateNaissanceText);
+        emailView = findViewById(R.id.emailText);
+        mdpView = findViewById(R.id.mdpText);
 
         //remplir les champs d'avance
         interimaireRef = FirebaseDatabase.getInstance().getReference().child("interimaire");
@@ -60,10 +66,14 @@ public class GererInterimaireProfil extends Drawer_base {
                     Interimaire candidat = interimairSnap.getValue(Interimaire.class);
                     if(candidat.getEmail().equals(userEmail)){
                         nom.setText(candidat.getNom());
+                        nomPrenomView.setText(candidat.getNom()+candidat.getPrenom());
                         prenom.setText(candidat.getPrenom());
                         dateNaissance.setText(candidat.getDateNaissance());
+                        dateNaissanceView.setText(candidat.getDateNaissance());
                         email.setText(userEmail);
-                        mdp.setText(candidat.getMdp());
+                        emailView.setText(userEmail);
+                        ancienMdp.setText((candidat.getMdp()));
+                        mdpView.setText(candidat.getMdp());
                         telephone.setText(candidat.getTelephone());
                     }
                 }
@@ -76,9 +86,9 @@ public class GererInterimaireProfil extends Drawer_base {
             @Override
             public void onClick(View view) {
                 String newName = nom.getText().toString();
-                String newPrenom = nom.getText().toString();
-                String newDate = nom.getText().toString();
-                String newMdp = nom.getText().toString();
+                String newPrenom = prenom.getText().toString();
+                String newDate = dateNaissance.getText().toString();
+                String newMdp = mdp.getText().toString();
                 String newTel = telephone.getText().toString();
 
 
@@ -114,7 +124,6 @@ public class GererInterimaireProfil extends Drawer_base {
                                             Toast.makeText(GererInterimaireProfil.this, "Mise à jour échouée!", Toast.LENGTH_SHORT).show();
                                         }
                                     });
-
                         }
                     }
 

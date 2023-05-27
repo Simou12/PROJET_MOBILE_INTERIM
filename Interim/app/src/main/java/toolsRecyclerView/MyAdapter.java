@@ -10,6 +10,7 @@ import android.transition.TransitionManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
@@ -17,16 +18,28 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.example.interim.CurrentUserManager;
 import com.example.interim.Postule;
 import com.example.interim.R;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+
+import models.Favoris;
 
 public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
     Context context;
     ArrayList<ItemOffre> listOffres;
     ConstraintLayout layoutCache;
     ConstraintLayout layoutHeader;
+    boolean like = false;
+    FirebaseUser currentUser = CurrentUserManager.getInstance().getCurrentUser();
+    String userEmail = currentUser.getEmail();
+    private DatabaseReference favoriRef;
 
 
     public MyAdapter(Context context, ArrayList<ItemOffre> listOffre) {
@@ -81,12 +94,52 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
             }
         });
 
+
         //liker
+        favoriRef = FirebaseDatabase.getInstance().getReference().child("favoris");
+        String favoriKey = favoriRef.push().getKey();
+
         holder.liker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(holder.liker.getVisibility()== View.VISIBLE){
-                    holder.liker.set
+                if(like == false){
+                    holder.liker.setImageResource(R.drawable.coeur_rempli);
+                    like = true;
+                    String ref = listOffres.get(position).getReference();
+                    String emploi = listOffres.get(position).getNomEmploi();
+                    String desc = listOffres.get(position).getDescription();
+                    String remuMois = listOffres.get(position).getRemuMois();
+                    String remHeure = listOffres.get(position).getRemuHeure();
+                    String contrat = listOffres.get(position).getContrat();
+                    String debut = listOffres.get(position).getDateDeb();
+                    String fin = listOffres.get(position).getDateFin();
+                    String employeur = listOffres.get(position).getEmployeur();
+                    String adress = listOffres.get(position).getAdress();
+                    String datePub = listOffres.get(position).getDatePublication();
+                    String entreprise = listOffres.get(position).getEntreprise();
+
+                    Favoris fav = new Favoris(userEmail,ref,emploi,desc,Long.parseLong(remuMois),Long.parseLong(remHeure),contrat,debut,fin,employeur,adress,datePub,entreprise);
+                    favoriRef.child(favoriKey).setValue(fav);
+                    Toast.makeText(context, "Annonce ajoutée aux favoris!", Toast.LENGTH_SHORT).show();
+                }else {
+                    holder.liker.setImageResource(R.drawable.coeurnonrempli);
+                    like=false;
+
+                    DatabaseReference childRef = favoriRef.child(favoriKey);
+                    //supprimer l'offre des favoris
+                    childRef.removeValue()
+                            .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void aVoid) {
+                                    Toast.makeText(context, "Annonce supprimée des favoris!", Toast.LENGTH_SHORT).show();
+                                }
+                            })
+                            .addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    // An error occurred while removing the child
+                                }
+                            });
                 }
 
             }

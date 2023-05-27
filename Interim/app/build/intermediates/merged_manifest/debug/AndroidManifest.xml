@@ -35,7 +35,28 @@
         android:theme="@style/Theme.Interim"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name="com.example.interim.Item"
+            android:name="agence.Inscription2Agence"
+            android:exported="false" />
+        <activity
+            android:name="agence.Inscription1Agence"
+            android:exported="false" />
+        <activity
+            android:name="agence.Inscription0Agence"
+            android:exported="false" />
+        <activity
+            android:name="com.example.interim.Inscription0Publisher"
+            android:exported="false" />
+        <activity
+            android:name="agence.PofilAgence"
+            android:exported="false" />
+        <activity
+            android:name="com.example.interim.Historiques"
+            android:exported="false" />
+        <activity
+            android:name="com.example.interim.CandidatureAccepteEmpl"
+            android:exported="false" />
+        <activity
+            android:name="com.example.interim.MesFavori"
             android:exported="false" />
         <activity
             android:name="com.example.interim.GererInterimaireProfil"
@@ -51,9 +72,6 @@
             android:exported="false" />
         <activity
             android:name="com.example.interim.Postule"
-            android:exported="false" />
-        <activity
-            android:name="com.example.interim.SavedOffers"
             android:exported="false" />
         <activity
             android:name="com.example.interim.MesNotifs"

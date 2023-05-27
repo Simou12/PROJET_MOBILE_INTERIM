@@ -6,14 +6,24 @@ public class ItemCandidatureEmpl {
     private String prenomCandidat;
     private String emailCandidat;
     private String dateCandidature;
+    private String nationalite;
+    private String adress;
+    private String ref;
+    private String dateNaissance,lettre;
+
 
     public ItemCandidatureEmpl(){}
 
-    public ItemCandidatureEmpl(String nomCandidat, String prenomCandidat, String emailCandidat,String dateCandidature) {
+    public ItemCandidatureEmpl(String nomCandidat, String prenomCandidat, String emailCandidat,String dateCandidature, String nationalite,String adress,String dateNaissance, String lettre, String ref) {
         this.dateCandidature = dateCandidature;
         this.nomCandidat = nomCandidat;
         this.prenomCandidat = prenomCandidat;
         this.emailCandidat = emailCandidat;
+        this.nationalite = nationalite;
+        this.adress = adress;
+        this.dateNaissance= dateNaissance;
+        this.lettre = lettre;
+        this.ref = ref;
     }
 
     public String getDateCandidature() {
@@ -46,5 +56,45 @@ public class ItemCandidatureEmpl {
 
     public void setEmailCandidat(String emailCandidat) {
         this.emailCandidat = emailCandidat;
+    }
+
+    public String getNationalite() {
+        return nationalite;
+    }
+
+    public void setNationalite(String nationalite) {
+        this.nationalite = nationalite;
+    }
+
+    public String getAdress() {
+        return adress;
+    }
+
+    public void setAdress(String adress) {
+        this.adress = adress;
+    }
+
+    public String getDateNaissance() {
+        return dateNaissance;
+    }
+
+    public void setDateNaissance(String dateNaissance) {
+        this.dateNaissance = dateNaissance;
+    }
+
+    public String getLettre() {
+        return lettre;
+    }
+
+    public void setLettre(String lettre) {
+        this.lettre = lettre;
+    }
+
+    public String getRef() {
+        return ref;
+    }
+
+    public void setRef(String ref) {
+        this.ref = ref;
     }
 }

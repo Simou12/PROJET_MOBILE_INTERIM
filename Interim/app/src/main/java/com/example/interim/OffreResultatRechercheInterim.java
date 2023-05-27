@@ -63,7 +63,6 @@ public class OffreResultatRechercheInterim extends Drawer_base{
             entreprise  = offre.getEntreprise();
             employeur = offre.getPublisher();
 
-
             ItemOffre item = new ItemOffre(nomEmploi, employeur, reference, contrat, remuHeure, remuMois, dateDeb, dateFin, description, datePublication, adress,entreprise);
             listOffresItem.add(item);
         }

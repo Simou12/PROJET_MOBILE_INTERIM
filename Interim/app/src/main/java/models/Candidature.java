@@ -15,10 +15,11 @@ public class Candidature {
     private String adress;
     private String email;
     private String entreprise;
+    private String nationalite, dateNaissance, lettre;
 
     public Candidature(){}
 
-    public Candidature(String nomCandidat, String prenomCandidat, String refAnnonce, String employeur, String date, String status, String cvUri, String nomEmploi, String adress, String email, String entreprise) {
+    public Candidature(String nomCandidat, String prenomCandidat, String refAnnonce, String employeur, String date, String status, String cvUri, String nomEmploi, String adress, String email, String entreprise, String nationalite, String dateNaissance, String lettre) {
         this.nomCandidat = nomCandidat;
         this.prenomCandidat = prenomCandidat;
         this.refAnnonce = refAnnonce;
@@ -30,6 +31,9 @@ public class Candidature {
         this.adress=adress;
         this.email = email;
         this.entreprise = entreprise;
+        this.nationalite = nationalite;
+        this.dateNaissance = dateNaissance;
+        this.lettre = lettre;
     }
 
     public String getNomCandidat() {
@@ -119,4 +123,29 @@ public class Candidature {
     public void setEntreprise(String entreprise) {
         this.entreprise = entreprise;
     }
+
+    public String getNationalite() {
+        return nationalite;
+    }
+
+    public void setNationalite(String nationalite) {
+        this.nationalite = nationalite;
+    }
+
+    public String getDateNaissance() {
+        return dateNaissance;
+    }
+
+    public void setDateNaissance(String dateNaissance) {
+        this.dateNaissance = dateNaissance;
+    }
+
+    public String getLettre() {
+        return lettre;
+    }
+
+    public void setLettre(String lettre) {
+        this.lettre = lettre;
+    }
+
 }

@@ -6,10 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.interim.R;
@@ -19,16 +19,19 @@ import java.lang.String;
 
 public final class ActivityInscription1PublisherBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final EditText contact1;
+  public final ConstraintLayout constraintLayout;
 
   @NonNull
-  public final EditText contact2;
+  public final EditText mail1;
 
   @NonNull
-  public final EditText depart;
+  public final EditText mdp;
+
+  @NonNull
+  public final EditText mdpConfirm;
 
   @NonNull
   public final ImageView next;
@@ -37,36 +40,38 @@ public final class ActivityInscription1PublisherBinding implements ViewBinding {
   public final EditText nom;
 
   @NonNull
-  public final EditText numEntite;
+  public final EditText prenom;
 
   @NonNull
-  public final EditText sousDepart;
+  public final EditText tel;
 
   @NonNull
-  public final TextView title;
+  public final TextView textView2;
 
   @NonNull
   public final TextView titre;
 
-  private ActivityInscription1PublisherBinding(@NonNull RelativeLayout rootView,
-      @NonNull EditText contact1, @NonNull EditText contact2, @NonNull EditText depart,
-      @NonNull ImageView next, @NonNull EditText nom, @NonNull EditText numEntite,
-      @NonNull EditText sousDepart, @NonNull TextView title, @NonNull TextView titre) {
+  private ActivityInscription1PublisherBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ConstraintLayout constraintLayout, @NonNull EditText mail1, @NonNull EditText mdp,
+      @NonNull EditText mdpConfirm, @NonNull ImageView next, @NonNull EditText nom,
+      @NonNull EditText prenom, @NonNull EditText tel, @NonNull TextView textView2,
+      @NonNull TextView titre) {
     this.rootView = rootView;
-    this.contact1 = contact1;
-    this.contact2 = contact2;
-    this.depart = depart;
+    this.constraintLayout = constraintLayout;
+    this.mail1 = mail1;
+    this.mdp = mdp;
+    this.mdpConfirm = mdpConfirm;
     this.next = next;
     this.nom = nom;
-    this.numEntite = numEntite;
-    this.sousDepart = sousDepart;
-    this.title = title;
+    this.prenom = prenom;
+    this.tel = tel;
+    this.textView2 = textView2;
     this.titre = titre;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -91,21 +96,27 @@ public final class ActivityInscription1PublisherBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.contact1;
-      EditText contact1 = ViewBindings.findChildViewById(rootView, id);
-      if (contact1 == null) {
+      id = R.id.constraintLayout;
+      ConstraintLayout constraintLayout = ViewBindings.findChildViewById(rootView, id);
+      if (constraintLayout == null) {
         break missingId;
       }
 
-      id = R.id.contact2;
-      EditText contact2 = ViewBindings.findChildViewById(rootView, id);
-      if (contact2 == null) {
+      id = R.id.mail1;
+      EditText mail1 = ViewBindings.findChildViewById(rootView, id);
+      if (mail1 == null) {
         break missingId;
       }
 
-      id = R.id.depart;
-      EditText depart = ViewBindings.findChildViewById(rootView, id);
-      if (depart == null) {
+      id = R.id.mdp;
+      EditText mdp = ViewBindings.findChildViewById(rootView, id);
+      if (mdp == null) {
+        break missingId;
+      }
+
+      id = R.id.mdpConfirm;
+      EditText mdpConfirm = ViewBindings.findChildViewById(rootView, id);
+      if (mdpConfirm == null) {
         break missingId;
       }
 
@@ -121,21 +132,21 @@ public final class ActivityInscription1PublisherBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.numEntite;
-      EditText numEntite = ViewBindings.findChildViewById(rootView, id);
-      if (numEntite == null) {
+      id = R.id.prenom;
+      EditText prenom = ViewBindings.findChildViewById(rootView, id);
+      if (prenom == null) {
         break missingId;
       }
 
-      id = R.id.sousDepart;
-      EditText sousDepart = ViewBindings.findChildViewById(rootView, id);
-      if (sousDepart == null) {
+      id = R.id.tel;
+      EditText tel = ViewBindings.findChildViewById(rootView, id);
+      if (tel == null) {
         break missingId;
       }
 
-      id = R.id.title;
-      TextView title = ViewBindings.findChildViewById(rootView, id);
-      if (title == null) {
+      id = R.id.textView2;
+      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
+      if (textView2 == null) {
         break missingId;
       }
 
@@ -145,8 +156,8 @@ public final class ActivityInscription1PublisherBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityInscription1PublisherBinding((RelativeLayout) rootView, contact1, contact2,
-          depart, next, nom, numEntite, sousDepart, title, titre);
+      return new ActivityInscription1PublisherBinding((ConstraintLayout) rootView, constraintLayout,
+          mail1, mdp, mdpConfirm, next, nom, prenom, tel, textView2, titre);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

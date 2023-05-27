@@ -35,7 +35,7 @@ public class MesCandidatures extends Drawer_base implements OnItemClickListener{
         super.onCreate(savedInstanceState);
         act = ActivityMesCandidaturesBinding.inflate(getLayoutInflater());
         setContentView(act.getRoot());
-        allocatedTitle("Mes candidature");
+        allocatedTitle("Mes candidatures");
 
         listCandidatures = new ArrayList<>();
 

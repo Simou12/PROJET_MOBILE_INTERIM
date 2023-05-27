@@ -4,12 +4,12 @@ package com.example.interim.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RelativeLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.interim.R;
@@ -19,71 +19,63 @@ import java.lang.String;
 
 public final class ActivityPostuleBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView DN;
+  public final TextView cv;
 
   @NonNull
   public final EditText dateNaissance;
 
   @NonNull
-  public final Button envoyer;
+  public final TextView envoyer;
 
   @NonNull
-  public final TextView monCv;
+  public final ImageView image;
+
+  @NonNull
+  public final ImageView monCv;
 
   @NonNull
   public final EditText motivation;
 
   @NonNull
-  public final TextView motivationtxt;
-
-  @NonNull
-  public final TextView national;
-
-  @NonNull
   public final EditText nationnalite;
+
+  @NonNull
+  public final ImageView next;
 
   @NonNull
   public final EditText nom;
 
   @NonNull
-  public final TextView nomtxt;
-
-  @NonNull
   public final EditText prenom;
 
   @NonNull
-  public final TextView prenomtxt;
+  public final TextView tmotiv;
 
-  @NonNull
-  public final TextView telechargerTxt;
-
-  private ActivityPostuleBinding(@NonNull RelativeLayout rootView, @NonNull TextView DN,
-      @NonNull EditText dateNaissance, @NonNull Button envoyer, @NonNull TextView monCv,
-      @NonNull EditText motivation, @NonNull TextView motivationtxt, @NonNull TextView national,
-      @NonNull EditText nationnalite, @NonNull EditText nom, @NonNull TextView nomtxt,
-      @NonNull EditText prenom, @NonNull TextView prenomtxt, @NonNull TextView telechargerTxt) {
+  private ActivityPostuleBinding(@NonNull ConstraintLayout rootView, @NonNull TextView cv,
+      @NonNull EditText dateNaissance, @NonNull TextView envoyer, @NonNull ImageView image,
+      @NonNull ImageView monCv, @NonNull EditText motivation, @NonNull EditText nationnalite,
+      @NonNull ImageView next, @NonNull EditText nom, @NonNull EditText prenom,
+      @NonNull TextView tmotiv) {
     this.rootView = rootView;
-    this.DN = DN;
+    this.cv = cv;
     this.dateNaissance = dateNaissance;
     this.envoyer = envoyer;
+    this.image = image;
     this.monCv = monCv;
     this.motivation = motivation;
-    this.motivationtxt = motivationtxt;
-    this.national = national;
     this.nationnalite = nationnalite;
+    this.next = next;
     this.nom = nom;
-    this.nomtxt = nomtxt;
     this.prenom = prenom;
-    this.prenomtxt = prenomtxt;
-    this.telechargerTxt = telechargerTxt;
+    this.tmotiv = tmotiv;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -108,9 +100,9 @@ public final class ActivityPostuleBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.DN;
-      TextView DN = ViewBindings.findChildViewById(rootView, id);
-      if (DN == null) {
+      id = R.id.cv;
+      TextView cv = ViewBindings.findChildViewById(rootView, id);
+      if (cv == null) {
         break missingId;
       }
 
@@ -121,13 +113,19 @@ public final class ActivityPostuleBinding implements ViewBinding {
       }
 
       id = R.id.envoyer;
-      Button envoyer = ViewBindings.findChildViewById(rootView, id);
+      TextView envoyer = ViewBindings.findChildViewById(rootView, id);
       if (envoyer == null) {
         break missingId;
       }
 
+      id = R.id.image;
+      ImageView image = ViewBindings.findChildViewById(rootView, id);
+      if (image == null) {
+        break missingId;
+      }
+
       id = R.id.monCv;
-      TextView monCv = ViewBindings.findChildViewById(rootView, id);
+      ImageView monCv = ViewBindings.findChildViewById(rootView, id);
       if (monCv == null) {
         break missingId;
       }
@@ -138,21 +136,15 @@ public final class ActivityPostuleBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.motivationtxt;
-      TextView motivationtxt = ViewBindings.findChildViewById(rootView, id);
-      if (motivationtxt == null) {
-        break missingId;
-      }
-
-      id = R.id.national;
-      TextView national = ViewBindings.findChildViewById(rootView, id);
-      if (national == null) {
-        break missingId;
-      }
-
       id = R.id.nationnalite;
       EditText nationnalite = ViewBindings.findChildViewById(rootView, id);
       if (nationnalite == null) {
+        break missingId;
+      }
+
+      id = R.id.next;
+      ImageView next = ViewBindings.findChildViewById(rootView, id);
+      if (next == null) {
         break missingId;
       }
 
@@ -162,33 +154,20 @@ public final class ActivityPostuleBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.nomtxt;
-      TextView nomtxt = ViewBindings.findChildViewById(rootView, id);
-      if (nomtxt == null) {
-        break missingId;
-      }
-
       id = R.id.prenom;
       EditText prenom = ViewBindings.findChildViewById(rootView, id);
       if (prenom == null) {
         break missingId;
       }
 
-      id = R.id.prenomtxt;
-      TextView prenomtxt = ViewBindings.findChildViewById(rootView, id);
-      if (prenomtxt == null) {
+      id = R.id.tmotiv;
+      TextView tmotiv = ViewBindings.findChildViewById(rootView, id);
+      if (tmotiv == null) {
         break missingId;
       }
 
-      id = R.id.telechargerTxt;
-      TextView telechargerTxt = ViewBindings.findChildViewById(rootView, id);
-      if (telechargerTxt == null) {
-        break missingId;
-      }
-
-      return new ActivityPostuleBinding((RelativeLayout) rootView, DN, dateNaissance, envoyer,
-          monCv, motivation, motivationtxt, national, nationnalite, nom, nomtxt, prenom, prenomtxt,
-          telechargerTxt);
+      return new ActivityPostuleBinding((ConstraintLayout) rootView, cv, dateNaissance, envoyer,
+          image, monCv, motivation, nationnalite, next, nom, prenom, tmotiv);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

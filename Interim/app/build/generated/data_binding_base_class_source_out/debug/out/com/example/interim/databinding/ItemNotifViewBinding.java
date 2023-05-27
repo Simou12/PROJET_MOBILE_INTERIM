@@ -4,6 +4,7 @@ package com.example.interim.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,7 +22,13 @@ public final class ItemNotifViewBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ImageView accepterOffre;
+
+  @NonNull
   public final CardView card;
+
+  @NonNull
+  public final TextView decision;
 
   @NonNull
   public final ConstraintLayout layout1;
@@ -33,21 +40,28 @@ public final class ItemNotifViewBinding implements ViewBinding {
   public final TextView nomEmploi;
 
   @NonNull
-  public final TextView nomEntreprise;
+  public final TextView nomEmployeur;
 
   @NonNull
   public final TextView ref;
 
-  private ItemNotifViewBinding(@NonNull ConstraintLayout rootView, @NonNull CardView card,
-      @NonNull ConstraintLayout layout1, @NonNull ConstraintLayout layoutCache,
-      @NonNull TextView nomEmploi, @NonNull TextView nomEntreprise, @NonNull TextView ref) {
+  @NonNull
+  public final ImageView refuserOffre;
+
+  private ItemNotifViewBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView accepterOffre,
+      @NonNull CardView card, @NonNull TextView decision, @NonNull ConstraintLayout layout1,
+      @NonNull ConstraintLayout layoutCache, @NonNull TextView nomEmploi,
+      @NonNull TextView nomEmployeur, @NonNull TextView ref, @NonNull ImageView refuserOffre) {
     this.rootView = rootView;
+    this.accepterOffre = accepterOffre;
     this.card = card;
+    this.decision = decision;
     this.layout1 = layout1;
     this.layoutCache = layoutCache;
     this.nomEmploi = nomEmploi;
-    this.nomEntreprise = nomEntreprise;
+    this.nomEmployeur = nomEmployeur;
     this.ref = ref;
+    this.refuserOffre = refuserOffre;
   }
 
   @Override
@@ -77,9 +91,21 @@ public final class ItemNotifViewBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.accepterOffre;
+      ImageView accepterOffre = ViewBindings.findChildViewById(rootView, id);
+      if (accepterOffre == null) {
+        break missingId;
+      }
+
       id = R.id.card;
       CardView card = ViewBindings.findChildViewById(rootView, id);
       if (card == null) {
+        break missingId;
+      }
+
+      id = R.id.decision;
+      TextView decision = ViewBindings.findChildViewById(rootView, id);
+      if (decision == null) {
         break missingId;
       }
 
@@ -101,9 +127,9 @@ public final class ItemNotifViewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.nomEntreprise;
-      TextView nomEntreprise = ViewBindings.findChildViewById(rootView, id);
-      if (nomEntreprise == null) {
+      id = R.id.nomEmployeur;
+      TextView nomEmployeur = ViewBindings.findChildViewById(rootView, id);
+      if (nomEmployeur == null) {
         break missingId;
       }
 
@@ -113,8 +139,14 @@ public final class ItemNotifViewBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemNotifViewBinding((ConstraintLayout) rootView, card, layout1, layoutCache,
-          nomEmploi, nomEntreprise, ref);
+      id = R.id.refuserOffre;
+      ImageView refuserOffre = ViewBindings.findChildViewById(rootView, id);
+      if (refuserOffre == null) {
+        break missingId;
+      }
+
+      return new ItemNotifViewBinding((ConstraintLayout) rootView, accepterOffre, card, decision,
+          layout1, layoutCache, nomEmploi, nomEmployeur, ref, refuserOffre);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

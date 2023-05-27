@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#002386"
+    android:background="@color/blue_background"
     tools:context=".Connexion">
 
     <ImageView
@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="32dp"
-            android:backgroundTint="#002386"
+            android:backgroundTint="@color/blue_background"
             android:text="Se connecter"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -113,7 +113,7 @@
             android:layout_below="@+id/btnvalid"
             android:layout_toRightOf="@+id/texte"
             android:text=" S'inscrire"
-            android:textColor="@color/bleu"
+            android:textColor="@color/blue_background"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"

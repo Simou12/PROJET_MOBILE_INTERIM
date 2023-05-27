@@ -7,16 +7,17 @@
     <color name="black">#FF000000</color>
     <color name="bleu">#33658A</color>
     <color name="bleuClair"> #EBF0FB</color>
-    <color name="blue_background">#002386 </color>
-    <color name="green">#ECE8C4</color>
+    <color name="blue_background">#465686 </color>
+    <color name="green">#0F9802</color>
     <color name="gris">#93928C</color>
     <color name="grisClair">#AAA9A3</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#ECE8C4</color>
     <color name="purple_700">#FFFFFFFF</color>
+    <color name="red">#CE2424</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="vertFonce">#B1BC76</color>
+    <color name="vertFonce">#5C8642</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">Interim</string>
     <string name="default_web_client_id" translatable="false">236397133814-cpg6gth6k2ob9gnmaata68hhjpv4tpv3.apps.googleusercontent.com</string>

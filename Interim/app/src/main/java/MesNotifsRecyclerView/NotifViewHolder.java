@@ -11,15 +11,16 @@ import com.example.interim.R;
 
 public class NotifViewHolder extends RecyclerView.ViewHolder{
 
-    TextView employeur, metier, ref;
+    TextView employeur, metier, ref,decision;
     ImageView rejete,accepte;
 
     public NotifViewHolder(@NonNull View itemView) {
         super(itemView);
-        employeur = itemView.findViewById(R.id.nomEntreprise);
+        employeur = itemView.findViewById(R.id.nomEmployeur);
         metier = itemView.findViewById(R.id.nomEmploi);
         ref = itemView.findViewById(R.id.ref);
-        /*rejete = itemView.findViewById(R.id.refus);
-        accepte = itemView.findViewById(R.id.refus);*/
+        rejete = itemView.findViewById(R.id.refuserOffre);
+        accepte = itemView.findViewById(R.id.accepterOffre);
+        decision = itemView.findViewById(R.id.decision);
     }
 }

@@ -20,7 +20,31 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".Item"
+            android:name=".GererEmployeurProfil"
+            android:exported="false" />
+        <activity
+            android:name="agence.Inscription2Agence"
+            android:exported="false" />
+        <activity
+            android:name="agence.Inscription1Agence"
+            android:exported="false" />
+        <activity
+            android:name="agence.Inscription0Agence"
+            android:exported="false" />
+        <activity
+            android:name=".Inscription0Publisher"
+            android:exported="false" />
+        <activity
+            android:name="agence.PofilAgence"
+            android:exported="false" />
+        <activity
+            android:name=".Historiques"
+            android:exported="false" />
+        <activity
+            android:name=".CandidatureAccepteEmpl"
+            android:exported="false" />
+        <activity
+            android:name=".MesFavori"
             android:exported="false" />
         <activity
             android:name=".GererInterimaireProfil"
@@ -36,9 +60,6 @@
             android:exported="false" />
         <activity
             android:name=".Postule"
-            android:exported="false" />
-        <activity
-            android:name=".SavedOffers"
             android:exported="false" />
         <activity
             android:name=".MesNotifs"
