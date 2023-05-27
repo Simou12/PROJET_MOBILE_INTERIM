@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue_background"
-    tools:context="com.interim.interim.Inscription1Interimaire">
+    tools:context="com.example.interim.Inscription1Interimaire">
 
 
     <TextView

@@ -8,7 +8,12 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+
+import com.example.interim.Inscription2Interimaire;
+import com.example.interim.R;
+
 import java.util.ArrayList;
+
 
 public class Inscription1Interimaire extends AppCompatActivity {
 
@@ -21,6 +26,11 @@ public class Inscription1Interimaire extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inscription1_interimaire);
 
+        initializeCompenents();
+    }
+
+
+    private void initializeCompenents() {
         nomView = findViewById(R.id.nom);
         prenomView = findViewById(R.id.prenom);
         dateNaissanceView = findViewById(R.id.dateNaissance);
@@ -46,5 +56,6 @@ public class Inscription1Interimaire extends AppCompatActivity {
                 if(dateNaissance.equals("")) dateNaissanceView.setBackgroundResource(R.drawable.error);
             }
         });
+
     }
 }
