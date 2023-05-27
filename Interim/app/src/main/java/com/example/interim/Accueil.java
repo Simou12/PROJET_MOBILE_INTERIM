@@ -9,6 +9,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,10 +29,11 @@ import models.Offre;
 public class Accueil extends Drawer_base {
 
     ActivityAccueilBinding activityAccueilBinding;
-    private TextView plus,moins,ajouter;
-    private EditText search,loc,periode,contrat,employeur;
-    private ImageView send;
-    ArrayList<Offre> listOffresFinal = new ArrayList<>();
+    private TextView plus, moins, ajouter;
+    private EditText loc, periode, contrat, employeur;
+    SearchView search;
+    ArrayList<Offre> listOffresFinal=new ArrayList<Offre>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +50,7 @@ public class Accueil extends Drawer_base {
         ajouter = findViewById(R.id.ajouter);
         plus = findViewById(R.id.plus);
         search = findViewById(R.id.search);
-        send = findViewById(R.id.send);
+
 
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,10 +81,12 @@ public class Accueil extends Drawer_base {
         DatabaseReference offreRef = FirebaseDatabase.getInstance().getReference("offre");
         ArrayList<Offre> listOffres = new ArrayList<Offre>();
 
-        send.setOnClickListener(new View.OnClickListener() {
+
+
+        search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
-            public void onClick(View view) {
-                String recherche = search.getText().toString();
+            public boolean onQueryTextSubmit(String query) {
+                String recherche = query;
                 String location = loc.getText().toString();
                 String period = periode.getText().toString();
                 String contr = contrat.getText().toString();
@@ -112,8 +116,17 @@ public class Accueil extends Drawer_base {
                         }
                     });
                 }
+
+                return false;
             }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                return false;
+            }
+
         });
+
     }
 
     private void startMyActivity(ArrayList<Offre> listOffres, String recherche) {
@@ -123,7 +136,6 @@ public class Accueil extends Drawer_base {
                 listOffresFinal.add(of);
             }
         }
-
         Intent intent = new Intent(Accueil.this,OffreResultatRechercheInterim.class);
         intent.putExtra("listOffre", listOffresFinal);
         startActivity(intent);

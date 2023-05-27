@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#002386"
+    android:background="@color/bleuClair"
     tools:context=".Connexion">
 
     <ImageView
         android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:src="@drawable/connexionimage"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/login"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,12 +21,11 @@
         android:id="@+id/conx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="40dp"
         android:text="Connexion"
-        android:textColor="@color/white"
+        android:textColor="@color/blue_background"
         android:textSize="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image"
         tools:ignore="MissingConstraints" />
@@ -39,7 +38,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/conx"
-        app:layout_constraintVertical_bias="0.273">
+        app:layout_constraintVertical_bias="0.0">
 
 
         <EditText
@@ -68,7 +67,7 @@
             android:layout_height="50dp"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="19dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/edit_background"
             android:drawableLeft="@drawable/baseline_lock_24"
@@ -87,7 +86,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="32dp"
-            android:backgroundTint="#002386"
+            android:backgroundTint="@color/blue_background"
             android:text="Se connecter"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

@@ -103,7 +103,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    >
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
                     <TextView
                         android:id="@+id/ref"
@@ -290,12 +293,11 @@
                             android:id="@+id/postuler"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:backgroundTint="@color/black"
                             android:layout_marginStart="10dp"
+                            android:backgroundTint="@color/black"
                             android:text="Postuler"
                             android:textColor="@color/white"
-                            android:textSize="15sp"
-                            />
+                            android:textSize="15sp" />
 
                         <ImageView
 
@@ -304,25 +306,28 @@
                             android:layout_height="30dp"
                             android:layout_marginStart="80dp"
                             android:src="@drawable/traduction" />
+
                         <ImageView
                             android:id="@+id/share"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_marginStart="10dp"
                             android:src="@drawable/share" />
+
                         <ImageView
                             android:id="@+id/liker"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_marginStart="10dp"
                             android:src="@drawable/coeurnonrempli" />
+
                         <ImageView
                             android:id="@+id/dislike"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_marginLeft="-30dp"
                             android:src="@drawable/coeur_rempli"
-                            android:visibility="gone"/>
+                            android:visibility="gone" />
 
                     </LinearLayout>
 
