@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bleuClair">
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="JobSpot"
+        android:textSize="30dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:background="@drawable/round"
+        />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choix de l'abonnement"
+        android:textSize="30dp"
+        android:textColor="@color/blue_background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="35dp"
+        android:layout_below="@+id/titre"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/unMois"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/white"
+            android:text="Un mois"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/indetermine"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/unMois"
+            android:backgroundTint="@color/white"
+            android:text="Indetermine"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <!-- Second row: Buttons 3 and 4 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/annuel"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_below="@+id/indetermine"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/white"
+            android:text="Annuel"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/mensuel"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_below="@+id/unMois"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/unMois"
+            android:backgroundTint="@color/white"
+            android:text="Mensuel"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <!-- Third row: Buttons 5 and 6 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/semestriel"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:text="Semestriel "
+            android:layout_below="@+id/annuel"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/trimestriel"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_below="@+id/mensuel"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@+id/semestriel"
+            android:backgroundTint="@color/white"
+            android:text=" Trimestriel"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+

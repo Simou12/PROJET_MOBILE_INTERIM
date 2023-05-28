@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type_contrat">
+        <item>CDD</item>
+        <item>CDI</item>
+    </string-array>
+    <color name="active">#50C2C9</color>
+    <color name="black">#FF000000</color>
+    <color name="bleu">#33658A</color>
+    <color name="bleuClair"> #EBF0FB</color>
+    <color name="blue_background">#465686 </color>
+    <color name="buttontext">#50C2C9</color>
+    <color name="green">#0F9802</color>
+    <color name="gris">#93928C</color>
+    <color name="grisClair">#AAA9A3</color>
+    <color name="inactive">#C4C4C4</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#ECE8C4</color>
+    <color name="purple_700">#FFFFFFFF</color>
+    <color name="red">#CE2424</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="vertFonce">#5C8642</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Interim</string>
+    <string name="default_web_client_id" translatable="false">236397133814-cpg6gth6k2ob9gnmaata68hhjpv4tpv3.apps.googleusercontent.com</string>
+    <string name="description1">Application mobile dédiée à tout type de recrtuteurs et aux intérimaires à la recherche d\'opportunité de travail.</string>
+    <string name="description2">Fini les déplacements ! Avec JobSpot, tu peux désormais postuler à des offres d\'emploi de chez toi. </string>
+    <string name="description3">Que vous soyez employeur ou agence d\'intérim, notre application JobSpot facilite le processus de recrutement.</string>
+    <string name="description4">En tant qu\'employeur ou agence, JobSpot vous propose une variété d\'options d\'abonnement adaptées à vos besoins.</string>
+    <string name="description5">JobSpot accorde une importance primordiale à la sécurité. Elle dispose des mesures robustes pour garantir la protection des données sensibles des employeurs, des agences d\'intérim et des intérimaires. </string>
+    <string name="gcm_defaultSenderId" translatable="false">236397133814</string>
+    <string name="google_api_key" translatable="false">AIzaSyATUdvkFvbQ0CZVDJW5PoctL3aM1CuxsNU</string>
+    <string name="google_app_id" translatable="false">1:236397133814:android:56541a1267ab03f0eed1d7</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyATUdvkFvbQ0CZVDJW5PoctL3aM1CuxsNU</string>
+    <string name="google_storage_bucket" translatable="false">interim-1a28c.appspot.com</string>
+    <string name="headling1">JobSpot</string>
+    <string name="headling2"> Trouvez vous un emploi en ligne</string>
+    <string name="headling3">Employeur</string>
+    <string name="headling4">Paiement en ligne</string>
+    <string name="headling5">Sécurité</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_drawer_close">drawer close</string>
+    <string name="menu_drawer_open">drawer open</string>
+    <string name="project_id" translatable="false">interim-1a28c</string>
+    <style name="Theme.Interim" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/blue_background</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        
+    </style>
+</resources>

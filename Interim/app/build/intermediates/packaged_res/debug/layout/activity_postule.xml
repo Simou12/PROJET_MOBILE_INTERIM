@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bleuClair">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:src="@drawable/jobapplication"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_background"
+        android:hint="Nom "
+        android:textSize="15dp"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/nom"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_background"
+        android:hint="Prénom"
+        android:inputType="text"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nom"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <EditText
+        android:id="@+id/dateNaissance"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/edit_background"
+        android:hint="Date de naissance"
+        android:inputType="date"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nom" />
+
+    <EditText
+        android:id="@+id/nationnalite"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/edit_background"
+        android:hint="Nationnalité"
+        android:inputType="text"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toEndOf="@+id/dateNaissance"
+        app:layout_constraintTop_toBottomOf="@+id/prenom"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/monCv"
+        android:layout_width="32dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="40dp"
+        android:src="@drawable/cv_postule"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateNaissance" />
+
+    <TextView
+        android:id="@+id/cv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
+        android:drawablePadding="0dp"
+        android:hint="CV"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/monCv"
+        app:layout_constraintTop_toBottomOf="@+id/dateNaissance" />
+
+    <TextView
+        android:id="@+id/tmotiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:drawablePadding="0dp"
+        android:hint="Mes motivations :"
+        android:textAlignment="center"
+        android:textColor="@color/blue_background"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monCv" />
+
+    <EditText
+        android:id="@+id/motivation"
+        android:layout_width="335dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_background"
+        android:gravity="top"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tmotiv" />
+
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue_background"
+        android:layout_marginTop="10dp"
+        android:text="Envoyer"
+        android:textColor="@color/white"
+        android:layout_marginLeft="200dp"
+        android:textSize="13dp"
+        app:layout_constraintTop_toBottomOf="@+id/motivation"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

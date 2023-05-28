@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/enCours"
+        android:title="Offres en cours"
+        />
+    <item
+        android:id="@+id/passe"
+        android:title="Offres passées"
+        />
+</menu>
