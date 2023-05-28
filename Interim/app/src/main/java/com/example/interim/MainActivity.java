@@ -69,6 +69,13 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
             }
         });
 
+        Button btnAide=findViewById(R.id.xxx);
+        btnAide.setOnClickListener(View->{
+            Intent intent=new Intent(this,AIdeCv.class);
+            startActivity(intent);
+
+        });
+
     }
 
         private void showAlertDialog() {

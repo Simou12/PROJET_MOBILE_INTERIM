@@ -11,8 +11,8 @@
         android:id="@+id/titleImage"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_marginTop="40dp"
-        android:src="@drawable/deal" />
+        android:layout_marginTop="60dp"
+        android:src="@drawable/image1" />
 
     <TextView
         android:id="@+id/texttitle"
@@ -26,13 +26,14 @@
     <TextView
         android:id="@+id/textdeccription"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="87dp"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="20dp"
-        android:textAlignment="center"
-        android:textColor="@color/grisClair"
         android:text="Application mobile dédiée à tout types de recrtuteurs et aux intérimaires à la recherche d'opportunité de travail"
-        android:textSize="16dp"/>
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/grisClair"
+        android:textSize="16dp" />
 
 
 </LinearLayout>

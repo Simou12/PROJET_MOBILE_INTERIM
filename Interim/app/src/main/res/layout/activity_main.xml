@@ -12,7 +12,6 @@
         android:id="@+id/image"
         android:layout_width="198dp"
         android:layout_height="225dp"
-        android:layout_below="@+id/titre"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="68dp"
         android:src="@drawable/connexionimage"
