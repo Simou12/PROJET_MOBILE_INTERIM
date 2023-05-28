@@ -45,6 +45,7 @@ public class ViewPagerAdapter extends PagerAdapter {
 
     @Override
     public int getCount() {
+
         return headling.length;
     }
 
@@ -60,14 +61,15 @@ public class ViewPagerAdapter extends PagerAdapter {
 
         ImageView slidetitleImage= (ImageView) view.findViewById(R.id.titleImage);
         TextView slideHeadling=(TextView)  view.findViewById(R.id.texttitle);
-        TextView slideDescription=(TextView)  view.findViewById(R.id.texttitle);
+        TextView slideDescription=(TextView)  view.findViewById(R.id.textdescription);
 
         slidetitleImage.setImageResource(images[position]);
         slideHeadling.setText(headling[position]);
         slideDescription.setText(descriptions[position]);
-        container.addView(view);
-        return view;
 
+        container.addView(view);
+
+        return view;
     }
     @Override
     public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {

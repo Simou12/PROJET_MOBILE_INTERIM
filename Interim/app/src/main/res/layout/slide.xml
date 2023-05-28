@@ -24,7 +24,7 @@
         android:textSize="28dp"/>
 
     <TextView
-        android:id="@+id/textdeccription"
+        android:id="@+id/textdescription"
         android:layout_width="match_parent"
         android:layout_height="87dp"
         android:layout_marginHorizontal="30dp"

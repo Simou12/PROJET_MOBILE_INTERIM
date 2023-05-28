@@ -86,7 +86,7 @@ public class Presentation_slides extends AppCompatActivity {
 
         public void setUpindicator(int position){
 
-            dots = new TextView[4];
+            dots = new TextView[5];
             mDotLayout.removeAllViews();
 
             for (int i = 0 ; i < dots.length ; i++){

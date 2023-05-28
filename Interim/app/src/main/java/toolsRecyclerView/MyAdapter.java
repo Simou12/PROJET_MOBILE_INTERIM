@@ -86,7 +86,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
             @Override
             public void onClick(View view) {
                 if(holder.liker.getVisibility()== View.VISIBLE){
-                    holder.liker.set
+                    holder.liker.setOnClickListener();
                 }
 
             }
