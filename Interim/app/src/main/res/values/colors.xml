@@ -7,9 +7,18 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="green">#ECE8C4</color>
-    <color name="vertFonce">#B1BC76</color>
+    <color name="green">#0F9802</color>
+    <color name="vertFonce">#5C8642</color>
     <color name="gris">#93928C</color>
     <color name="grisClair">#AAA9A3</color>
     <color name="bleu">#33658A</color>
+    <color name="blue_background">#465686 </color>
+    <color name="bleuClair"> #EBF0FB</color>
+    <color name="red">#CE2424</color>
+    <color name="buttontext">#50C2C9</color>
+
+
+    //indicator color
+    <color name="inactive">#C4C4C4</color>
+    <color name="active">#50C2C9</color>
 </resources>

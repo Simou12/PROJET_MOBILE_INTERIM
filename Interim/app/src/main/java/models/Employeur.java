@@ -1,6 +1,8 @@
 package models;
 
-public class Employeur {
+import java.io.Serializable;
+
+public class Employeur implements Serializable {
     private int id;
     private String nom;
     private String departement;
@@ -17,6 +19,15 @@ public class Employeur {
     private String lien;
 
     public Employeur(){}
+
+    public Employeur(String nom, String departement, String sousDepartement, String numEntreprise,String adresse, String lien) {
+        this.nom = nom;
+        this.departement = departement;
+        this.sousDepartement = sousDepartement;
+        this.numEntreprise = numEntreprise;
+        this.lien = lien;
+        this.adresse = adresse;
+    }
 
     public Employeur(String nom, String departement, String sousDepartement, String numEntreprise, String contac1, String contact2, String adresse, String telephone1, String telephone2, String email1, String email2, String mdp, String lien) {
         this.nom = nom;

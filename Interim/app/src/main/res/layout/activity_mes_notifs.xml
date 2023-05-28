@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MesNotifs">
 
+    <TextView
+        android:id="@+id/aucune"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recylerView"
         android:layout_width="match_parent"

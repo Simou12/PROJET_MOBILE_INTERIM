@@ -43,11 +43,12 @@ public class FragmentChoixAbonnement extends Fragment {
                     CurrentUserManager.getInstance().setCurrentUser(currentUser);
                     Abonnement abonnement = new Abonnement(15,"Mensuel",userEmail);
                     DatabaseReference abonnementRef = FirebaseDatabase.getInstance().getReference().child("abonnement");
-                    abonnementRef.setValue(abonnement)
+                    String abonnementKey = abonnementRef.push().getKey();
+                    abonnementRef.child(abonnementKey).setValue(abonnement)
                             .addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void unused) {
-                                    showToast("Abonnement ajouté!");
+                                    //showToast("Abonnement validé!");
                                     FragmentProcederPayement secondFragment = new FragmentProcederPayement();
                                     requireActivity().getSupportFragmentManager().beginTransaction()
                                             .replace(R.id.fragment_container, secondFragment)

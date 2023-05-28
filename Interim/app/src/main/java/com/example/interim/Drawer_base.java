@@ -25,6 +25,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import models.Agence;
 import models.Employeur;
 import models.Interimaire;
 
@@ -96,6 +97,34 @@ public class Drawer_base extends AppCompatActivity implements NavigationView.OnN
                                     if(interimaireExist){
                                         startActivity(new Intent(Drawer_base.this,InterimaireProfil.class));
                                         overridePendingTransition(0,0);
+                                    }else{
+                                        DatabaseReference agenceRef = FirebaseDatabase.getInstance().getReference("agence");
+                                        agenceRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                                            @Override
+                                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                boolean agenceExist = false;
+                                                for (DataSnapshot agenceSnapshot : snapshot.getChildren()){
+                                                    Agence inter = agenceSnapshot.getValue(Agence.class);
+                                                    if(inter.getEmail1().equals(userEmail)){
+                                                        agenceExist = true;
+                                                        break;
+                                                    }
+                                                }
+                                                if(agenceExist){
+                                                    startActivity(new Intent(Drawer_base.this,agence.PofilAgence.class));
+                                                    overridePendingTransition(0,0);
+                                                }else{
+                                                    startActivity(new Intent(Drawer_base.this,ProfilGestionnaire.class));
+                                                    overridePendingTransition(0,0);
+                                                }
+                                            }
+
+                                            @Override
+                                            public void onCancelled(@NonNull DatabaseError error) {
+
+                                            }
+                                        });
+
                                     }
                                 }
                                 @Override

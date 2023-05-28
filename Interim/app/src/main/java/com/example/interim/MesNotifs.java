@@ -1,11 +1,11 @@
 package com.example.interim;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.example.interim.databinding.ActivityMesNotifsBinding;
 import com.google.firebase.auth.FirebaseUser;
@@ -21,7 +21,6 @@ import java.util.List;
 import MesNotifsRecyclerView.ItemNotif;
 import MesNotifsRecyclerView.NotifAdapter;
 import models.Candidature;
-import toolsRecyclerView.MyAdapter;
 
 public class MesNotifs extends Drawer_base {
 
@@ -31,6 +30,7 @@ public class MesNotifs extends Drawer_base {
     DatabaseReference candidatureRef;
     FirebaseUser currentUser = CurrentUserManager.getInstance().getCurrentUser();
     String userEmail = currentUser.getEmail();
+    TextView aucuneView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,13 +47,10 @@ public class MesNotifs extends Drawer_base {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot datasnapshot : snapshot.getChildren()) {
                     Candidature candidature = datasnapshot.getValue(Candidature.class);
-                    if(candidature.getCandidat().equals(userEmail)){
-                        ItemNotif notif= new ItemNotif(candidature.getNomEmploi(),candidature.getEmployeur(),candidature.getAdress());
+                    if(candidature.getEmail().equals(userEmail) && (candidature.getStatus().equals("acceptee") || candidature.getStatus().equals("refusee"))){
+                        ItemNotif notif= new ItemNotif(candidature.getNomEmploi(),candidature.getEntreprise(),candidature.getAdress(),candidature.getStatus(),candidature.getRefAnnonce());
                         listNotifItem.add(notif);
                     }
-                }
-                for (ItemNotif item : listNotifItem){
-                    System.out.println("itemmmmmmmm"+item.getEmployeur());
                 }
                 afficher(listNotifItem);
             }
@@ -66,11 +63,17 @@ public class MesNotifs extends Drawer_base {
 
     }
 
-    private void afficher(List<ItemNotif> listNotifItem) {
-        recyclerView=findViewById(R.id.recylerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(new NotifAdapter(getApplicationContext(),listNotifItem));
+    private void afficher(List<ItemNotif> list) {
+        if(list.isEmpty()){
+            aucuneView = findViewById(R.id.aucune);
+            aucuneView.setText("Vous n'avez aucune notification!");
+        }else {
+            recyclerView = findViewById(R.id.recylerView);
+            recyclerView.setLayoutManager(new LinearLayoutManager(this));
+            recyclerView.setAdapter(new NotifAdapter(getApplicationContext(), list));
+        }
     }
+
 
 
 }

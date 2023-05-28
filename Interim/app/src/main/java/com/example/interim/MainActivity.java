@@ -1,19 +1,27 @@
 package com.example.interim;
 
-import androidx.appcompat.app.AppCompatActivity;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+
+
+public class MainActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        
         Button btnConx = findViewById(R.id.conx);
         btnConx.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,5 +39,47 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button btnAnonyme = findViewById(R.id.anonyme);
+        btnAnonyme.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showAlertDialog();
+            }
+        });
+
+        Button aide = findViewById(R.id.aide);
+        aide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(MainActivity.this,AIdeCv.class);
+                startActivity(intent);
+            }
+        });
+
     }
+
+        private void showAlertDialog() {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("Accéder à la localisation");
+            builder.setMessage("Afin de pouvoir vous proposer des offres dans votre secteur, veuillez autoriser l'application à accéder à votre localisation?");
+            builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    Intent intent = new Intent(MainActivity.this,AccueilAnonyme.class);
+                    intent.putExtra("choix","yes");
+                    startActivity(intent);
+                }
+            });
+            builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    Intent intent = new Intent(MainActivity.this,AccueilAnonyme.class);
+                    intent.putExtra("choix","no");
+                    startActivity(intent);
+                }
+            });
+            builder.show();
+        }
+
 }

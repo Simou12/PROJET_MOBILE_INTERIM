@@ -33,11 +33,12 @@ public class FragmentProcederPayement extends Fragment {
                 String cvc = cvcView.getText().toString();
 
                 if(numCarte.length()<10 || numCarte.length()>10){
-                    showToast("Le numéro de carte n'est pas valide!");
+                    showToast("Numéro de carte non valide!");
                 } else if (cvc.length()< 3 || cvc.length()>3) {
-                    showToast("Le numéro CVC n'est pas valide!");
+                    showToast("Numéro CVC non valide!");
                 } else {
                     startNewActivity();
+                    showToast("Email de vérification envoyé!");
                 }
             }
         });

@@ -11,7 +11,7 @@
             android:icon="@drawable/profil"/>
         <item android:id="@+id/candidatures"
             android:title="Mes candidatures"
-            android:icon="@drawable/candidatures"/>
+            android:icon="@drawable/candidature"/>
         <item android:id="@+id/deconect"
             android:title="Se déconnecter"
             android:icon="@drawable/logout"/>
