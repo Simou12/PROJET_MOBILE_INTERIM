@@ -41,7 +41,7 @@
 22-->[androidx.core:core:1.9.0] /Users/nguermou/.gradle/caches/transforms-3/46580efff2520e68c7940204055d2c0f/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
 23
 24    <application
-24-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:12:5-115:19
+24-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:12:5-118:19
 25        android:allowBackup="true"
 25-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:13:9-35
 26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -58,363 +58,368 @@
 32-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:17:9-41
 33        android:supportsRtl="true"
 33-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:18:9-35
-34        android:testOnly="true"
-35        android:theme="@style/Theme.Interim"
-35-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:19:9-45
-36        android:usesCleartextTraffic="true" >
-36-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:20:9-44
-37        <activity
-37-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:22:9-24:40
-38            android:name="com.example.interim.GestionnaireNewInscriptions"
-38-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:23:13-56
-39            android:exported="false" />
-39-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:24:13-37
-40        <activity
-40-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:25:9-27:40
-41            android:name="com.example.interim.ProfilGestionnaire"
-41-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:26:13-47
-42            android:exported="false" />
-42-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:27:13-37
-43        <activity
-43-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:28:9-30:39
-44            android:name="com.example.interim.Presentation_slides"
-44-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:29:13-48
-45            android:exported="true" />
-45-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:30:13-36
-46        <activity
-46-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:31:9-33:40
-47            android:name="com.example.interim.GererEmployeurProfil"
-47-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:32:13-49
-48            android:exported="false" />
-48-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:33:13-37
-49        <activity
-49-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:34:9-36:40
-50            android:name="com.example.interim.Item"
-50-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:35:13-33
-51            android:exported="false" />
-51-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:36:13-37
-52        <activity
-52-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:37:9-39:40
-53            android:name="com.example.interim.GererInterimaireProfil"
-53-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:38:13-51
-54            android:exported="false" />
-54-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:39:13-37
-55        <activity
-55-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:40:9-42:40
-56            android:name="com.example.interim.AccueilAnonyme"
-56-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:41:13-43
-57            android:exported="false" />
-57-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:42:13-37
-58        <activity
-58-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:43:9-45:40
-59            android:name="com.example.interim.CandidatureEnCoursEmpl"
-59-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:44:13-51
-60            android:exported="false" />
-60-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:45:13-37
-61        <activity
-61-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:46:9-48:40
-62            android:name="com.example.interim.AnnonceEmployeur"
-62-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:47:13-45
-63            android:exported="false" />
-63-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:48:13-37
-64        <activity
-64-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:49:9-51:40
-65            android:name="com.example.interim.Postule"
-65-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:50:13-36
-66            android:exported="false" />
-66-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:51:13-37
-67        <activity
-67-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:52:9-54:40
-68            android:name="com.example.interim.SavedOffers"
-68-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:53:13-40
-69            android:exported="false" />
-69-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:54:13-37
-70        <activity
-70-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:55:9-57:40
-71            android:name="com.example.interim.MesNotifs"
-71-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:56:13-38
-72            android:exported="false" />
-72-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:57:13-37
-73        <activity
-73-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:58:9-60:40
-74            android:name="com.example.interim.MesEmplois"
-74-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:59:13-39
-75            android:exported="false" />
-75-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:60:13-37
-76        <activity
-76-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:61:9-63:40
-77            android:name="com.example.interim.MesCandidatures"
-77-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:62:13-44
-78            android:exported="false" />
-78-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:63:13-37
-79        <activity
-79-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:64:9-66:40
-80            android:name="com.example.interim.OffreResultatRechercheInterim"
-80-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:65:13-58
-81            android:exported="false" />
-81-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:66:13-37
-82        <activity
-82-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:67:9-69:40
-83            android:name="com.example.interim.ChoixAbonnement"
-83-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:68:13-44
-84            android:exported="false" />
-84-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:69:13-37
-85        <activity
-85-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:70:9-72:40
-86            android:name="com.example.interim.MesOffres"
-86-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:71:13-38
-87            android:exported="false" />
-87-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:72:13-37
-88        <activity
-88-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:73:9-75:40
-89            android:name="com.example.interim.AddOffre"
-89-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:74:13-37
-90            android:exported="false" />
-90-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:75:13-37
-91        <activity
-91-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:76:9-78:40
-92            android:name="com.example.interim.InterimaireProfil"
-92-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:77:13-46
-93            android:exported="false" />
-93-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:78:13-37
-94        <activity
-94-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:79:9-81:40
-95            android:name="com.example.interim.EmployeurProfil"
-95-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:80:13-44
-96            android:exported="false" />
-96-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:81:13-37
-97        <activity
-97-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:82:9-84:40
-98            android:name="com.example.interim.Inscription2Publisher"
-98-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:83:13-50
-99            android:exported="false" />
-99-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:84:13-37
-100        <activity
-100-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:85:9-87:40
-101            android:name="com.example.interim.Inscription1Publisher"
-101-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:86:13-50
-102            android:exported="false" />
-102-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:87:13-37
-103        <activity
-103-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:88:9-90:40
-104            android:name="com.example.interim.Drawer_base"
-104-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:89:13-40
-105            android:exported="false" />
-105-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:90:13-37
-106        <activity
-106-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:91:9-93:40
-107            android:name="com.example.interim.Accueil"
-107-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:92:13-36
-108            android:exported="false" />
-108-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:93:13-37
-109        <activity
-109-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:94:9-96:40
-110            android:name="com.example.interim.Connexion"
-110-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:95:13-38
-111            android:exported="false" />
-111-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:96:13-37
-112        <activity
-112-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:97:9-99:40
-113            android:name="com.example.interim.Role"
-113-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:98:13-33
-114            android:exported="false" />
-114-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:99:13-37
-115        <activity
-115-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:100:9-102:40
-116            android:name="com.example.interim.Inscription2Interimaire"
-116-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:101:13-52
-117            android:exported="false" />
-117-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:102:13-37
-118        <activity
-118-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:103:9-105:40
-119            android:name="com.example.interim.Inscription1Interimaire"
-119-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:104:13-52
-120            android:exported="false" />
-120-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:105:13-37
-121        <activity
-121-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:106:9-114:20
-122            android:name="com.example.interim.MainActivity"
-122-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:107:13-41
-123            android:exported="true" >
-123-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:108:13-36
-124            <intent-filter>
-124-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:109:13-113:29
-125                <action android:name="android.intent.action.MAIN" />
-125-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:110:17-69
-125-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:110:25-66
-126
-127                <category android:name="android.intent.category.LAUNCHER" />
-127-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:112:17-77
-127-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:112:27-74
-128            </intent-filter>
-129        </activity>
-130        <activity
-130-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:27:9-44:20
-131            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-131-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:28:13-80
-132            android:excludeFromRecents="true"
-132-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:29:13-46
-133            android:exported="true"
-133-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:30:13-36
-134            android:launchMode="singleTask"
-134-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:31:13-44
-135            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-135-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:32:13-72
-136            <intent-filter>
-136-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:33:13-43:29
-137                <action android:name="android.intent.action.VIEW" />
-137-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:34:17-69
-137-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:34:25-66
-138
-139                <category android:name="android.intent.category.DEFAULT" />
-139-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:36:17-76
-139-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:36:27-73
-140                <category android:name="android.intent.category.BROWSABLE" />
-140-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:37:17-78
-140-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:37:27-75
-141
-142                <data
-142-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:39:17-42:51
-143                    android:host="firebase.auth"
-143-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:40:21-49
-144                    android:path="/"
-144-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:41:21-37
-145                    android:scheme="genericidp" />
-145-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:42:21-48
-146            </intent-filter>
-147        </activity>
-148        <activity
-148-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:45:9-62:20
-149            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-149-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:46:13-79
-150            android:excludeFromRecents="true"
-150-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:47:13-46
-151            android:exported="true"
-151-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:48:13-36
-152            android:launchMode="singleTask"
-152-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:49:13-44
-153            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-153-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:50:13-72
-154            <intent-filter>
-154-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:51:13-61:29
-155                <action android:name="android.intent.action.VIEW" />
-155-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:34:17-69
-155-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:34:25-66
-156
-157                <category android:name="android.intent.category.DEFAULT" />
-157-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:36:17-76
-157-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:36:27-73
-158                <category android:name="android.intent.category.BROWSABLE" />
-158-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:37:17-78
-158-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:37:27-75
-159
-160                <data
-160-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:39:17-42:51
-161                    android:host="firebase.auth"
-161-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:40:21-49
-162                    android:path="/"
-162-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:41:21-37
-163                    android:scheme="recaptcha" />
-163-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:42:21-48
-164            </intent-filter>
-165        </activity>
-166
-167        <service
-167-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:64:9-70:19
-168            android:name="com.google.firebase.components.ComponentDiscoveryService"
-168-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:65:13-84
-169            android:directBootAware="true"
-169-->[com.google.firebase:firebase-common:20.3.2] /Users/nguermou/.gradle/caches/transforms-3/9d36afbc47413410132b9745cffb91fe/transformed/firebase-common-20.3.2/AndroidManifest.xml:34:13-43
-170            android:exported="false" >
-170-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:66:13-37
-171            <meta-data
-171-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:67:13-69:85
-172                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-172-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:68:17-109
-173                android:value="com.google.firebase.components.ComponentRegistrar" />
-173-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:69:17-82
-174            <meta-data
-174-->[com.google.firebase:firebase-storage-ktx:20.2.0] /Users/nguermou/.gradle/caches/transforms-3/cb6fc0ecd3b1e5d9526bdf692ea90b6a/transformed/firebase-storage-ktx-20.2.0/AndroidManifest.xml:14:13-16:85
-175                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
-175-->[com.google.firebase:firebase-storage-ktx:20.2.0] /Users/nguermou/.gradle/caches/transforms-3/cb6fc0ecd3b1e5d9526bdf692ea90b6a/transformed/firebase-storage-ktx-20.2.0/AndroidManifest.xml:15:17-122
-176                android:value="com.google.firebase.components.ComponentRegistrar" />
-176-->[com.google.firebase:firebase-storage-ktx:20.2.0] /Users/nguermou/.gradle/caches/transforms-3/cb6fc0ecd3b1e5d9526bdf692ea90b6a/transformed/firebase-storage-ktx-20.2.0/AndroidManifest.xml:16:17-82
-177            <meta-data
-177-->[com.google.firebase:firebase-database-ktx:20.2.1] /Users/nguermou/.gradle/caches/transforms-3/177518be23d09819f9dfe9f705b414ce/transformed/firebase-database-ktx-20.2.1/AndroidManifest.xml:14:13-16:85
-178                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
-178-->[com.google.firebase:firebase-database-ktx:20.2.1] /Users/nguermou/.gradle/caches/transforms-3/177518be23d09819f9dfe9f705b414ce/transformed/firebase-database-ktx-20.2.1/AndroidManifest.xml:15:17-124
-179                android:value="com.google.firebase.components.ComponentRegistrar" />
-179-->[com.google.firebase:firebase-database-ktx:20.2.1] /Users/nguermou/.gradle/caches/transforms-3/177518be23d09819f9dfe9f705b414ce/transformed/firebase-database-ktx-20.2.1/AndroidManifest.xml:16:17-82
-180            <meta-data
-180-->[com.google.firebase:firebase-database:20.2.1] /Users/nguermou/.gradle/caches/transforms-3/d08f9dfa09b645d684d456be0842cfc0/transformed/firebase-database-20.2.1/AndroidManifest.xml:31:13-33:85
-181                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-181-->[com.google.firebase:firebase-database:20.2.1] /Users/nguermou/.gradle/caches/transforms-3/d08f9dfa09b645d684d456be0842cfc0/transformed/firebase-database-20.2.1/AndroidManifest.xml:32:17-109
-182                android:value="com.google.firebase.components.ComponentRegistrar" />
-182-->[com.google.firebase:firebase-database:20.2.1] /Users/nguermou/.gradle/caches/transforms-3/d08f9dfa09b645d684d456be0842cfc0/transformed/firebase-database-20.2.1/AndroidManifest.xml:33:17-82
-183            <meta-data
-183-->[com.google.firebase:firebase-storage:20.2.0] /Users/nguermou/.gradle/caches/transforms-3/2ee820edaf6458dd0a43185ce4416d7c/transformed/firebase-storage-20.2.0/AndroidManifest.xml:32:13-34:85
-184                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-184-->[com.google.firebase:firebase-storage:20.2.0] /Users/nguermou/.gradle/caches/transforms-3/2ee820edaf6458dd0a43185ce4416d7c/transformed/firebase-storage-20.2.0/AndroidManifest.xml:33:17-107
-185                android:value="com.google.firebase.components.ComponentRegistrar" />
-185-->[com.google.firebase:firebase-storage:20.2.0] /Users/nguermou/.gradle/caches/transforms-3/2ee820edaf6458dd0a43185ce4416d7c/transformed/firebase-storage-20.2.0/AndroidManifest.xml:34:17-82
-186            <meta-data
-186-->[com.google.firebase:firebase-common-ktx:20.3.2] /Users/nguermou/.gradle/caches/transforms-3/8973c699c524efca6523a5b7602ef067/transformed/firebase-common-ktx-20.3.2/AndroidManifest.xml:14:13-16:85
-187                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
-187-->[com.google.firebase:firebase-common-ktx:20.3.2] /Users/nguermou/.gradle/caches/transforms-3/8973c699c524efca6523a5b7602ef067/transformed/firebase-common-ktx-20.3.2/AndroidManifest.xml:15:17-113
-188                android:value="com.google.firebase.components.ComponentRegistrar" />
-188-->[com.google.firebase:firebase-common-ktx:20.3.2] /Users/nguermou/.gradle/caches/transforms-3/8973c699c524efca6523a5b7602ef067/transformed/firebase-common-ktx-20.3.2/AndroidManifest.xml:16:17-82
-189        </service>
-190
-191        <provider
-191-->[com.google.firebase:firebase-common:20.3.2] /Users/nguermou/.gradle/caches/transforms-3/9d36afbc47413410132b9745cffb91fe/transformed/firebase-common-20.3.2/AndroidManifest.xml:25:9-30:39
-192            android:name="com.google.firebase.provider.FirebaseInitProvider"
-192-->[com.google.firebase:firebase-common:20.3.2] /Users/nguermou/.gradle/caches/transforms-3/9d36afbc47413410132b9745cffb91fe/transformed/firebase-common-20.3.2/AndroidManifest.xml:26:13-77
-193            android:authorities="com.example.interim.firebaseinitprovider"
-193-->[com.google.firebase:firebase-common:20.3.2] /Users/nguermou/.gradle/caches/transforms-3/9d36afbc47413410132b9745cffb91fe/transformed/firebase-common-20.3.2/AndroidManifest.xml:27:13-72
-194            android:directBootAware="true"
-194-->[com.google.firebase:firebase-common:20.3.2] /Users/nguermou/.gradle/caches/transforms-3/9d36afbc47413410132b9745cffb91fe/transformed/firebase-common-20.3.2/AndroidManifest.xml:28:13-43
-195            android:exported="false"
-195-->[com.google.firebase:firebase-common:20.3.2] /Users/nguermou/.gradle/caches/transforms-3/9d36afbc47413410132b9745cffb91fe/transformed/firebase-common-20.3.2/AndroidManifest.xml:29:13-37
-196            android:initOrder="100" />
-196-->[com.google.firebase:firebase-common:20.3.2] /Users/nguermou/.gradle/caches/transforms-3/9d36afbc47413410132b9745cffb91fe/transformed/firebase-common-20.3.2/AndroidManifest.xml:30:13-36
-197
-198        <activity
-198-->[com.google.android.gms:play-services-base:18.1.0] /Users/nguermou/.gradle/caches/transforms-3/8a19cf77664cd0c37e70c8090baf5942/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
-199            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-199-->[com.google.android.gms:play-services-base:18.1.0] /Users/nguermou/.gradle/caches/transforms-3/8a19cf77664cd0c37e70c8090baf5942/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
-200            android:exported="false"
-200-->[com.google.android.gms:play-services-base:18.1.0] /Users/nguermou/.gradle/caches/transforms-3/8a19cf77664cd0c37e70c8090baf5942/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
-201            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-201-->[com.google.android.gms:play-services-base:18.1.0] /Users/nguermou/.gradle/caches/transforms-3/8a19cf77664cd0c37e70c8090baf5942/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
-202
-203        <meta-data
-203-->[com.google.android.gms:play-services-basement:18.1.0] /Users/nguermou/.gradle/caches/transforms-3/3ed17915a2e744c2bbbfb52330773cf5/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
-204            android:name="com.google.android.gms.version"
-204-->[com.google.android.gms:play-services-basement:18.1.0] /Users/nguermou/.gradle/caches/transforms-3/3ed17915a2e744c2bbbfb52330773cf5/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
-205            android:value="@integer/google_play_services_version" />
-205-->[com.google.android.gms:play-services-basement:18.1.0] /Users/nguermou/.gradle/caches/transforms-3/3ed17915a2e744c2bbbfb52330773cf5/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
-206
-207        <provider
-207-->[androidx.emoji2:emoji2:1.2.0] /Users/nguermou/.gradle/caches/transforms-3/ac0fb3956709d2347e7c19d6d7a40626/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-208            android:name="androidx.startup.InitializationProvider"
-208-->[androidx.emoji2:emoji2:1.2.0] /Users/nguermou/.gradle/caches/transforms-3/ac0fb3956709d2347e7c19d6d7a40626/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-209            android:authorities="com.example.interim.androidx-startup"
-209-->[androidx.emoji2:emoji2:1.2.0] /Users/nguermou/.gradle/caches/transforms-3/ac0fb3956709d2347e7c19d6d7a40626/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-210            android:exported="false" >
-210-->[androidx.emoji2:emoji2:1.2.0] /Users/nguermou/.gradle/caches/transforms-3/ac0fb3956709d2347e7c19d6d7a40626/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-211            <meta-data
-211-->[androidx.emoji2:emoji2:1.2.0] /Users/nguermou/.gradle/caches/transforms-3/ac0fb3956709d2347e7c19d6d7a40626/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-212                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-212-->[androidx.emoji2:emoji2:1.2.0] /Users/nguermou/.gradle/caches/transforms-3/ac0fb3956709d2347e7c19d6d7a40626/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-213                android:value="androidx.startup" />
-213-->[androidx.emoji2:emoji2:1.2.0] /Users/nguermou/.gradle/caches/transforms-3/ac0fb3956709d2347e7c19d6d7a40626/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-214            <meta-data
-214-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/nguermou/.gradle/caches/transforms-3/a7afaacbc7177510ad6c44aabd6a8811/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-215                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-215-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/nguermou/.gradle/caches/transforms-3/a7afaacbc7177510ad6c44aabd6a8811/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
-216                android:value="androidx.startup" />
-216-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/nguermou/.gradle/caches/transforms-3/a7afaacbc7177510ad6c44aabd6a8811/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-217        </provider>
-218    </application>
-219
-220</manifest>
+34        android:theme="@style/Theme.Interim"
+34-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:19:9-45
+35        android:usesCleartextTraffic="true" >
+35-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:20:9-44
+36        <activity
+36-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:22:9-24:40
+37            android:name="com.example.interim.AIdeCv"
+37-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:23:13-35
+38            android:exported="false" />
+38-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:24:13-37
+39        <activity
+39-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:25:9-27:40
+40            android:name="com.example.interim.GestionnaireNewInscriptions"
+40-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:26:13-56
+41            android:exported="false" />
+41-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:27:13-37
+42        <activity
+42-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:28:9-30:40
+43            android:name="com.example.interim.ProfilGestionnaire"
+43-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:29:13-47
+44            android:exported="false" />
+44-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:30:13-37
+45        <activity
+45-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:31:9-33:39
+46            android:name="com.example.interim.Presentation_slides"
+46-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:32:13-48
+47            android:exported="true" />
+47-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:33:13-36
+48        <activity
+48-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:34:9-36:40
+49            android:name="com.example.interim.GererEmployeurProfil"
+49-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:35:13-49
+50            android:exported="false" />
+50-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:36:13-37
+51        <activity
+51-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:37:9-39:40
+52            android:name="com.example.interim.Item"
+52-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:38:13-33
+53            android:exported="false" />
+53-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:39:13-37
+54        <activity
+54-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:40:9-42:40
+55            android:name="com.example.interim.GererInterimaireProfil"
+55-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:41:13-51
+56            android:exported="false" />
+56-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:42:13-37
+57        <activity
+57-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:43:9-45:40
+58            android:name="com.example.interim.AccueilAnonyme"
+58-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:44:13-43
+59            android:exported="false" />
+59-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:45:13-37
+60        <activity
+60-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:46:9-48:40
+61            android:name="com.example.interim.CandidatureEnCoursEmpl"
+61-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:47:13-51
+62            android:exported="false" />
+62-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:48:13-37
+63        <activity
+63-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:49:9-51:40
+64            android:name="com.example.interim.AnnonceEmployeur"
+64-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:50:13-45
+65            android:exported="false" />
+65-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:51:13-37
+66        <activity
+66-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:52:9-54:40
+67            android:name="com.example.interim.Postule"
+67-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:53:13-36
+68            android:exported="false" />
+68-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:54:13-37
+69        <activity
+69-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:55:9-57:40
+70            android:name="com.example.interim.SavedOffers"
+70-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:56:13-40
+71            android:exported="false" />
+71-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:57:13-37
+72        <activity
+72-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:58:9-60:40
+73            android:name="com.example.interim.MesNotifs"
+73-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:59:13-38
+74            android:exported="false" />
+74-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:60:13-37
+75        <activity
+75-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:61:9-63:40
+76            android:name="com.example.interim.MesEmplois"
+76-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:62:13-39
+77            android:exported="false" />
+77-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:63:13-37
+78        <activity
+78-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:64:9-66:40
+79            android:name="com.example.interim.MesCandidatures"
+79-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:65:13-44
+80            android:exported="false" />
+80-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:66:13-37
+81        <activity
+81-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:67:9-69:40
+82            android:name="com.example.interim.OffreResultatRechercheInterim"
+82-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:68:13-58
+83            android:exported="false" />
+83-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:69:13-37
+84        <activity
+84-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:70:9-72:40
+85            android:name="com.example.interim.ChoixAbonnement"
+85-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:71:13-44
+86            android:exported="false" />
+86-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:72:13-37
+87        <activity
+87-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:73:9-75:40
+88            android:name="com.example.interim.MesOffres"
+88-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:74:13-38
+89            android:exported="false" />
+89-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:75:13-37
+90        <activity
+90-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:76:9-78:40
+91            android:name="com.example.interim.AddOffre"
+91-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:77:13-37
+92            android:exported="false" />
+92-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:78:13-37
+93        <activity
+93-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:79:9-81:40
+94            android:name="com.example.interim.InterimaireProfil"
+94-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:80:13-46
+95            android:exported="false" />
+95-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:81:13-37
+96        <activity
+96-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:82:9-84:40
+97            android:name="com.example.interim.EmployeurProfil"
+97-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:83:13-44
+98            android:exported="false" />
+98-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:84:13-37
+99        <activity
+99-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:85:9-87:40
+100            android:name="com.example.interim.Inscription2Publisher"
+100-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:86:13-50
+101            android:exported="false" />
+101-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:87:13-37
+102        <activity
+102-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:88:9-90:40
+103            android:name="com.example.interim.Inscription1Publisher"
+103-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:89:13-50
+104            android:exported="false" />
+104-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:90:13-37
+105        <activity
+105-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:91:9-93:40
+106            android:name="com.example.interim.Drawer_base"
+106-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:92:13-40
+107            android:exported="false" />
+107-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:93:13-37
+108        <activity
+108-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:94:9-96:40
+109            android:name="com.example.interim.Accueil"
+109-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:95:13-36
+110            android:exported="false" />
+110-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:96:13-37
+111        <activity
+111-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:97:9-99:40
+112            android:name="com.example.interim.Connexion"
+112-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:98:13-38
+113            android:exported="false" />
+113-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:99:13-37
+114        <activity
+114-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:100:9-102:40
+115            android:name="com.example.interim.Role"
+115-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:101:13-33
+116            android:exported="false" />
+116-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:102:13-37
+117        <activity
+117-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:103:9-105:40
+118            android:name="com.example.interim.Inscription2Interimaire"
+118-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:104:13-52
+119            android:exported="false" />
+119-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:105:13-37
+120        <activity
+120-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:106:9-108:40
+121            android:name="com.example.interim.Inscription1Interimaire"
+121-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:107:13-52
+122            android:exported="false" />
+122-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:108:13-37
+123        <activity
+123-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:109:9-117:20
+124            android:name="com.example.interim.MainActivity"
+124-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:110:13-41
+125            android:exported="true" >
+125-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:111:13-36
+126            <intent-filter>
+126-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:112:13-116:29
+127                <action android:name="android.intent.action.MAIN" />
+127-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:113:17-69
+127-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:113:25-66
+128
+129                <category android:name="android.intent.category.LAUNCHER" />
+129-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:115:17-77
+129-->/Users/nguermou/Documents/GitHub/PROJET_MOBILE_INTERIM/Interim/app/src/main/AndroidManifest.xml:115:27-74
+130            </intent-filter>
+131        </activity>
+132        <activity
+132-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:27:9-44:20
+133            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+133-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:28:13-80
+134            android:excludeFromRecents="true"
+134-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:29:13-46
+135            android:exported="true"
+135-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:30:13-36
+136            android:launchMode="singleTask"
+136-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:31:13-44
+137            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+137-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:32:13-72
+138            <intent-filter>
+138-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:33:13-43:29
+139                <action android:name="android.intent.action.VIEW" />
+139-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:34:17-69
+139-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:34:25-66
+140
+141                <category android:name="android.intent.category.DEFAULT" />
+141-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:36:17-76
+141-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:36:27-73
+142                <category android:name="android.intent.category.BROWSABLE" />
+142-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:37:17-78
+142-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:37:27-75
+143
+144                <data
+144-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:39:17-42:51
+145                    android:host="firebase.auth"
+145-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:40:21-49
+146                    android:path="/"
+146-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:41:21-37
+147                    android:scheme="genericidp" />
+147-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:42:21-48
+148            </intent-filter>
+149        </activity>
+150        <activity
+150-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:45:9-62:20
+151            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+151-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:46:13-79
+152            android:excludeFromRecents="true"
+152-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:47:13-46
+153            android:exported="true"
+153-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:48:13-36
+154            android:launchMode="singleTask"
+154-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:49:13-44
+155            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+155-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:50:13-72
+156            <intent-filter>
+156-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:51:13-61:29
+157                <action android:name="android.intent.action.VIEW" />
+157-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:34:17-69
+157-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:34:25-66
+158
+159                <category android:name="android.intent.category.DEFAULT" />
+159-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:36:17-76
+159-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:36:27-73
+160                <category android:name="android.intent.category.BROWSABLE" />
+160-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:37:17-78
+160-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:37:27-75
+161
+162                <data
+162-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:39:17-42:51
+163                    android:host="firebase.auth"
+163-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:40:21-49
+164                    android:path="/"
+164-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:41:21-37
+165                    android:scheme="recaptcha" />
+165-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:42:21-48
+166            </intent-filter>
+167        </activity>
+168
+169        <service
+169-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:64:9-70:19
+170            android:name="com.google.firebase.components.ComponentDiscoveryService"
+170-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:65:13-84
+171            android:directBootAware="true"
+171-->[com.google.firebase:firebase-common:20.3.2] /Users/nguermou/.gradle/caches/transforms-3/9d36afbc47413410132b9745cffb91fe/transformed/firebase-common-20.3.2/AndroidManifest.xml:34:13-43
+172            android:exported="false" >
+172-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:66:13-37
+173            <meta-data
+173-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:67:13-69:85
+174                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+174-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:68:17-109
+175                android:value="com.google.firebase.components.ComponentRegistrar" />
+175-->[com.google.firebase:firebase-auth:21.0.3] /Users/nguermou/.gradle/caches/transforms-3/54899434be3bf1fbab6799b5abd6fb67/transformed/firebase-auth-21.0.3/AndroidManifest.xml:69:17-82
+176            <meta-data
+176-->[com.google.firebase:firebase-storage-ktx:20.2.0] /Users/nguermou/.gradle/caches/transforms-3/cb6fc0ecd3b1e5d9526bdf692ea90b6a/transformed/firebase-storage-ktx-20.2.0/AndroidManifest.xml:14:13-16:85
+177                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
+177-->[com.google.firebase:firebase-storage-ktx:20.2.0] /Users/nguermou/.gradle/caches/transforms-3/cb6fc0ecd3b1e5d9526bdf692ea90b6a/transformed/firebase-storage-ktx-20.2.0/AndroidManifest.xml:15:17-122
+178                android:value="com.google.firebase.components.ComponentRegistrar" />
+178-->[com.google.firebase:firebase-storage-ktx:20.2.0] /Users/nguermou/.gradle/caches/transforms-3/cb6fc0ecd3b1e5d9526bdf692ea90b6a/transformed/firebase-storage-ktx-20.2.0/AndroidManifest.xml:16:17-82
+179            <meta-data
+179-->[com.google.firebase:firebase-database-ktx:20.2.1] /Users/nguermou/.gradle/caches/transforms-3/177518be23d09819f9dfe9f705b414ce/transformed/firebase-database-ktx-20.2.1/AndroidManifest.xml:14:13-16:85
+180                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+180-->[com.google.firebase:firebase-database-ktx:20.2.1] /Users/nguermou/.gradle/caches/transforms-3/177518be23d09819f9dfe9f705b414ce/transformed/firebase-database-ktx-20.2.1/AndroidManifest.xml:15:17-124
+181                android:value="com.google.firebase.components.ComponentRegistrar" />
+181-->[com.google.firebase:firebase-database-ktx:20.2.1] /Users/nguermou/.gradle/caches/transforms-3/177518be23d09819f9dfe9f705b414ce/transformed/firebase-database-ktx-20.2.1/AndroidManifest.xml:16:17-82
+182            <meta-data
+182-->[com.google.firebase:firebase-database:20.2.1] /Users/nguermou/.gradle/caches/transforms-3/d08f9dfa09b645d684d456be0842cfc0/transformed/firebase-database-20.2.1/AndroidManifest.xml:31:13-33:85
+183                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+183-->[com.google.firebase:firebase-database:20.2.1] /Users/nguermou/.gradle/caches/transforms-3/d08f9dfa09b645d684d456be0842cfc0/transformed/firebase-database-20.2.1/AndroidManifest.xml:32:17-109
+184                android:value="com.google.firebase.components.ComponentRegistrar" />
+184-->[com.google.firebase:firebase-database:20.2.1] /Users/nguermou/.gradle/caches/transforms-3/d08f9dfa09b645d684d456be0842cfc0/transformed/firebase-database-20.2.1/AndroidManifest.xml:33:17-82
+185            <meta-data
+185-->[com.google.firebase:firebase-storage:20.2.0] /Users/nguermou/.gradle/caches/transforms-3/2ee820edaf6458dd0a43185ce4416d7c/transformed/firebase-storage-20.2.0/AndroidManifest.xml:32:13-34:85
+186                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+186-->[com.google.firebase:firebase-storage:20.2.0] /Users/nguermou/.gradle/caches/transforms-3/2ee820edaf6458dd0a43185ce4416d7c/transformed/firebase-storage-20.2.0/AndroidManifest.xml:33:17-107
+187                android:value="com.google.firebase.components.ComponentRegistrar" />
+187-->[com.google.firebase:firebase-storage:20.2.0] /Users/nguermou/.gradle/caches/transforms-3/2ee820edaf6458dd0a43185ce4416d7c/transformed/firebase-storage-20.2.0/AndroidManifest.xml:34:17-82
+188            <meta-data
+188-->[com.google.firebase:firebase-common-ktx:20.3.2] /Users/nguermou/.gradle/caches/transforms-3/8973c699c524efca6523a5b7602ef067/transformed/firebase-common-ktx-20.3.2/AndroidManifest.xml:14:13-16:85
+189                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+189-->[com.google.firebase:firebase-common-ktx:20.3.2] /Users/nguermou/.gradle/caches/transforms-3/8973c699c524efca6523a5b7602ef067/transformed/firebase-common-ktx-20.3.2/AndroidManifest.xml:15:17-113
+190                android:value="com.google.firebase.components.ComponentRegistrar" />
+190-->[com.google.firebase:firebase-common-ktx:20.3.2] /Users/nguermou/.gradle/caches/transforms-3/8973c699c524efca6523a5b7602ef067/transformed/firebase-common-ktx-20.3.2/AndroidManifest.xml:16:17-82
+191        </service>
+192
+193        <provider
+193-->[com.google.firebase:firebase-common:20.3.2] /Users/nguermou/.gradle/caches/transforms-3/9d36afbc47413410132b9745cffb91fe/transformed/firebase-common-20.3.2/AndroidManifest.xml:25:9-30:39
+194            android:name="com.google.firebase.provider.FirebaseInitProvider"
+194-->[com.google.firebase:firebase-common:20.3.2] /Users/nguermou/.gradle/caches/transforms-3/9d36afbc47413410132b9745cffb91fe/transformed/firebase-common-20.3.2/AndroidManifest.xml:26:13-77
+195            android:authorities="com.example.interim.firebaseinitprovider"
+195-->[com.google.firebase:firebase-common:20.3.2] /Users/nguermou/.gradle/caches/transforms-3/9d36afbc47413410132b9745cffb91fe/transformed/firebase-common-20.3.2/AndroidManifest.xml:27:13-72
+196            android:directBootAware="true"
+196-->[com.google.firebase:firebase-common:20.3.2] /Users/nguermou/.gradle/caches/transforms-3/9d36afbc47413410132b9745cffb91fe/transformed/firebase-common-20.3.2/AndroidManifest.xml:28:13-43
+197            android:exported="false"
+197-->[com.google.firebase:firebase-common:20.3.2] /Users/nguermou/.gradle/caches/transforms-3/9d36afbc47413410132b9745cffb91fe/transformed/firebase-common-20.3.2/AndroidManifest.xml:29:13-37
+198            android:initOrder="100" />
+198-->[com.google.firebase:firebase-common:20.3.2] /Users/nguermou/.gradle/caches/transforms-3/9d36afbc47413410132b9745cffb91fe/transformed/firebase-common-20.3.2/AndroidManifest.xml:30:13-36
+199
+200        <activity
+200-->[com.google.android.gms:play-services-base:18.1.0] /Users/nguermou/.gradle/caches/transforms-3/8a19cf77664cd0c37e70c8090baf5942/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+201            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+201-->[com.google.android.gms:play-services-base:18.1.0] /Users/nguermou/.gradle/caches/transforms-3/8a19cf77664cd0c37e70c8090baf5942/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+202            android:exported="false"
+202-->[com.google.android.gms:play-services-base:18.1.0] /Users/nguermou/.gradle/caches/transforms-3/8a19cf77664cd0c37e70c8090baf5942/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+203            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+203-->[com.google.android.gms:play-services-base:18.1.0] /Users/nguermou/.gradle/caches/transforms-3/8a19cf77664cd0c37e70c8090baf5942/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+204
+205        <meta-data
+205-->[com.google.android.gms:play-services-basement:18.1.0] /Users/nguermou/.gradle/caches/transforms-3/3ed17915a2e744c2bbbfb52330773cf5/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+206            android:name="com.google.android.gms.version"
+206-->[com.google.android.gms:play-services-basement:18.1.0] /Users/nguermou/.gradle/caches/transforms-3/3ed17915a2e744c2bbbfb52330773cf5/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+207            android:value="@integer/google_play_services_version" />
+207-->[com.google.android.gms:play-services-basement:18.1.0] /Users/nguermou/.gradle/caches/transforms-3/3ed17915a2e744c2bbbfb52330773cf5/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+208
+209        <provider
+209-->[androidx.emoji2:emoji2:1.2.0] /Users/nguermou/.gradle/caches/transforms-3/ac0fb3956709d2347e7c19d6d7a40626/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+210            android:name="androidx.startup.InitializationProvider"
+210-->[androidx.emoji2:emoji2:1.2.0] /Users/nguermou/.gradle/caches/transforms-3/ac0fb3956709d2347e7c19d6d7a40626/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+211            android:authorities="com.example.interim.androidx-startup"
+211-->[androidx.emoji2:emoji2:1.2.0] /Users/nguermou/.gradle/caches/transforms-3/ac0fb3956709d2347e7c19d6d7a40626/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+212            android:exported="false" >
+212-->[androidx.emoji2:emoji2:1.2.0] /Users/nguermou/.gradle/caches/transforms-3/ac0fb3956709d2347e7c19d6d7a40626/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+213            <meta-data
+213-->[androidx.emoji2:emoji2:1.2.0] /Users/nguermou/.gradle/caches/transforms-3/ac0fb3956709d2347e7c19d6d7a40626/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+214                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+214-->[androidx.emoji2:emoji2:1.2.0] /Users/nguermou/.gradle/caches/transforms-3/ac0fb3956709d2347e7c19d6d7a40626/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+215                android:value="androidx.startup" />
+215-->[androidx.emoji2:emoji2:1.2.0] /Users/nguermou/.gradle/caches/transforms-3/ac0fb3956709d2347e7c19d6d7a40626/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+216            <meta-data
+216-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/nguermou/.gradle/caches/transforms-3/a7afaacbc7177510ad6c44aabd6a8811/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+217                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+217-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/nguermou/.gradle/caches/transforms-3/a7afaacbc7177510ad6c44aabd6a8811/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+218                android:value="androidx.startup" />
+218-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/nguermou/.gradle/caches/transforms-3/a7afaacbc7177510ad6c44aabd6a8811/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+219        </provider>
+220    </application>
+221
+222</manifest>

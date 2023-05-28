@@ -20,6 +20,7 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
     ConstraintLayout layoutHeader;
     CardView cardView;
 
+
     public MyViewHolder(@NonNull View itemView) {
         super(itemView);
         nomEmploiView=itemView.findViewById(R.id.nomPostePub);
