@@ -42,9 +42,6 @@ public final class ProcederPayementBinding implements ViewBinding {
   public final TextView title;
 
   @NonNull
-  public final TextView titre;
-
-  @NonNull
   public final EditText titulaireCarte;
 
   @NonNull
@@ -55,9 +52,8 @@ public final class ProcederPayementBinding implements ViewBinding {
 
   private ProcederPayementBinding(@NonNull LinearLayout rootView, @NonNull RelativeLayout contaner,
       @NonNull EditText cvcCarte, @NonNull ImageView likeImage, @NonNull EditText numCarte,
-      @NonNull ImageView shareImage, @NonNull TextView title, @NonNull TextView titre,
-      @NonNull EditText titulaireCarte, @NonNull ImageView translateImage,
-      @NonNull Button valider) {
+      @NonNull ImageView shareImage, @NonNull TextView title, @NonNull EditText titulaireCarte,
+      @NonNull ImageView translateImage, @NonNull Button valider) {
     this.rootView = rootView;
     this.contaner = contaner;
     this.cvcCarte = cvcCarte;
@@ -65,7 +61,6 @@ public final class ProcederPayementBinding implements ViewBinding {
     this.numCarte = numCarte;
     this.shareImage = shareImage;
     this.title = title;
-    this.titre = titre;
     this.titulaireCarte = titulaireCarte;
     this.translateImage = translateImage;
     this.valider = valider;
@@ -134,12 +129,6 @@ public final class ProcederPayementBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.titre;
-      TextView titre = ViewBindings.findChildViewById(rootView, id);
-      if (titre == null) {
-        break missingId;
-      }
-
       id = R.id.titulaireCarte;
       EditText titulaireCarte = ViewBindings.findChildViewById(rootView, id);
       if (titulaireCarte == null) {
@@ -159,7 +148,7 @@ public final class ProcederPayementBinding implements ViewBinding {
       }
 
       return new ProcederPayementBinding((LinearLayout) rootView, contaner, cvcCarte, likeImage,
-          numCarte, shareImage, title, titre, titulaireCarte, translateImage, valider);
+          numCarte, shareImage, title, titulaireCarte, translateImage, valider);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -76,8 +76,8 @@ public class Inscription2Publisher extends AppCompatActivity {
                                                             @Override
                                                             public void onComplete(@NonNull Task<Void> task) {
                                                                 if (task.isSuccessful()) {
-                                                                    Toast.makeText(Inscription2Publisher.this, "Email de vérification envoyé!", Toast.LENGTH_SHORT).show();
-                                                                    Intent intent = new Intent(Inscription2Publisher.this, Connexion.class);
+                                                                    //Toast.makeText(Inscription2Publisher.this, "Email de vérification envoyé!", Toast.LENGTH_SHORT).show();
+                                                                    Intent intent = new Intent(Inscription2Publisher.this, ChoixAbonnement.class);
                                                                     startActivity(intent);
                                                                 } else {
                                                                     Toast.makeText(Inscription2Publisher.this, "Email de vérification n'a pas été envoyé!", Toast.LENGTH_SHORT).show();

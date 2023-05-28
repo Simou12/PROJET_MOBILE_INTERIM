@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.interim.Connexion;
+import com.example.interim.FragmentChoixAbonnement;
 import com.example.interim.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -76,8 +77,8 @@ public class Inscription2Agence extends AppCompatActivity {
                                                             @Override
                                                             public void onComplete(@NonNull Task<Void> task) {
                                                                 if (task.isSuccessful()) {
-                                                                    Toast.makeText(Inscription2Agence.this, "Email de vérification envoyé!", Toast.LENGTH_SHORT).show();
-                                                                    Intent intent = new Intent(Inscription2Agence.this, Connexion.class);
+                                                                    //Toast.makeText(Inscription2Agence.this, "Email de vérification envoyé!", Toast.LENGTH_SHORT).show();
+                                                                    Intent intent = new Intent(Inscription2Agence.this, FragmentChoixAbonnement.class);
                                                                     startActivity(intent);
                                                                 } else {
                                                                     Toast.makeText(Inscription2Agence.this, "Email de vérification n'a pas été envoyé!", Toast.LENGTH_SHORT).show();

@@ -33,7 +33,9 @@ public class Inscription2Interimaire extends AppCompatActivity {
     private Button btnValider;
     Interimaire candidat;
     String validMDP = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$";
-    String mailValid= "^[a-zA-Z0-9]+@[a-zA-Z0-9]+\\.[a-zA-Z0-9]+$";
+    String mailValid = "^[a-zA-Z0-9.-]+@[a-zA-Z0-9]+\\.[a-zA-Z0-9]+$";
+
+
     private FirebaseAuth firebaseAuth;
     private DatabaseReference usersRef;
     @Override

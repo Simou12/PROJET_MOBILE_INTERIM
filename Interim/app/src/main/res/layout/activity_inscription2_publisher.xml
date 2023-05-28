@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context="com.interim.interim.Inscription2Publisher">
+    tools:context=".Inscription2Publisher">
 
 
     <TextView
@@ -35,12 +35,11 @@
 
         <EditText
             android:id="@+id/nom"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="50dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="-50dp"
             android:layout_marginTop="48dp"
-            android:layout_marginRight="20dp"
             android:background="@drawable/edit_background"
             android:hint="Nom"
             android:textAlignment="center"
@@ -51,12 +50,11 @@
 
         <EditText
             android:id="@+id/prenom"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="50dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="-50dp"
             android:layout_marginTop="33dp"
-            android:layout_marginRight="20dp"
             android:background="@drawable/edit_background"
             android:hint="Prénom "
             android:textAlignment="center"
@@ -67,17 +65,16 @@
 
         <EditText
             android:id="@+id/tel"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="50dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="-50dp"
             android:layout_marginTop="33dp"
-            android:layout_marginRight="20dp"
             android:background="@drawable/edit_background"
             android:drawableLeft="@drawable/baseline_smartphone_24"
             android:drawablePadding="8dp"
             android:hint="Téléphone "
-            android:inputType="textEmailAddress"
+            android:inputType="phone"
             android:paddingLeft="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -87,12 +84,11 @@
 
         <EditText
             android:id="@+id/mail1"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="50dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="-50dp"
             android:layout_marginTop="33dp"
-            android:layout_marginRight="20dp"
             android:background="@drawable/edit_background"
             android:drawableLeft="@drawable/baseline_email_24"
             android:drawablePadding="8dp"
@@ -107,17 +103,16 @@
 
         <EditText
             android:id="@+id/mdp"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="50dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="-50dp"
             android:layout_marginTop="33dp"
-            android:layout_marginRight="20dp"
             android:background="@drawable/edit_background"
             android:drawableLeft="@drawable/baseline_lock_24"
             android:drawablePadding="8dp"
             android:hint="Mot de passe"
-            android:inputType="textEmailAddress"
+            android:inputType="textPassword"
             android:paddingLeft="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -125,17 +120,16 @@
 
         <EditText
             android:id="@+id/mdpConfirm"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="50dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="-50dp"
             android:layout_marginTop="33dp"
-            android:layout_marginRight="20dp"
             android:background="@drawable/edit_background"
             android:drawableLeft="@drawable/baseline_lock_24"
             android:drawablePadding="8dp"
             android:hint="Confirmer le mot de passe saisi"
-            android:inputType="textEmailAddress"
+            android:inputType="textPassword"
             android:paddingLeft="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -145,6 +139,7 @@
             android:id="@+id/next"
             android:layout_width="55dp"
             android:layout_height="70dp"
+            android:layout_marginLeft="-60dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.703"

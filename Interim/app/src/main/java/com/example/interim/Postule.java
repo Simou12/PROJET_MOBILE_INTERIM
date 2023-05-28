@@ -39,7 +39,7 @@ public class Postule extends Drawer_base {
 
     ActivityPostuleBinding activityPostuleBinding;
     private EditText nom, prenom, dateNaissance,lettreMotivation, nationalite;
-    private ImageView envoyer;
+    private Button envoyer;
     TextView cv;
     FirebaseUser currentUser = CurrentUserManager.getInstance().getCurrentUser();
     String userEmail = currentUser.getEmail();
@@ -146,13 +146,13 @@ public class Postule extends Drawer_base {
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                        Toast.makeText(Postule.this, "File uploaded successfully", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(Postule.this, "File uploaded successfully", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(Postule.this, "File upload failed: ", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(Postule.this, "File upload failed: ", Toast.LENGTH_SHORT).show();
                     }
                 });
     }

@@ -1,10 +1,12 @@
 package OffrePublieeRecyclerView;
 
 import android.content.Context;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -100,6 +102,7 @@ public class OffrePublieeAdapter extends RecyclerView.Adapter<OffrePublieeAdapte
 
         TextView nomEmploi, ref, datePublication;
         Button  supprimer;
+        ImageView calendrier;
 
         public OffreViewHolder(@NonNull View itemView, OnItemClickListener listener) {
             super(itemView);
@@ -107,6 +110,7 @@ public class OffrePublieeAdapter extends RecyclerView.Adapter<OffrePublieeAdapte
             ref = itemView.findViewById(R.id.ref);
             datePublication = itemView.findViewById(R.id.datePublication);
             supprimer = itemView.findViewById(R.id.supprimer);
+            calendrier=itemView.findViewById(R.id.calendrier);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

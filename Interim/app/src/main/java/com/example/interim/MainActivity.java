@@ -8,22 +8,11 @@ import androidx.core.content.ContextCompat;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.location.Address;
-import android.location.Geocoder;
-import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
-import android.Manifest;
-import android.widget.Toast;
 
-import java.io.IOException;
-import java.util.List;
-import java.util.Locale;
 
 
 public class MainActivity extends AppCompatActivity{
@@ -56,6 +45,15 @@ public class MainActivity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 showAlertDialog();
+            }
+        });
+
+        Button aide = findViewById(R.id.aide);
+        aide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(MainActivity.this,AIdeCv.class);
+                startActivity(intent);
             }
         });
 

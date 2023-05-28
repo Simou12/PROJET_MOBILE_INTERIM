@@ -15,4 +15,10 @@
     <color name="blue_background">#465686 </color>
     <color name="bleuClair"> #EBF0FB</color>
     <color name="red">#CE2424</color>
+    <color name="buttontext">#50C2C9</color>
+
+
+    //indicator color
+    <color name="inactive">#C4C4C4</color>
+    <color name="active">#50C2C9</color>
 </resources>

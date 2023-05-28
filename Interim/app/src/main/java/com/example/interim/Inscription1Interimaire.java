@@ -59,9 +59,13 @@ public class Inscription1Interimaire extends AppCompatActivity {
             }else {
                 Toast.makeText(this, "Veuillez remplir tous les champs de saisi SVP", Toast.LENGTH_SHORT).show();
                 if(nom.equals("")) nomView.setBackgroundResource(R.drawable.error);
+                else  nomView.setBackgroundResource(R.drawable.edit_background);
                 if(prenom.equals("")) prenomView.setBackgroundResource(R.drawable.error);
+                else prenomView.setBackgroundResource(R.drawable.edit_background);
                 if(dateNaissance.equals("")) dateNaissanceView.setBackgroundResource(R.drawable.error);
+                else dateNaissanceView.setBackgroundResource(R.drawable.edit_background);
                 if(adress.equals("")) adressView.setBackgroundResource(R.drawable.error);
+                else adressView.setBackgroundResource(R.drawable.error);
             }
         });
 

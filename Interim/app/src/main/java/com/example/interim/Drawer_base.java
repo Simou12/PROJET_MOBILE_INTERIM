@@ -113,6 +113,9 @@ public class Drawer_base extends AppCompatActivity implements NavigationView.OnN
                                                 if(agenceExist){
                                                     startActivity(new Intent(Drawer_base.this,agence.PofilAgence.class));
                                                     overridePendingTransition(0,0);
+                                                }else{
+                                                    startActivity(new Intent(Drawer_base.this,ProfilGestionnaire.class));
+                                                    overridePendingTransition(0,0);
                                                 }
                                             }
 

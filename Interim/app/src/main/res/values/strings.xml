@@ -8,4 +8,14 @@
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="headling1">JobSpot</string>
+    <string name="headling2"> Trouvez vous un emploi en ligne</string>
+    <string name="headling3">Employeur</string>
+    <string name="headling4">Paiement en ligne</string>
+    <string name="headling5">Sécurité</string>
+    <string name="description1">Application mobile dédiée à tout type de recrtuteurs et aux intérimaires à la recherche d\'opportunité de travail.</string>
+    <string name="description2">Fini les déplacements ! Avec JobSpot, tu peux désormais postuler à des offres d\'emploi de chez toi. </string>
+    <string name="description3">Que vous soyez employeur ou agence d\'intérim, notre application JobSpot facilite le processus de recrutement.</string>
+    <string name="description4">En tant qu\'employeur ou agence, JobSpot vous propose une variété d\'options d\'abonnement adaptées à vos besoins.</string>
+    <string name="description5">JobSpot accorde une importance primordiale à la sécurité. Elle dispose des mesures robustes pour garantir la protection des données sensibles des employeurs, des agences d\'intérim et des intérimaires. </string>
 </resources>

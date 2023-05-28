@@ -23,6 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.HashMap;
 import java.util.Map;
 
+import agence.GererProfilAgence;
 import models.Employeur;
 import models.Interimaire;
 
@@ -43,7 +44,7 @@ public class GererEmployeurProfil extends Drawer_base {
         super.onCreate(savedInstanceState);
         act = ActivityGererEmployeurProfilBinding.inflate(getLayoutInflater());
         setContentView(act.getRoot());
-        allocatedTitle("Gérer mon profil");
+        allocatedTitle("Gérer mon profile");
 
         nomView=findViewById(R.id.nom);
         adresseView=findViewById(R.id.adresse);
@@ -93,6 +94,7 @@ public class GererEmployeurProfil extends Drawer_base {
 
 
         valider.setOnClickListener(View -> {
+            Toast.makeText(GererEmployeurProfil.this, "Votre profil à été mis à jours!", Toast.LENGTH_SHORT).show();
             nom=nomView.getText().toString();
             adresse=adresseView.getText().toString();
             tel=telView.getText().toString();

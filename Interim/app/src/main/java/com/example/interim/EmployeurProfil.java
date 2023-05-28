@@ -33,7 +33,7 @@ public class EmployeurProfil extends Drawer_base {
         super.onCreate(savedInstanceState);
         activityEmployeurProfilBinding = ActivityEmployeurProfilBinding.inflate(getLayoutInflater());
         setContentView(activityEmployeurProfilBinding.getRoot());
-        allocatedTitle("Mon profil");
+        allocatedTitle("Mon profile");
 
         nom = findViewById(R.id.userName);
         gestionCand = findViewById(R.id.candidaturesEmp);
@@ -67,6 +67,14 @@ public class EmployeurProfil extends Drawer_base {
             }
         });
 
+        gestionProfil = findViewById(R.id.gestProfilEmp);
+        gestionProfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(EmployeurProfil.this, GererEmployeurProfil.class));
+            }
+        });
+
 
         gestionCand.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,6 +91,8 @@ public class EmployeurProfil extends Drawer_base {
                 startActivity(intent);*/
             }
         });
+
+
     }
     private void initializeComponents() {
         ajouterOffreView=findViewById(R.id.ajoutOffreEmp);

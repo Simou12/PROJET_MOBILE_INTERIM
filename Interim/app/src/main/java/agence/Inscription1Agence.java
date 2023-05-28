@@ -21,7 +21,8 @@ public class Inscription1Agence extends AppCompatActivity {
     private ImageView btnNext;
     private String nom, prenom,telephone,email,mdp,mdpConfirm;
     String validMDP = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$";
-    String mailValid= "^[a-zA-Z0-9]+@[a-zA-Z0-9]+\\.[a-zA-Z0-9]+$";
+    String mailValid = "^[a-zA-Z0-9.-]+@[a-zA-Z0-9]+\\.[a-zA-Z0-9]+$";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

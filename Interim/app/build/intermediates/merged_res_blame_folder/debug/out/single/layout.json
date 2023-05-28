@@ -4,16 +4,20 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_candidature_en_cours_empl.xml"
     },
     {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_historiques.xml",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_historiques.xml"
-    },
-    {
-        "merged": "com.example.interim.app-mergeDebugResources-33:/layout/activity_gerer_interimaire_profil.xml",
-        "source": "com.example.interim.app-main-36:/layout/activity_gerer_interimaire_profil.xml"
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_gestionnaire_new_inscriptions.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_gestionnaire_new_inscriptions.xml"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_add_offre.xml",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_add_offre.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_gerer_profil_agence.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_gerer_profil_agence.xml"
+    },
+    {
+        "merged": "com.example.interim.app-mergeDebugResources-33:/layout/fragment_choix_abonnement.xml",
+        "source": "com.example.interim.app-main-36:/layout/fragment_choix_abonnement.xml"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_mes_notifs.xml",
@@ -32,14 +36,6 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_accueil.xml"
     },
     {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_profil_agence.xml",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_profil_agence.xml"
-    },
-    {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\item_candidature_accepte.xml",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_candidature_accepte.xml"
-    },
-    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_annonce_employeur.xml",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_annonce_employeur.xml"
     },
@@ -52,16 +48,16 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_offre_view.xml"
     },
     {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_main.xml"
+    },
+    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_inscription1_agence.xml",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_inscription1_agence.xml"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_inscription2_publisher.xml",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_inscription2_publisher.xml"
-    },
-    {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_main.xml"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_mes_candidatures.xml",
@@ -72,16 +68,20 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_inscription0_agence.xml"
     },
     {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\item_interimaire_candidatures.xml",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_interimaire_candidatures.xml"
-    },
-    {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\fragment_choix_abonnement.xml",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\fragment_choix_abonnement.xml"
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\slide.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\slide.xml"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\item_annonce_anonyme.xml",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_annonce_anonyme.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_presentation_slides.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_presentation_slides.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\fragment_choix_abonnement.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\fragment_choix_abonnement.xml"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_choix_abonnement.xml",
@@ -92,16 +92,12 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_inscription2_interimaire.xml"
     },
     {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\item_notif_view.xml",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_notif_view.xml"
-    },
-    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_mes_emplois.xml",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_mes_emplois.xml"
     },
     {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_connexion.xml",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_connexion.xml"
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\item_notif_view.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_notif_view.xml"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\content_layout.xml",
@@ -112,16 +108,8 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_interimaire_profil.xml"
     },
     {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_inscription2_agence.xml",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_inscription2_agence.xml"
-    },
-    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\item_emploi.xml",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_emploi.xml"
-    },
-    {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\proceder_payement.xml",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\proceder_payement.xml"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_gerer_interimaire_profil.xml",
@@ -132,40 +120,20 @@
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_inscription1_publisher.xml"
     },
     {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\layout_dialog.xml",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\layout_dialog.xml"
-    },
-    {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\main_drawer_header.xml",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\main_drawer_header.xml"
-    },
-    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_employeur_profil.xml",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_employeur_profil.xml"
-    },
-    {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\item_candidature_en_cours.xml",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_candidature_en_cours.xml"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_role.xml",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_role.xml"
     },
     {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_inscription1_interimaire.xml",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_inscription1_interimaire.xml"
-    },
-    {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_mes_offres.xml",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_mes_offres.xml"
     },
     {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\item_annonce_employeur.xml",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_annonce_employeur.xml"
-    },
-    {
-        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\item_hiso.xml",
-        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_hiso.xml"
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_gerer_employeur_profil.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_gerer_employeur_profil.xml"
     },
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\item_offre_employeur.xml",
@@ -186,5 +154,81 @@
     {
         "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_postule.xml",
         "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_postule.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_historiques.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_historiques.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_affiche_cv.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_affiche_cv.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_call.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_call.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\image_cv.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\image_cv.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_profil_agence.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_profil_agence.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\item_candidature_accepte.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_candidature_accepte.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\item_interimaire_candidatures.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_interimaire_candidatures.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_aide_cv.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_aide_cv.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_profil_gestionnaire.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_profil_gestionnaire.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_connexion.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_connexion.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_inscription2_agence.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_inscription2_agence.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\proceder_payement.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\proceder_payement.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\layout_dialog.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\layout_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\main_drawer_header.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\main_drawer_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\item_candidature_en_cours.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_candidature_en_cours.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\activity_inscription1_interimaire.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\activity_inscription1_interimaire.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\item_gestionnaire_demande_inscription.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_gestionnaire_demande_inscription.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\item_annonce_employeur.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_annonce_employeur.xml"
+    },
+    {
+        "merged": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-mergeDebugResources-33:\\layout\\item_hiso.xml",
+        "source": "C:\\Users\\SCD UM\\.gradle\\daemon\\7.5\\com.example.interim.app-main-36:\\layout\\item_hiso.xml"
     }
 ]

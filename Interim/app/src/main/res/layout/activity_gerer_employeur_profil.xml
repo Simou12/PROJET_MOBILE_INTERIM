@@ -184,7 +184,7 @@
             android:layout_marginTop="16dp"
             android:background="@drawable/edit_background_bleuclair"
             android:hint="Nouveau numéro de téléphone "
-            android:inputType="text"
+            android:inputType="phone"
             android:textAlignment="center"
             android:textSize="15dp"
             app:layout_constraintEnd_toEndOf="parent"

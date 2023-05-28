@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bleuClair"
     tools:context=".MainActivity">
 
     <TextView
@@ -64,7 +65,7 @@
         />
 
     <Button
-        android:id="@+id/xxx"
+        android:id="@+id/aide"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:layout_below="@+id/inscription"

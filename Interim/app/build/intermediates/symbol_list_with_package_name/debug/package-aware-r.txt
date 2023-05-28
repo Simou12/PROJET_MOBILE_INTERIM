@@ -1305,6 +1305,7 @@ color abc_tint_spinner
 color abc_tint_switch_track
 color accent_material_dark
 color accent_material_light
+color active
 color androidx_core_ripple_material_light
 color androidx_core_secondary_text_default_material_light
 color background_floating_material_dark
@@ -1327,6 +1328,7 @@ color browser_actions_text_color
 color browser_actions_title_color
 color button_material_dark
 color button_material_light
+color buttontext
 color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
@@ -1393,6 +1395,7 @@ color gris
 color grisClair
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color inactive
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -2743,6 +2746,7 @@ drawable background_white_radius
 drawable baseline_email_24
 drawable baseline_lock_24
 drawable baseline_smartphone_24
+drawable baseline_wifi_calling_3_24
 drawable bloque
 drawable bottom_background_connexion
 drawable bottom_background_light
@@ -2784,6 +2788,7 @@ drawable connexionimage
 drawable contrat
 drawable conx_image
 drawable cv_postule
+drawable cvexemple
 drawable deconnexion
 drawable design_fab_background
 drawable design_ic_visibility
@@ -2801,6 +2806,7 @@ drawable favori
 drawable file_download_24
 drawable flow_menu
 drawable gestionprofil
+drawable gmail
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable home
@@ -2818,6 +2824,12 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+drawable image1
+drawable image2
+drawable image3
+drawable image4
+drawable image5
+drawable image6
 drawable jaccepte
 drawable jobapplication
 drawable loc
@@ -2911,6 +2923,7 @@ drawable salaire
 drawable search
 drawable send
 drawable share
+drawable smartphone
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3003,6 +3016,8 @@ id adjust_width
 id adre
 id adress
 id adresse
+id adresseText
+id aide
 id ajoutOffreEmp
 id ajouter
 id alertTitle
@@ -3026,6 +3041,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backbtn
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3049,6 +3065,9 @@ id btnGestionnaire
 id btnvalid
 id buttonPanel
 id cache_measures
+id calendar
+id calendrier
+id call
 id callMeasure
 id cancel_button
 id candidatures
@@ -3103,6 +3122,7 @@ id dateDebFin
 id dateDebPub
 id dateFin
 id dateFinPub
+id dateInscription
 id dateNaissance
 id dateNaissanceText
 id datePublication
@@ -3157,7 +3177,7 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
-id envoyer
+id exemplecv
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3184,6 +3204,7 @@ id gestProfilEmp
 id gestProfilInterim
 id ghost_view
 id ghost_view_holder
+id gmail
 id gone
 id graph
 id graph_wrap
@@ -3211,6 +3232,7 @@ id immediateStop
 id included
 id indeterminate
 id indetermine
+id indicator_layout
 id info
 id inscription
 id invisible
@@ -3243,6 +3265,7 @@ id listMode
 id listNoirEmp
 id list_item
 id loc
+id local
 id m3_side_sheet
 id mail1
 id marquee
@@ -3328,6 +3351,7 @@ id never
 id neverCompleteToEnd
 id neverCompleteToStart
 id next
+id nextbtn
 id noScroll
 id noState
 id nom
@@ -3370,8 +3394,10 @@ id pays
 id peekHeight
 id percent
 id periode
+id phone
 id photoProfil
 id pin
+id place
 id plus
 id position
 id postLayout
@@ -3384,6 +3410,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerView2
 id recylerView
 id ref
 id reference
@@ -3452,9 +3479,11 @@ id showHome
 id showTitle
 id signUp
 id sin
+id skipButton
 id skipCollapsed
 id skipped
 id slide
+id slideViewPager
 id snackbar_action
 id snackbar_text
 id snap
@@ -3499,6 +3528,7 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
 id tel
+id telephone
 id text
 id text2
 id textDescr
@@ -3510,9 +3540,15 @@ id textStart
 id textTop
 id textView
 id textView2
+id textView3
+id textView4
+id textView5
+id textView6
+id textView7
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
+id textdescription
 id texte
 id textinput_counter
 id textinput_error
@@ -3520,9 +3556,11 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id texttitle
 id time
 id title
 id titleDividerNoCustom
+id titleImage
 id title_template
 id titre
 id titulaireCarte
@@ -3575,7 +3613,6 @@ id wrap_content
 id wrap_content_constrained
 id x_left
 id x_right
-id xxx
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -3686,14 +3723,20 @@ layout abc_tooltip
 layout activity_accueil
 layout activity_accueil_anonyme
 layout activity_add_offre
+layout activity_affiche_cv
+layout activity_aide_cv
 layout activity_annonce_employeur
+layout activity_call
 layout activity_candidature_accepte_empl
 layout activity_candidature_en_cours_empl
 layout activity_choix_abonnement
 layout activity_connexion
 layout activity_drawer_base
 layout activity_employeur_profil
+layout activity_gerer_employeur_profil
 layout activity_gerer_interimaire_profil
+layout activity_gerer_profil_agence
+layout activity_gestionnaire_new_inscriptions
 layout activity_historiques
 layout activity_inscription0_agence
 layout activity_inscription0_publisher
@@ -3712,7 +3755,9 @@ layout activity_mes_notifs
 layout activity_mes_offres
 layout activity_offre_resultat_recherche_interim
 layout activity_postule
+layout activity_presentation_slides
 layout activity_profil_agence
+layout activity_profil_gestionnaire
 layout activity_role
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
@@ -3734,11 +3779,13 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_choix_abonnement
+layout image_cv
 layout item_annonce_anonyme
 layout item_annonce_employeur
 layout item_candidature_accepte
 layout item_candidature_en_cours
 layout item_emploi
+layout item_gestionnaire_demande_inscription
 layout item_hiso
 layout item_interimaire_candidatures
 layout item_notif_view
@@ -3807,6 +3854,7 @@ layout proceder_payement
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout slide
 layout support_simple_spinner_dropdown_item
 menu hiso
 menu main_drawer_menu
@@ -3875,6 +3923,11 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string default_web_client_id
+string description1
+string description2
+string description3
+string description4
+string description5
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -3885,6 +3938,11 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string headling1
+string headling2
+string headling3
+string headling4
+string headling5
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description

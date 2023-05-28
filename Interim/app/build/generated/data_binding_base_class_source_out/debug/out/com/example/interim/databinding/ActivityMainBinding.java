@@ -22,6 +22,9 @@ public final class ActivityMainBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final Button aide;
+
+  @NonNull
   public final Button anonyme;
 
   @NonNull
@@ -36,19 +39,16 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final TextView titre;
 
-  @NonNull
-  public final Button xxx;
-
-  private ActivityMainBinding(@NonNull RelativeLayout rootView, @NonNull Button anonyme,
-      @NonNull Button conx, @NonNull ImageView image, @NonNull Button inscription,
-      @NonNull TextView titre, @NonNull Button xxx) {
+  private ActivityMainBinding(@NonNull RelativeLayout rootView, @NonNull Button aide,
+      @NonNull Button anonyme, @NonNull Button conx, @NonNull ImageView image,
+      @NonNull Button inscription, @NonNull TextView titre) {
     this.rootView = rootView;
+    this.aide = aide;
     this.anonyme = anonyme;
     this.conx = conx;
     this.image = image;
     this.inscription = inscription;
     this.titre = titre;
-    this.xxx = xxx;
   }
 
   @Override
@@ -78,6 +78,12 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.aide;
+      Button aide = ViewBindings.findChildViewById(rootView, id);
+      if (aide == null) {
+        break missingId;
+      }
+
       id = R.id.anonyme;
       Button anonyme = ViewBindings.findChildViewById(rootView, id);
       if (anonyme == null) {
@@ -108,14 +114,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.xxx;
-      Button xxx = ViewBindings.findChildViewById(rootView, id);
-      if (xxx == null) {
-        break missingId;
-      }
-
-      return new ActivityMainBinding((RelativeLayout) rootView, anonyme, conx, image, inscription,
-          titre, xxx);
+      return new ActivityMainBinding((RelativeLayout) rootView, aide, anonyme, conx, image,
+          inscription, titre);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

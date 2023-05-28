@@ -4,6 +4,7 @@ package com.example.interim.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -28,9 +29,6 @@ public final class ActivityPostuleBinding implements ViewBinding {
   public final EditText dateNaissance;
 
   @NonNull
-  public final TextView envoyer;
-
-  @NonNull
   public final ImageView image;
 
   @NonNull
@@ -43,7 +41,7 @@ public final class ActivityPostuleBinding implements ViewBinding {
   public final EditText nationnalite;
 
   @NonNull
-  public final ImageView next;
+  public final Button next;
 
   @NonNull
   public final EditText nom;
@@ -55,14 +53,12 @@ public final class ActivityPostuleBinding implements ViewBinding {
   public final TextView tmotiv;
 
   private ActivityPostuleBinding(@NonNull ConstraintLayout rootView, @NonNull TextView cv,
-      @NonNull EditText dateNaissance, @NonNull TextView envoyer, @NonNull ImageView image,
-      @NonNull ImageView monCv, @NonNull EditText motivation, @NonNull EditText nationnalite,
-      @NonNull ImageView next, @NonNull EditText nom, @NonNull EditText prenom,
-      @NonNull TextView tmotiv) {
+      @NonNull EditText dateNaissance, @NonNull ImageView image, @NonNull ImageView monCv,
+      @NonNull EditText motivation, @NonNull EditText nationnalite, @NonNull Button next,
+      @NonNull EditText nom, @NonNull EditText prenom, @NonNull TextView tmotiv) {
     this.rootView = rootView;
     this.cv = cv;
     this.dateNaissance = dateNaissance;
-    this.envoyer = envoyer;
     this.image = image;
     this.monCv = monCv;
     this.motivation = motivation;
@@ -112,12 +108,6 @@ public final class ActivityPostuleBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.envoyer;
-      TextView envoyer = ViewBindings.findChildViewById(rootView, id);
-      if (envoyer == null) {
-        break missingId;
-      }
-
       id = R.id.image;
       ImageView image = ViewBindings.findChildViewById(rootView, id);
       if (image == null) {
@@ -143,7 +133,7 @@ public final class ActivityPostuleBinding implements ViewBinding {
       }
 
       id = R.id.next;
-      ImageView next = ViewBindings.findChildViewById(rootView, id);
+      Button next = ViewBindings.findChildViewById(rootView, id);
       if (next == null) {
         break missingId;
       }
@@ -166,8 +156,8 @@ public final class ActivityPostuleBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPostuleBinding((ConstraintLayout) rootView, cv, dateNaissance, envoyer,
-          image, monCv, motivation, nationnalite, next, nom, prenom, tmotiv);
+      return new ActivityPostuleBinding((ConstraintLayout) rootView, cv, dateNaissance, image,
+          monCv, motivation, nationnalite, next, nom, prenom, tmotiv);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

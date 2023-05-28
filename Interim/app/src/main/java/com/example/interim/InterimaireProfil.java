@@ -34,7 +34,7 @@ public class InterimaireProfil extends Drawer_base {
         super.onCreate(savedInstanceState);
         act = ActivityInterimaireProfilBinding.inflate(getLayoutInflater());
         setContentView(act.getRoot());
-        allocatedTitle("Mon profil");
+        allocatedTitle("Mon profile");
 
         nom = findViewById(R.id.userNameInterim);
 
